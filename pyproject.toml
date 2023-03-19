@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "computational-intelligence"
+version = "0.1.0"
+description = ""
+authors = ["war-in <marcin.warchol20@gmail.com>"]
+readme = "README.md"
+packages = [{include = "computational_intelligence"}]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+jmetalpy = "^1.5.5"
+black = "^23.1.0"
+pylint = "^2.17.0"
+poethepoet = "^0.18.1"
+isort = "^5.12.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poe.tasks]
+format.shell = "isort . && black ."
+lint = "pylint ./computational_intelligence ./tests"
