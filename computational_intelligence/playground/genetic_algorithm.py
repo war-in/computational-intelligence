@@ -22,7 +22,7 @@ from jmetal.util.termination_criterion import StoppingByEvaluations
 
 class PrintObjectivesObserver(Observer):
     def __init__(self, frequency: float = 1.0) -> None:
-        """Show the number of evaluations, best fitness and computing time.
+        """Show the number of evaluations, the best fitness and computing time.
 
         :param frequency: Display frequency."""
         self.display_frequency = frequency
@@ -34,7 +34,7 @@ class PrintObjectivesObserver(Observer):
         solutions = kwargs["SOLUTIONS"]
 
         if (evaluations % self.display_frequency) == 0 and solutions:
-            if type(solutions) == list:
+            if isinstance(solutions, list):
                 fitness = solutions[0].objectives
             else:
                 fitness = solutions.objectives
@@ -46,23 +46,37 @@ class PrintObjectivesObserver(Observer):
 
 
 if __name__ == "__main__":
-    problem = Rastrigin()
+    problem = Sphere(50)
 
-    algorithm = GeneticAlgorithm(
-        problem=problem,
-        population_size=100,
-        offspring_population_size=1,
-        mutation=UniformMutation(probability=0.1),
-        crossover=SBXCrossover(probability=0.9),
-        selection=RouletteWheelSelection(),
-        termination_criterion=StoppingByEvaluations(1000),
-    )
+    mutation_algorithms = [
+        PolynomialMutation(probability=0.1),
+        SimpleRandomMutation(probability=0.1),
+        UniformMutation(probability=0.1),
+    ]
+    fitness = []
 
-    observer = PrintObjectivesObserver(10)
-    algorithm.observable.register(observer)
+    for mutation_algorithm in mutation_algorithms:
+        algorithm = GeneticAlgorithm(
+            problem=problem,
+            population_size=10,
+            offspring_population_size=1,
+            mutation=mutation_algorithm,
+            crossover=SBXCrossover(probability=0.9),
+            selection=BestSolutionSelection(),
+            termination_criterion=StoppingByEvaluations(10000),
+        )
 
-    algorithm.run()
-    solutions = algorithm.solutions
+        observer = PrintObjectivesObserver(1)
+        algorithm.observable.register(observer)
 
-    plt.plot(observer.fitness)
+        algorithm.run()
+
+        fitness.append(observer.fitness)
+
+    plt.xlabel("Ewaluacje")
+    plt.ylabel("Fitness")
+    plt.title("Porównanie różnych operatorów mutacji")
+    for i, data in enumerate(zip(fitness, mutation_algorithms)):
+        plt.plot(data[0], label=data[1].get_name())
+    plt.legend()
     plt.show()
