@@ -17407,3 +17407,1251 @@
 2023-04-14 12:26:29,820 [MainThread  ] [INFO ]  Average age: 2.59
 2023-04-14 12:26:29,823 [MainThread  ] [INFO ]  Evaluations: 1000. fitness: [4.229630852304435]
 2023-04-14 12:26:29,823 [MainThread  ] [INFO ]  Average age: 2.84
+2023-04-18 21:28:16,156 [MainThread  ] [INFO ]  Evaluations: 100. fitness: [159.14504212083204]
+2023-04-18 21:28:16,157 [MainThread  ] [INFO ]  Average age: 0.0
+2023-04-18 21:28:16,158 [MainThread  ] [INFO ]  Evaluations: 110. fitness: [111.15505263866939]
+2023-04-18 21:28:16,158 [MainThread  ] [INFO ]  Average age: 1.0
+2023-04-18 21:28:16,159 [MainThread  ] [INFO ]  Evaluations: 120. fitness: [111.15505263866939]
+2023-04-18 21:28:16,159 [MainThread  ] [INFO ]  Average age: 1.91
+2023-04-18 21:28:16,160 [MainThread  ] [INFO ]  Evaluations: 130. fitness: [111.15505263866939]
+2023-04-18 21:28:16,160 [MainThread  ] [INFO ]  Average age: 2.73
+2023-04-18 21:28:16,161 [MainThread  ] [INFO ]  Evaluations: 140. fitness: [111.15505263866939]
+2023-04-18 21:28:16,161 [MainThread  ] [INFO ]  Average age: 3.54
+2023-04-18 21:28:16,162 [MainThread  ] [INFO ]  Evaluations: 150. fitness: [111.15505263866939]
+2023-04-18 21:28:16,162 [MainThread  ] [INFO ]  Average age: 4.26
+2023-04-18 21:28:16,164 [MainThread  ] [INFO ]  Evaluations: 160. fitness: [111.15505263866939]
+2023-04-18 21:28:16,164 [MainThread  ] [INFO ]  Average age: 4.94
+2023-04-18 21:28:16,165 [MainThread  ] [INFO ]  Evaluations: 170. fitness: [111.15505263866939]
+2023-04-18 21:28:16,165 [MainThread  ] [INFO ]  Average age: 5.52
+2023-04-18 21:28:16,166 [MainThread  ] [INFO ]  Evaluations: 180. fitness: [111.15505263866939]
+2023-04-18 21:28:16,166 [MainThread  ] [INFO ]  Average age: 6.1
+2023-04-18 21:28:16,167 [MainThread  ] [INFO ]  Evaluations: 190. fitness: [111.15505263866939]
+2023-04-18 21:28:16,167 [MainThread  ] [INFO ]  Average age: 6.66
+2023-04-18 21:28:16,168 [MainThread  ] [INFO ]  Evaluations: 200. fitness: [111.15505263866939]
+2023-04-18 21:28:16,168 [MainThread  ] [INFO ]  Average age: 7.14
+2023-04-18 21:28:16,169 [MainThread  ] [INFO ]  Evaluations: 210. fitness: [111.15505263866939]
+2023-04-18 21:28:16,169 [MainThread  ] [INFO ]  Average age: 7.46
+2023-04-18 21:28:16,170 [MainThread  ] [INFO ]  Evaluations: 220. fitness: [111.15505263866939]
+2023-04-18 21:28:16,170 [MainThread  ] [INFO ]  Average age: 7.82
+2023-04-18 21:28:16,170 [MainThread  ] [INFO ]  Evaluations: 230. fitness: [111.15505263866939]
+2023-04-18 21:28:16,171 [MainThread  ] [INFO ]  Average age: 8.15
+2023-04-18 21:28:16,171 [MainThread  ] [INFO ]  Evaluations: 240. fitness: [111.15505263866939]
+2023-04-18 21:28:16,172 [MainThread  ] [INFO ]  Average age: 8.42
+2023-04-18 21:28:16,173 [MainThread  ] [INFO ]  Evaluations: 250. fitness: [86.55511148367124]
+2023-04-18 21:28:16,173 [MainThread  ] [INFO ]  Average age: 8.73
+2023-04-18 21:28:16,175 [MainThread  ] [INFO ]  Evaluations: 260. fitness: [86.55511148367124]
+2023-04-18 21:28:16,176 [MainThread  ] [INFO ]  Average age: 9.09
+2023-04-18 21:28:16,178 [MainThread  ] [INFO ]  Evaluations: 270. fitness: [86.55511148367124]
+2023-04-18 21:28:16,178 [MainThread  ] [INFO ]  Average age: 9.65
+2023-04-18 21:28:16,180 [MainThread  ] [INFO ]  Evaluations: 280. fitness: [86.55511148367124]
+2023-04-18 21:28:16,180 [MainThread  ] [INFO ]  Average age: 9.76
+2023-04-18 21:28:16,182 [MainThread  ] [INFO ]  Evaluations: 290. fitness: [85.17685556309452]
+2023-04-18 21:28:16,182 [MainThread  ] [INFO ]  Average age: 9.78
+2023-04-18 21:28:16,184 [MainThread  ] [INFO ]  Evaluations: 300. fitness: [85.17685556309452]
+2023-04-18 21:28:16,184 [MainThread  ] [INFO ]  Average age: 9.94
+2023-04-18 21:28:16,186 [MainThread  ] [INFO ]  Evaluations: 310. fitness: [85.17685556309452]
+2023-04-18 21:28:16,186 [MainThread  ] [INFO ]  Average age: 10.3
+2023-04-18 21:28:16,188 [MainThread  ] [INFO ]  Evaluations: 320. fitness: [85.17685556309452]
+2023-04-18 21:28:16,188 [MainThread  ] [INFO ]  Average age: 10.4
+2023-04-18 21:28:16,189 [MainThread  ] [INFO ]  Evaluations: 330. fitness: [85.17685556309452]
+2023-04-18 21:28:16,190 [MainThread  ] [INFO ]  Average age: 10.62
+2023-04-18 21:28:16,191 [MainThread  ] [INFO ]  Evaluations: 340. fitness: [85.17685556309452]
+2023-04-18 21:28:16,192 [MainThread  ] [INFO ]  Average age: 10.37
+2023-04-18 21:28:16,194 [MainThread  ] [INFO ]  Evaluations: 350. fitness: [81.81372787661303]
+2023-04-18 21:28:16,195 [MainThread  ] [INFO ]  Average age: 9.99
+2023-04-18 21:28:16,196 [MainThread  ] [INFO ]  Evaluations: 360. fitness: [81.81372787661303]
+2023-04-18 21:28:16,197 [MainThread  ] [INFO ]  Average age: 10.43
+2023-04-18 21:28:16,198 [MainThread  ] [INFO ]  Evaluations: 370. fitness: [81.81372787661303]
+2023-04-18 21:28:16,199 [MainThread  ] [INFO ]  Average age: 10.62
+2023-04-18 21:28:16,202 [MainThread  ] [INFO ]  Evaluations: 380. fitness: [81.59578860356427]
+2023-04-18 21:28:16,202 [MainThread  ] [INFO ]  Average age: 10.34
+2023-04-18 21:28:16,202 [MainThread  ] [INFO ]  Evaluations: 390. fitness: [81.59578860356427]
+2023-04-18 21:28:16,202 [MainThread  ] [INFO ]  Average age: 10.56
+2023-04-18 21:28:16,203 [MainThread  ] [INFO ]  Evaluations: 400. fitness: [81.59578860356427]
+2023-04-18 21:28:16,203 [MainThread  ] [INFO ]  Average age: 10.85
+2023-04-18 21:28:16,204 [MainThread  ] [INFO ]  Evaluations: 410. fitness: [81.59578860356427]
+2023-04-18 21:28:16,204 [MainThread  ] [INFO ]  Average age: 11.17
+2023-04-18 21:28:16,205 [MainThread  ] [INFO ]  Evaluations: 420. fitness: [81.59578860356427]
+2023-04-18 21:28:16,205 [MainThread  ] [INFO ]  Average age: 11.1
+2023-04-18 21:28:16,206 [MainThread  ] [INFO ]  Evaluations: 430. fitness: [81.59578860356427]
+2023-04-18 21:28:16,206 [MainThread  ] [INFO ]  Average age: 10.9
+2023-04-18 21:28:16,207 [MainThread  ] [INFO ]  Evaluations: 440. fitness: [76.82686532257141]
+2023-04-18 21:28:16,207 [MainThread  ] [INFO ]  Average age: 10.39
+2023-04-18 21:28:16,208 [MainThread  ] [INFO ]  Evaluations: 450. fitness: [76.82686532257141]
+2023-04-18 21:28:16,208 [MainThread  ] [INFO ]  Average age: 10.74
+2023-04-18 21:28:16,209 [MainThread  ] [INFO ]  Evaluations: 460. fitness: [66.00458765930762]
+2023-04-18 21:28:16,209 [MainThread  ] [INFO ]  Average age: 11.01
+2023-04-18 21:28:16,210 [MainThread  ] [INFO ]  Evaluations: 470. fitness: [66.00458765930762]
+2023-04-18 21:28:16,210 [MainThread  ] [INFO ]  Average age: 10.81
+2023-04-18 21:28:16,210 [MainThread  ] [INFO ]  Evaluations: 480. fitness: [66.00458765930762]
+2023-04-18 21:28:16,210 [MainThread  ] [INFO ]  Average age: 11.34
+2023-04-18 21:28:16,212 [MainThread  ] [INFO ]  Evaluations: 490. fitness: [66.00458765930762]
+2023-04-18 21:28:16,212 [MainThread  ] [INFO ]  Average age: 10.93
+2023-04-18 21:28:16,214 [MainThread  ] [INFO ]  Evaluations: 500. fitness: [66.00458765930762]
+2023-04-18 21:28:16,214 [MainThread  ] [INFO ]  Average age: 10.97
+2023-04-18 21:28:16,216 [MainThread  ] [INFO ]  Evaluations: 510. fitness: [66.00458765930762]
+2023-04-18 21:28:16,216 [MainThread  ] [INFO ]  Average age: 10.93
+2023-04-18 21:28:16,218 [MainThread  ] [INFO ]  Evaluations: 520. fitness: [66.00458765930762]
+2023-04-18 21:28:16,218 [MainThread  ] [INFO ]  Average age: 10.61
+2023-04-18 21:28:16,220 [MainThread  ] [INFO ]  Evaluations: 530. fitness: [66.00458765930762]
+2023-04-18 21:28:16,220 [MainThread  ] [INFO ]  Average age: 10.26
+2023-04-18 21:28:16,223 [MainThread  ] [INFO ]  Evaluations: 540. fitness: [66.00458765930762]
+2023-04-18 21:28:16,223 [MainThread  ] [INFO ]  Average age: 10.28
+2023-04-18 21:28:16,224 [MainThread  ] [INFO ]  Evaluations: 550. fitness: [66.00458765930762]
+2023-04-18 21:28:16,224 [MainThread  ] [INFO ]  Average age: 10.67
+2023-04-18 21:28:16,226 [MainThread  ] [INFO ]  Evaluations: 560. fitness: [66.00458765930762]
+2023-04-18 21:28:16,226 [MainThread  ] [INFO ]  Average age: 11.02
+2023-04-18 21:28:16,227 [MainThread  ] [INFO ]  Evaluations: 570. fitness: [66.00458765930762]
+2023-04-18 21:28:16,227 [MainThread  ] [INFO ]  Average age: 11.24
+2023-04-18 21:28:16,228 [MainThread  ] [INFO ]  Evaluations: 580. fitness: [66.00458765930762]
+2023-04-18 21:28:16,228 [MainThread  ] [INFO ]  Average age: 11.72
+2023-04-18 21:28:16,229 [MainThread  ] [INFO ]  Evaluations: 590. fitness: [66.00458765930762]
+2023-04-18 21:28:16,229 [MainThread  ] [INFO ]  Average age: 12.34
+2023-04-18 21:28:16,229 [MainThread  ] [INFO ]  Evaluations: 600. fitness: [66.00458765930762]
+2023-04-18 21:28:16,229 [MainThread  ] [INFO ]  Average age: 12.38
+2023-04-18 21:28:16,230 [MainThread  ] [INFO ]  Evaluations: 610. fitness: [61.12691828906835]
+2023-04-18 21:28:16,230 [MainThread  ] [INFO ]  Average age: 12.39
+2023-04-18 21:28:16,231 [MainThread  ] [INFO ]  Evaluations: 620. fitness: [61.12691828906835]
+2023-04-18 21:28:16,231 [MainThread  ] [INFO ]  Average age: 12.51
+2023-04-18 21:28:16,231 [MainThread  ] [INFO ]  Evaluations: 630. fitness: [61.12691828906835]
+2023-04-18 21:28:16,232 [MainThread  ] [INFO ]  Average age: 12.35
+2023-04-18 21:28:16,232 [MainThread  ] [INFO ]  Evaluations: 640. fitness: [61.12691828906835]
+2023-04-18 21:28:16,232 [MainThread  ] [INFO ]  Average age: 12.44
+2023-04-18 21:28:16,233 [MainThread  ] [INFO ]  Evaluations: 650. fitness: [61.12691828906835]
+2023-04-18 21:28:16,234 [MainThread  ] [INFO ]  Average age: 12.57
+2023-04-18 21:28:16,234 [MainThread  ] [INFO ]  Evaluations: 660. fitness: [58.826687843414916]
+2023-04-18 21:28:16,234 [MainThread  ] [INFO ]  Average age: 12.45
+2023-04-18 21:28:16,235 [MainThread  ] [INFO ]  Evaluations: 670. fitness: [58.826687843414916]
+2023-04-18 21:28:16,235 [MainThread  ] [INFO ]  Average age: 12.54
+2023-04-18 21:28:16,236 [MainThread  ] [INFO ]  Evaluations: 680. fitness: [51.27424487539547]
+2023-04-18 21:28:16,236 [MainThread  ] [INFO ]  Average age: 12.53
+2023-04-18 21:28:16,239 [MainThread  ] [INFO ]  Evaluations: 690. fitness: [51.27424487539547]
+2023-04-18 21:28:16,239 [MainThread  ] [INFO ]  Average age: 12.19
+2023-04-18 21:28:16,240 [MainThread  ] [INFO ]  Evaluations: 700. fitness: [51.27424487539547]
+2023-04-18 21:28:16,240 [MainThread  ] [INFO ]  Average age: 12.59
+2023-04-18 21:28:16,241 [MainThread  ] [INFO ]  Evaluations: 710. fitness: [41.43927477775773]
+2023-04-18 21:28:16,241 [MainThread  ] [INFO ]  Average age: 12.68
+2023-04-18 21:28:16,242 [MainThread  ] [INFO ]  Evaluations: 720. fitness: [41.43927477775773]
+2023-04-18 21:28:16,242 [MainThread  ] [INFO ]  Average age: 12.68
+2023-04-18 21:28:16,243 [MainThread  ] [INFO ]  Evaluations: 730. fitness: [41.43927477775773]
+2023-04-18 21:28:16,243 [MainThread  ] [INFO ]  Average age: 12.13
+2023-04-18 21:28:16,244 [MainThread  ] [INFO ]  Evaluations: 740. fitness: [41.43927477775773]
+2023-04-18 21:28:16,245 [MainThread  ] [INFO ]  Average age: 12.87
+2023-04-18 21:28:16,246 [MainThread  ] [INFO ]  Evaluations: 750. fitness: [41.43927477775773]
+2023-04-18 21:28:16,247 [MainThread  ] [INFO ]  Average age: 13.31
+2023-04-18 21:28:16,248 [MainThread  ] [INFO ]  Evaluations: 760. fitness: [41.43927477775773]
+2023-04-18 21:28:16,248 [MainThread  ] [INFO ]  Average age: 13.49
+2023-04-18 21:28:16,250 [MainThread  ] [INFO ]  Evaluations: 770. fitness: [41.43927477775773]
+2023-04-18 21:28:16,250 [MainThread  ] [INFO ]  Average age: 12.67
+2023-04-18 21:28:16,252 [MainThread  ] [INFO ]  Evaluations: 780. fitness: [41.43927477775773]
+2023-04-18 21:28:16,252 [MainThread  ] [INFO ]  Average age: 12.91
+2023-04-18 21:28:16,254 [MainThread  ] [INFO ]  Evaluations: 790. fitness: [41.43927477775773]
+2023-04-18 21:28:16,254 [MainThread  ] [INFO ]  Average age: 12.39
+2023-04-18 21:28:16,255 [MainThread  ] [INFO ]  Evaluations: 800. fitness: [41.43927477775773]
+2023-04-18 21:28:16,255 [MainThread  ] [INFO ]  Average age: 12.81
+2023-04-18 21:28:16,256 [MainThread  ] [INFO ]  Evaluations: 810. fitness: [41.43927477775773]
+2023-04-18 21:28:16,256 [MainThread  ] [INFO ]  Average age: 12.5
+2023-04-18 21:28:16,257 [MainThread  ] [INFO ]  Evaluations: 820. fitness: [41.43927477775773]
+2023-04-18 21:28:16,257 [MainThread  ] [INFO ]  Average age: 12.0
+2023-04-18 21:28:16,258 [MainThread  ] [INFO ]  Evaluations: 830. fitness: [41.43927477775773]
+2023-04-18 21:28:16,258 [MainThread  ] [INFO ]  Average age: 12.44
+2023-04-18 21:28:16,258 [MainThread  ] [INFO ]  Evaluations: 840. fitness: [41.43927477775773]
+2023-04-18 21:28:16,259 [MainThread  ] [INFO ]  Average age: 12.43
+2023-04-18 21:28:16,259 [MainThread  ] [INFO ]  Evaluations: 850. fitness: [41.43927477775773]
+2023-04-18 21:28:16,259 [MainThread  ] [INFO ]  Average age: 12.62
+2023-04-18 21:28:16,260 [MainThread  ] [INFO ]  Evaluations: 860. fitness: [41.43927477775773]
+2023-04-18 21:28:16,260 [MainThread  ] [INFO ]  Average age: 12.6
+2023-04-18 21:28:16,261 [MainThread  ] [INFO ]  Evaluations: 870. fitness: [41.43927477775773]
+2023-04-18 21:28:16,261 [MainThread  ] [INFO ]  Average age: 12.88
+2023-04-18 21:28:16,262 [MainThread  ] [INFO ]  Evaluations: 880. fitness: [41.43927477775773]
+2023-04-18 21:28:16,262 [MainThread  ] [INFO ]  Average age: 12.74
+2023-04-18 21:28:16,263 [MainThread  ] [INFO ]  Evaluations: 890. fitness: [32.41533496787161]
+2023-04-18 21:28:16,263 [MainThread  ] [INFO ]  Average age: 12.14
+2023-04-18 21:28:16,264 [MainThread  ] [INFO ]  Evaluations: 900. fitness: [32.41533496787161]
+2023-04-18 21:28:16,264 [MainThread  ] [INFO ]  Average age: 12.53
+2023-04-18 21:28:16,265 [MainThread  ] [INFO ]  Evaluations: 910. fitness: [32.41533496787161]
+2023-04-18 21:28:16,265 [MainThread  ] [INFO ]  Average age: 12.49
+2023-04-18 21:28:16,266 [MainThread  ] [INFO ]  Evaluations: 920. fitness: [32.41533496787161]
+2023-04-18 21:28:16,266 [MainThread  ] [INFO ]  Average age: 12.66
+2023-04-18 21:28:16,266 [MainThread  ] [INFO ]  Evaluations: 930. fitness: [32.41533496787161]
+2023-04-18 21:28:16,266 [MainThread  ] [INFO ]  Average age: 12.84
+2023-04-18 21:28:16,267 [MainThread  ] [INFO ]  Evaluations: 940. fitness: [32.41533496787161]
+2023-04-18 21:28:16,267 [MainThread  ] [INFO ]  Average age: 12.37
+2023-04-18 21:28:16,268 [MainThread  ] [INFO ]  Evaluations: 950. fitness: [32.41533496787161]
+2023-04-18 21:28:16,268 [MainThread  ] [INFO ]  Average age: 12.8
+2023-04-18 21:28:16,269 [MainThread  ] [INFO ]  Evaluations: 960. fitness: [32.41533496787161]
+2023-04-18 21:28:16,269 [MainThread  ] [INFO ]  Average age: 13.17
+2023-04-18 21:28:16,269 [MainThread  ] [INFO ]  Evaluations: 970. fitness: [32.41533496787161]
+2023-04-18 21:28:16,269 [MainThread  ] [INFO ]  Average age: 13.51
+2023-04-18 21:28:16,270 [MainThread  ] [INFO ]  Evaluations: 980. fitness: [32.41533496787161]
+2023-04-18 21:28:16,270 [MainThread  ] [INFO ]  Average age: 13.51
+2023-04-18 21:28:16,271 [MainThread  ] [INFO ]  Evaluations: 990. fitness: [32.41533496787161]
+2023-04-18 21:28:16,271 [MainThread  ] [INFO ]  Average age: 13.03
+2023-04-18 21:28:16,271 [MainThread  ] [INFO ]  Evaluations: 1000. fitness: [32.41533496787161]
+2023-04-18 21:28:16,271 [MainThread  ] [INFO ]  Average age: 13.0
+2023-04-18 21:28:16,273 [MainThread  ] [INFO ]  Evaluations: 100. fitness: [164.73839034201188]
+2023-04-18 21:28:16,273 [MainThread  ] [INFO ]  Average age: 0.0
+2023-04-18 21:28:16,274 [MainThread  ] [INFO ]  Evaluations: 120. fitness: [102.71643395502451]
+2023-04-18 21:28:16,274 [MainThread  ] [INFO ]  Average age: 1.0
+2023-04-18 21:28:16,275 [MainThread  ] [INFO ]  Evaluations: 140. fitness: [102.71643395502451]
+2023-04-18 21:28:16,275 [MainThread  ] [INFO ]  Average age: 1.84
+2023-04-18 21:28:16,277 [MainThread  ] [INFO ]  Evaluations: 160. fitness: [102.71643395502451]
+2023-04-18 21:28:16,277 [MainThread  ] [INFO ]  Average age: 2.57
+2023-04-18 21:28:16,279 [MainThread  ] [INFO ]  Evaluations: 180. fitness: [102.71643395502451]
+2023-04-18 21:28:16,279 [MainThread  ] [INFO ]  Average age: 3.23
+2023-04-18 21:28:16,280 [MainThread  ] [INFO ]  Evaluations: 200. fitness: [102.71643395502451]
+2023-04-18 21:28:16,280 [MainThread  ] [INFO ]  Average age: 3.68
+2023-04-18 21:28:16,282 [MainThread  ] [INFO ]  Evaluations: 220. fitness: [102.71643395502451]
+2023-04-18 21:28:16,282 [MainThread  ] [INFO ]  Average age: 4.3
+2023-04-18 21:28:16,284 [MainThread  ] [INFO ]  Evaluations: 240. fitness: [100.17500719482508]
+2023-04-18 21:28:16,284 [MainThread  ] [INFO ]  Average age: 4.51
+2023-04-18 21:28:16,286 [MainThread  ] [INFO ]  Evaluations: 260. fitness: [93.53207747519791]
+2023-04-18 21:28:16,286 [MainThread  ] [INFO ]  Average age: 4.83
+2023-04-18 21:28:16,287 [MainThread  ] [INFO ]  Evaluations: 280. fitness: [93.12761895452]
+2023-04-18 21:28:16,287 [MainThread  ] [INFO ]  Average age: 4.86
+2023-04-18 21:28:16,288 [MainThread  ] [INFO ]  Evaluations: 300. fitness: [93.12761895452]
+2023-04-18 21:28:16,289 [MainThread  ] [INFO ]  Average age: 5.12
+2023-04-18 21:28:16,290 [MainThread  ] [INFO ]  Evaluations: 320. fitness: [93.12761895452]
+2023-04-18 21:28:16,290 [MainThread  ] [INFO ]  Average age: 5.34
+2023-04-18 21:28:16,291 [MainThread  ] [INFO ]  Evaluations: 340. fitness: [83.586204833222]
+2023-04-18 21:28:16,291 [MainThread  ] [INFO ]  Average age: 5.71
+2023-04-18 21:28:16,292 [MainThread  ] [INFO ]  Evaluations: 360. fitness: [80.35909002347937]
+2023-04-18 21:28:16,292 [MainThread  ] [INFO ]  Average age: 5.8
+2023-04-18 21:28:16,293 [MainThread  ] [INFO ]  Evaluations: 380. fitness: [80.35909002347937]
+2023-04-18 21:28:16,293 [MainThread  ] [INFO ]  Average age: 5.96
+2023-04-18 21:28:16,295 [MainThread  ] [INFO ]  Evaluations: 400. fitness: [80.35909002347937]
+2023-04-18 21:28:16,295 [MainThread  ] [INFO ]  Average age: 5.93
+2023-04-18 21:28:16,296 [MainThread  ] [INFO ]  Evaluations: 420. fitness: [75.12395209275454]
+2023-04-18 21:28:16,297 [MainThread  ] [INFO ]  Average age: 6.14
+2023-04-18 21:28:16,298 [MainThread  ] [INFO ]  Evaluations: 440. fitness: [75.12395209275454]
+2023-04-18 21:28:16,298 [MainThread  ] [INFO ]  Average age: 6.31
+2023-04-18 21:28:16,299 [MainThread  ] [INFO ]  Evaluations: 460. fitness: [75.12395209275454]
+2023-04-18 21:28:16,299 [MainThread  ] [INFO ]  Average age: 6.43
+2023-04-18 21:28:16,300 [MainThread  ] [INFO ]  Evaluations: 480. fitness: [66.95215385718734]
+2023-04-18 21:28:16,301 [MainThread  ] [INFO ]  Average age: 6.25
+2023-04-18 21:28:16,303 [MainThread  ] [INFO ]  Evaluations: 500. fitness: [64.26696937574597]
+2023-04-18 21:28:16,303 [MainThread  ] [INFO ]  Average age: 6.8
+2023-04-18 21:28:16,304 [MainThread  ] [INFO ]  Evaluations: 520. fitness: [64.26696937574597]
+2023-04-18 21:28:16,304 [MainThread  ] [INFO ]  Average age: 6.93
+2023-04-18 21:28:16,305 [MainThread  ] [INFO ]  Evaluations: 540. fitness: [64.26696937574597]
+2023-04-18 21:28:16,305 [MainThread  ] [INFO ]  Average age: 6.95
+2023-04-18 21:28:16,306 [MainThread  ] [INFO ]  Evaluations: 560. fitness: [64.26696937574597]
+2023-04-18 21:28:16,306 [MainThread  ] [INFO ]  Average age: 6.73
+2023-04-18 21:28:16,307 [MainThread  ] [INFO ]  Evaluations: 580. fitness: [64.26696937574597]
+2023-04-18 21:28:16,308 [MainThread  ] [INFO ]  Average age: 6.21
+2023-04-18 21:28:16,309 [MainThread  ] [INFO ]  Evaluations: 600. fitness: [63.11254429780696]
+2023-04-18 21:28:16,309 [MainThread  ] [INFO ]  Average age: 5.98
+2023-04-18 21:28:16,310 [MainThread  ] [INFO ]  Evaluations: 620. fitness: [63.061166147146224]
+2023-04-18 21:28:16,310 [MainThread  ] [INFO ]  Average age: 5.71
+2023-04-18 21:28:16,311 [MainThread  ] [INFO ]  Evaluations: 640. fitness: [61.64829229426836]
+2023-04-18 21:28:16,311 [MainThread  ] [INFO ]  Average age: 5.96
+2023-04-18 21:28:16,313 [MainThread  ] [INFO ]  Evaluations: 660. fitness: [61.64829229426836]
+2023-04-18 21:28:16,313 [MainThread  ] [INFO ]  Average age: 6.13
+2023-04-18 21:28:16,314 [MainThread  ] [INFO ]  Evaluations: 680. fitness: [49.60581461156808]
+2023-04-18 21:28:16,314 [MainThread  ] [INFO ]  Average age: 5.94
+2023-04-18 21:28:16,315 [MainThread  ] [INFO ]  Evaluations: 700. fitness: [49.60581461156808]
+2023-04-18 21:28:16,315 [MainThread  ] [INFO ]  Average age: 5.69
+2023-04-18 21:28:16,317 [MainThread  ] [INFO ]  Evaluations: 720. fitness: [49.60581461156808]
+2023-04-18 21:28:16,317 [MainThread  ] [INFO ]  Average age: 6.0
+2023-04-18 21:28:16,319 [MainThread  ] [INFO ]  Evaluations: 740. fitness: [49.60581461156808]
+2023-04-18 21:28:16,319 [MainThread  ] [INFO ]  Average age: 6.29
+2023-04-18 21:28:16,320 [MainThread  ] [INFO ]  Evaluations: 760. fitness: [49.60581461156808]
+2023-04-18 21:28:16,320 [MainThread  ] [INFO ]  Average age: 6.42
+2023-04-18 21:28:16,322 [MainThread  ] [INFO ]  Evaluations: 780. fitness: [49.60581461156808]
+2023-04-18 21:28:16,322 [MainThread  ] [INFO ]  Average age: 6.2
+2023-04-18 21:28:16,323 [MainThread  ] [INFO ]  Evaluations: 800. fitness: [49.60581461156808]
+2023-04-18 21:28:16,323 [MainThread  ] [INFO ]  Average age: 6.66
+2023-04-18 21:28:16,325 [MainThread  ] [INFO ]  Evaluations: 820. fitness: [33.34637523333405]
+2023-04-18 21:28:16,325 [MainThread  ] [INFO ]  Average age: 6.8
+2023-04-18 21:28:16,326 [MainThread  ] [INFO ]  Evaluations: 840. fitness: [33.34637523333405]
+2023-04-18 21:28:16,326 [MainThread  ] [INFO ]  Average age: 6.14
+2023-04-18 21:28:16,327 [MainThread  ] [INFO ]  Evaluations: 860. fitness: [33.34637523333405]
+2023-04-18 21:28:16,327 [MainThread  ] [INFO ]  Average age: 5.84
+2023-04-18 21:28:16,329 [MainThread  ] [INFO ]  Evaluations: 880. fitness: [33.34637523333405]
+2023-04-18 21:28:16,329 [MainThread  ] [INFO ]  Average age: 5.87
+2023-04-18 21:28:16,330 [MainThread  ] [INFO ]  Evaluations: 900. fitness: [33.34637523333405]
+2023-04-18 21:28:16,330 [MainThread  ] [INFO ]  Average age: 5.94
+2023-04-18 21:28:16,331 [MainThread  ] [INFO ]  Evaluations: 920. fitness: [33.34637523333405]
+2023-04-18 21:28:16,331 [MainThread  ] [INFO ]  Average age: 6.1
+2023-04-18 21:28:16,332 [MainThread  ] [INFO ]  Evaluations: 940. fitness: [33.34637523333405]
+2023-04-18 21:28:16,333 [MainThread  ] [INFO ]  Average age: 6.02
+2023-04-18 21:28:16,335 [MainThread  ] [INFO ]  Evaluations: 960. fitness: [33.34637523333405]
+2023-04-18 21:28:16,335 [MainThread  ] [INFO ]  Average age: 6.44
+2023-04-18 21:28:16,336 [MainThread  ] [INFO ]  Evaluations: 980. fitness: [33.34637523333405]
+2023-04-18 21:28:16,337 [MainThread  ] [INFO ]  Average age: 6.54
+2023-04-18 21:28:16,338 [MainThread  ] [INFO ]  Evaluations: 1000. fitness: [33.34637523333405]
+2023-04-18 21:28:16,338 [MainThread  ] [INFO ]  Average age: 6.42
+2023-04-18 21:28:16,339 [MainThread  ] [INFO ]  Evaluations: 100. fitness: [209.56909322652206]
+2023-04-18 21:28:16,339 [MainThread  ] [INFO ]  Average age: 0.0
+2023-04-18 21:28:16,342 [MainThread  ] [INFO ]  Evaluations: 150. fitness: [114.14110662460592]
+2023-04-18 21:28:16,342 [MainThread  ] [INFO ]  Average age: 1.0
+2023-04-18 21:28:16,346 [MainThread  ] [INFO ]  Evaluations: 200. fitness: [114.14110662460592]
+2023-04-18 21:28:16,346 [MainThread  ] [INFO ]  Average age: 1.68
+2023-04-18 21:28:16,350 [MainThread  ] [INFO ]  Evaluations: 250. fitness: [105.42163171062336]
+2023-04-18 21:28:16,350 [MainThread  ] [INFO ]  Average age: 2.13
+2023-04-18 21:28:16,353 [MainThread  ] [INFO ]  Evaluations: 300. fitness: [105.42163171062336]
+2023-04-18 21:28:16,353 [MainThread  ] [INFO ]  Average age: 2.42
+2023-04-18 21:28:16,356 [MainThread  ] [INFO ]  Evaluations: 350. fitness: [98.35813387482555]
+2023-04-18 21:28:16,356 [MainThread  ] [INFO ]  Average age: 2.61
+2023-04-18 21:28:16,359 [MainThread  ] [INFO ]  Evaluations: 400. fitness: [96.51032869005134]
+2023-04-18 21:28:16,359 [MainThread  ] [INFO ]  Average age: 2.91
+2023-04-18 21:28:16,363 [MainThread  ] [INFO ]  Evaluations: 450. fitness: [72.64710201141415]
+2023-04-18 21:28:16,363 [MainThread  ] [INFO ]  Average age: 3.02
+2023-04-18 21:28:16,366 [MainThread  ] [INFO ]  Evaluations: 500. fitness: [72.64710201141415]
+2023-04-18 21:28:16,366 [MainThread  ] [INFO ]  Average age: 2.98
+2023-04-18 21:28:16,370 [MainThread  ] [INFO ]  Evaluations: 550. fitness: [50.71571100795086]
+2023-04-18 21:28:16,370 [MainThread  ] [INFO ]  Average age: 3.01
+2023-04-18 21:28:16,373 [MainThread  ] [INFO ]  Evaluations: 600. fitness: [50.71571100795086]
+2023-04-18 21:28:16,373 [MainThread  ] [INFO ]  Average age: 2.63
+2023-04-18 21:28:16,376 [MainThread  ] [INFO ]  Evaluations: 650. fitness: [34.473079813133]
+2023-04-18 21:28:16,376 [MainThread  ] [INFO ]  Average age: 2.65
+2023-04-18 21:28:16,379 [MainThread  ] [INFO ]  Evaluations: 700. fitness: [34.473079813133]
+2023-04-18 21:28:16,379 [MainThread  ] [INFO ]  Average age: 2.72
+2023-04-18 21:28:16,382 [MainThread  ] [INFO ]  Evaluations: 750. fitness: [34.473079813133]
+2023-04-18 21:28:16,382 [MainThread  ] [INFO ]  Average age: 2.65
+2023-04-18 21:28:16,385 [MainThread  ] [INFO ]  Evaluations: 800. fitness: [34.473079813133]
+2023-04-18 21:28:16,385 [MainThread  ] [INFO ]  Average age: 2.82
+2023-04-18 21:28:16,388 [MainThread  ] [INFO ]  Evaluations: 850. fitness: [34.473079813133]
+2023-04-18 21:28:16,388 [MainThread  ] [INFO ]  Average age: 2.96
+2023-04-18 21:28:16,391 [MainThread  ] [INFO ]  Evaluations: 900. fitness: [34.473079813133]
+2023-04-18 21:28:16,391 [MainThread  ] [INFO ]  Average age: 2.77
+2023-04-18 21:28:16,395 [MainThread  ] [INFO ]  Evaluations: 950. fitness: [34.473079813133]
+2023-04-18 21:28:16,395 [MainThread  ] [INFO ]  Average age: 2.78
+2023-04-18 21:28:16,398 [MainThread  ] [INFO ]  Evaluations: 1000. fitness: [34.473079813133]
+2023-04-18 21:28:16,398 [MainThread  ] [INFO ]  Average age: 2.84
+2023-04-18 23:13:40,745 [MainThread  ] [INFO ]  Evaluations: 100. fitness: [248.76274344163286]
+2023-04-18 23:13:40,745 [MainThread  ] [INFO ]  Average age: 0.0
+2023-04-18 23:13:40,746 [MainThread  ] [INFO ]  Evaluations: 110. fitness: [108.4682740028866]
+2023-04-18 23:13:40,746 [MainThread  ] [INFO ]  Average age: 1.0
+2023-04-18 23:13:40,747 [MainThread  ] [INFO ]  Evaluations: 120. fitness: [108.4682740028866]
+2023-04-18 23:13:40,747 [MainThread  ] [INFO ]  Average age: 1.92
+2023-04-18 23:13:40,748 [MainThread  ] [INFO ]  Evaluations: 130. fitness: [108.4682740028866]
+2023-04-18 23:13:40,748 [MainThread  ] [INFO ]  Average age: 2.75
+2023-04-18 23:13:40,749 [MainThread  ] [INFO ]  Evaluations: 140. fitness: [108.4682740028866]
+2023-04-18 23:13:40,749 [MainThread  ] [INFO ]  Average age: 3.49
+2023-04-18 23:13:40,749 [MainThread  ] [INFO ]  Evaluations: 150. fitness: [108.4682740028866]
+2023-04-18 23:13:40,749 [MainThread  ] [INFO ]  Average age: 4.21
+2023-04-18 23:13:40,750 [MainThread  ] [INFO ]  Evaluations: 160. fitness: [108.4682740028866]
+2023-04-18 23:13:40,750 [MainThread  ] [INFO ]  Average age: 4.86
+2023-04-18 23:13:40,751 [MainThread  ] [INFO ]  Evaluations: 170. fitness: [108.4682740028866]
+2023-04-18 23:13:40,751 [MainThread  ] [INFO ]  Average age: 5.59
+2023-04-18 23:13:40,752 [MainThread  ] [INFO ]  Evaluations: 180. fitness: [108.4682740028866]
+2023-04-18 23:13:40,752 [MainThread  ] [INFO ]  Average age: 6.1
+2023-04-18 23:13:40,753 [MainThread  ] [INFO ]  Evaluations: 190. fitness: [108.09583175072028]
+2023-04-18 23:13:40,753 [MainThread  ] [INFO ]  Average age: 6.59
+2023-04-18 23:13:40,755 [MainThread  ] [INFO ]  Evaluations: 200. fitness: [104.5114985635571]
+2023-04-18 23:13:40,755 [MainThread  ] [INFO ]  Average age: 7.16
+2023-04-18 23:13:40,755 [MainThread  ] [INFO ]  Evaluations: 210. fitness: [104.5114985635571]
+2023-04-18 23:13:40,756 [MainThread  ] [INFO ]  Average age: 7.59
+2023-04-18 23:13:40,756 [MainThread  ] [INFO ]  Evaluations: 220. fitness: [103.20611953047937]
+2023-04-18 23:13:40,757 [MainThread  ] [INFO ]  Average age: 7.88
+2023-04-18 23:13:40,757 [MainThread  ] [INFO ]  Evaluations: 230. fitness: [103.20611953047937]
+2023-04-18 23:13:40,757 [MainThread  ] [INFO ]  Average age: 8.03
+2023-04-18 23:13:40,758 [MainThread  ] [INFO ]  Evaluations: 240. fitness: [95.83035314939458]
+2023-04-18 23:13:40,758 [MainThread  ] [INFO ]  Average age: 8.35
+2023-04-18 23:13:40,759 [MainThread  ] [INFO ]  Evaluations: 250. fitness: [95.83035314939458]
+2023-04-18 23:13:40,759 [MainThread  ] [INFO ]  Average age: 8.24
+2023-04-18 23:13:40,760 [MainThread  ] [INFO ]  Evaluations: 260. fitness: [95.83035314939458]
+2023-04-18 23:13:40,760 [MainThread  ] [INFO ]  Average age: 8.68
+2023-04-18 23:13:40,761 [MainThread  ] [INFO ]  Evaluations: 270. fitness: [95.83035314939458]
+2023-04-18 23:13:40,761 [MainThread  ] [INFO ]  Average age: 9.05
+2023-04-18 23:13:40,762 [MainThread  ] [INFO ]  Evaluations: 280. fitness: [95.83035314939458]
+2023-04-18 23:13:40,762 [MainThread  ] [INFO ]  Average age: 9.28
+2023-04-18 23:13:40,763 [MainThread  ] [INFO ]  Evaluations: 290. fitness: [95.83035314939458]
+2023-04-18 23:13:40,763 [MainThread  ] [INFO ]  Average age: 9.62
+2023-04-18 23:13:40,764 [MainThread  ] [INFO ]  Evaluations: 300. fitness: [95.83035314939458]
+2023-04-18 23:13:40,764 [MainThread  ] [INFO ]  Average age: 9.58
+2023-04-18 23:13:40,765 [MainThread  ] [INFO ]  Evaluations: 310. fitness: [95.83035314939458]
+2023-04-18 23:13:40,765 [MainThread  ] [INFO ]  Average age: 9.8
+2023-04-18 23:13:40,766 [MainThread  ] [INFO ]  Evaluations: 320. fitness: [82.05304419568205]
+2023-04-18 23:13:40,766 [MainThread  ] [INFO ]  Average age: 10.06
+2023-04-18 23:13:40,767 [MainThread  ] [INFO ]  Evaluations: 330. fitness: [82.05304419568205]
+2023-04-18 23:13:40,767 [MainThread  ] [INFO ]  Average age: 10.21
+2023-04-18 23:13:40,768 [MainThread  ] [INFO ]  Evaluations: 340. fitness: [82.05304419568205]
+2023-04-18 23:13:40,768 [MainThread  ] [INFO ]  Average age: 10.11
+2023-04-18 23:13:40,769 [MainThread  ] [INFO ]  Evaluations: 350. fitness: [76.70427531042849]
+2023-04-18 23:13:40,769 [MainThread  ] [INFO ]  Average age: 10.68
+2023-04-18 23:13:40,770 [MainThread  ] [INFO ]  Evaluations: 360. fitness: [76.70427531042849]
+2023-04-18 23:13:40,770 [MainThread  ] [INFO ]  Average age: 10.45
+2023-04-18 23:13:40,771 [MainThread  ] [INFO ]  Evaluations: 370. fitness: [76.70427531042849]
+2023-04-18 23:13:40,771 [MainThread  ] [INFO ]  Average age: 10.24
+2023-04-18 23:13:40,772 [MainThread  ] [INFO ]  Evaluations: 380. fitness: [76.70427531042849]
+2023-04-18 23:13:40,772 [MainThread  ] [INFO ]  Average age: 10.07
+2023-04-18 23:13:40,773 [MainThread  ] [INFO ]  Evaluations: 390. fitness: [76.70427531042849]
+2023-04-18 23:13:40,773 [MainThread  ] [INFO ]  Average age: 10.65
+2023-04-18 23:13:40,774 [MainThread  ] [INFO ]  Evaluations: 400. fitness: [76.70427531042849]
+2023-04-18 23:13:40,774 [MainThread  ] [INFO ]  Average age: 10.72
+2023-04-18 23:13:40,775 [MainThread  ] [INFO ]  Evaluations: 410. fitness: [76.70427531042849]
+2023-04-18 23:13:40,775 [MainThread  ] [INFO ]  Average age: 10.76
+2023-04-18 23:13:40,776 [MainThread  ] [INFO ]  Evaluations: 420. fitness: [76.70427531042849]
+2023-04-18 23:13:40,776 [MainThread  ] [INFO ]  Average age: 11.27
+2023-04-18 23:13:40,777 [MainThread  ] [INFO ]  Evaluations: 430. fitness: [76.70427531042849]
+2023-04-18 23:13:40,777 [MainThread  ] [INFO ]  Average age: 11.39
+2023-04-18 23:13:40,778 [MainThread  ] [INFO ]  Evaluations: 440. fitness: [76.70427531042849]
+2023-04-18 23:13:40,778 [MainThread  ] [INFO ]  Average age: 10.87
+2023-04-18 23:13:40,779 [MainThread  ] [INFO ]  Evaluations: 450. fitness: [75.78600766875275]
+2023-04-18 23:13:40,779 [MainThread  ] [INFO ]  Average age: 11.38
+2023-04-18 23:13:40,780 [MainThread  ] [INFO ]  Evaluations: 460. fitness: [75.56042992284854]
+2023-04-18 23:13:40,780 [MainThread  ] [INFO ]  Average age: 11.78
+2023-04-18 23:13:40,780 [MainThread  ] [INFO ]  Evaluations: 470. fitness: [75.56042992284854]
+2023-04-18 23:13:40,781 [MainThread  ] [INFO ]  Average age: 11.37
+2023-04-18 23:13:40,781 [MainThread  ] [INFO ]  Evaluations: 480. fitness: [75.56042992284854]
+2023-04-18 23:13:40,781 [MainThread  ] [INFO ]  Average age: 11.67
+2023-04-18 23:13:40,782 [MainThread  ] [INFO ]  Evaluations: 490. fitness: [73.53411379273281]
+2023-04-18 23:13:40,782 [MainThread  ] [INFO ]  Average age: 12.2
+2023-04-18 23:13:40,783 [MainThread  ] [INFO ]  Evaluations: 500. fitness: [73.53411379273281]
+2023-04-18 23:13:40,783 [MainThread  ] [INFO ]  Average age: 12.45
+2023-04-18 23:13:40,784 [MainThread  ] [INFO ]  Evaluations: 510. fitness: [71.5910139073728]
+2023-04-18 23:13:40,784 [MainThread  ] [INFO ]  Average age: 12.33
+2023-04-18 23:13:40,784 [MainThread  ] [INFO ]  Evaluations: 520. fitness: [71.5910139073728]
+2023-04-18 23:13:40,785 [MainThread  ] [INFO ]  Average age: 12.39
+2023-04-18 23:13:40,785 [MainThread  ] [INFO ]  Evaluations: 530. fitness: [71.5910139073728]
+2023-04-18 23:13:40,785 [MainThread  ] [INFO ]  Average age: 12.75
+2023-04-18 23:13:40,786 [MainThread  ] [INFO ]  Evaluations: 540. fitness: [64.7780651510445]
+2023-04-18 23:13:40,786 [MainThread  ] [INFO ]  Average age: 12.59
+2023-04-18 23:13:40,787 [MainThread  ] [INFO ]  Evaluations: 550. fitness: [64.7780651510445]
+2023-04-18 23:13:40,787 [MainThread  ] [INFO ]  Average age: 12.4
+2023-04-18 23:13:40,788 [MainThread  ] [INFO ]  Evaluations: 560. fitness: [64.7780651510445]
+2023-04-18 23:13:40,788 [MainThread  ] [INFO ]  Average age: 12.12
+2023-04-18 23:13:40,788 [MainThread  ] [INFO ]  Evaluations: 570. fitness: [64.7780651510445]
+2023-04-18 23:13:40,788 [MainThread  ] [INFO ]  Average age: 11.54
+2023-04-18 23:13:40,789 [MainThread  ] [INFO ]  Evaluations: 580. fitness: [64.7780651510445]
+2023-04-18 23:13:40,789 [MainThread  ] [INFO ]  Average age: 10.84
+2023-04-18 23:13:40,790 [MainThread  ] [INFO ]  Evaluations: 590. fitness: [64.7780651510445]
+2023-04-18 23:13:40,790 [MainThread  ] [INFO ]  Average age: 10.83
+2023-04-18 23:13:40,791 [MainThread  ] [INFO ]  Evaluations: 600. fitness: [64.7780651510445]
+2023-04-18 23:13:40,791 [MainThread  ] [INFO ]  Average age: 11.52
+2023-04-18 23:13:40,791 [MainThread  ] [INFO ]  Evaluations: 610. fitness: [64.7780651510445]
+2023-04-18 23:13:40,792 [MainThread  ] [INFO ]  Average age: 11.34
+2023-04-18 23:13:40,792 [MainThread  ] [INFO ]  Evaluations: 620. fitness: [64.7780651510445]
+2023-04-18 23:13:40,792 [MainThread  ] [INFO ]  Average age: 11.42
+2023-04-18 23:13:40,793 [MainThread  ] [INFO ]  Evaluations: 630. fitness: [57.036029573647795]
+2023-04-18 23:13:40,793 [MainThread  ] [INFO ]  Average age: 11.3
+2023-04-18 23:13:40,794 [MainThread  ] [INFO ]  Evaluations: 640. fitness: [57.036029573647795]
+2023-04-18 23:13:40,794 [MainThread  ] [INFO ]  Average age: 11.64
+2023-04-18 23:13:40,795 [MainThread  ] [INFO ]  Evaluations: 650. fitness: [57.036029573647795]
+2023-04-18 23:13:40,795 [MainThread  ] [INFO ]  Average age: 11.8
+2023-04-18 23:13:40,796 [MainThread  ] [INFO ]  Evaluations: 660. fitness: [57.036029573647795]
+2023-04-18 23:13:40,796 [MainThread  ] [INFO ]  Average age: 11.99
+2023-04-18 23:13:40,796 [MainThread  ] [INFO ]  Evaluations: 670. fitness: [57.036029573647795]
+2023-04-18 23:13:40,796 [MainThread  ] [INFO ]  Average age: 12.15
+2023-04-18 23:13:40,797 [MainThread  ] [INFO ]  Evaluations: 680. fitness: [57.036029573647795]
+2023-04-18 23:13:40,797 [MainThread  ] [INFO ]  Average age: 11.85
+2023-04-18 23:13:40,798 [MainThread  ] [INFO ]  Evaluations: 690. fitness: [57.036029573647795]
+2023-04-18 23:13:40,798 [MainThread  ] [INFO ]  Average age: 12.25
+2023-04-18 23:13:40,799 [MainThread  ] [INFO ]  Evaluations: 700. fitness: [57.036029573647795]
+2023-04-18 23:13:40,799 [MainThread  ] [INFO ]  Average age: 11.91
+2023-04-18 23:13:40,800 [MainThread  ] [INFO ]  Evaluations: 710. fitness: [57.036029573647795]
+2023-04-18 23:13:40,800 [MainThread  ] [INFO ]  Average age: 12.09
+2023-04-18 23:13:40,800 [MainThread  ] [INFO ]  Evaluations: 720. fitness: [57.036029573647795]
+2023-04-18 23:13:40,800 [MainThread  ] [INFO ]  Average age: 12.11
+2023-04-18 23:13:40,802 [MainThread  ] [INFO ]  Evaluations: 730. fitness: [57.036029573647795]
+2023-04-18 23:13:40,802 [MainThread  ] [INFO ]  Average age: 11.94
+2023-04-18 23:13:40,802 [MainThread  ] [INFO ]  Evaluations: 740. fitness: [57.036029573647795]
+2023-04-18 23:13:40,803 [MainThread  ] [INFO ]  Average age: 12.36
+2023-04-18 23:13:40,803 [MainThread  ] [INFO ]  Evaluations: 750. fitness: [57.036029573647795]
+2023-04-18 23:13:40,803 [MainThread  ] [INFO ]  Average age: 12.44
+2023-04-18 23:13:40,804 [MainThread  ] [INFO ]  Evaluations: 760. fitness: [57.036029573647795]
+2023-04-18 23:13:40,804 [MainThread  ] [INFO ]  Average age: 13.03
+2023-04-18 23:13:40,805 [MainThread  ] [INFO ]  Evaluations: 770. fitness: [57.036029573647795]
+2023-04-18 23:13:40,805 [MainThread  ] [INFO ]  Average age: 12.83
+2023-04-18 23:13:40,806 [MainThread  ] [INFO ]  Evaluations: 780. fitness: [57.036029573647795]
+2023-04-18 23:13:40,806 [MainThread  ] [INFO ]  Average age: 12.84
+2023-04-18 23:13:40,807 [MainThread  ] [INFO ]  Evaluations: 790. fitness: [57.036029573647795]
+2023-04-18 23:13:40,807 [MainThread  ] [INFO ]  Average age: 13.38
+2023-04-18 23:13:40,807 [MainThread  ] [INFO ]  Evaluations: 800. fitness: [50.751767499919296]
+2023-04-18 23:13:40,808 [MainThread  ] [INFO ]  Average age: 12.75
+2023-04-18 23:13:40,808 [MainThread  ] [INFO ]  Evaluations: 810. fitness: [50.751767499919296]
+2023-04-18 23:13:40,808 [MainThread  ] [INFO ]  Average age: 12.67
+2023-04-18 23:13:40,809 [MainThread  ] [INFO ]  Evaluations: 820. fitness: [50.751767499919296]
+2023-04-18 23:13:40,809 [MainThread  ] [INFO ]  Average age: 12.27
+2023-04-18 23:13:40,810 [MainThread  ] [INFO ]  Evaluations: 830. fitness: [50.751767499919296]
+2023-04-18 23:13:40,810 [MainThread  ] [INFO ]  Average age: 12.38
+2023-04-18 23:13:40,811 [MainThread  ] [INFO ]  Evaluations: 840. fitness: [50.751767499919296]
+2023-04-18 23:13:40,811 [MainThread  ] [INFO ]  Average age: 12.32
+2023-04-18 23:13:40,811 [MainThread  ] [INFO ]  Evaluations: 850. fitness: [50.751767499919296]
+2023-04-18 23:13:40,811 [MainThread  ] [INFO ]  Average age: 12.65
+2023-04-18 23:13:40,812 [MainThread  ] [INFO ]  Evaluations: 860. fitness: [50.751767499919296]
+2023-04-18 23:13:40,812 [MainThread  ] [INFO ]  Average age: 12.49
+2023-04-18 23:13:40,813 [MainThread  ] [INFO ]  Evaluations: 870. fitness: [50.751767499919296]
+2023-04-18 23:13:40,813 [MainThread  ] [INFO ]  Average age: 12.48
+2023-04-18 23:13:40,814 [MainThread  ] [INFO ]  Evaluations: 880. fitness: [50.751767499919296]
+2023-04-18 23:13:40,814 [MainThread  ] [INFO ]  Average age: 13.11
+2023-04-18 23:13:40,815 [MainThread  ] [INFO ]  Evaluations: 890. fitness: [49.23645979661261]
+2023-04-18 23:13:40,815 [MainThread  ] [INFO ]  Average age: 13.1
+2023-04-18 23:13:40,815 [MainThread  ] [INFO ]  Evaluations: 900. fitness: [49.23645979661261]
+2023-04-18 23:13:40,815 [MainThread  ] [INFO ]  Average age: 13.11
+2023-04-18 23:13:40,816 [MainThread  ] [INFO ]  Evaluations: 910. fitness: [49.23645979661261]
+2023-04-18 23:13:40,816 [MainThread  ] [INFO ]  Average age: 12.75
+2023-04-18 23:13:40,817 [MainThread  ] [INFO ]  Evaluations: 920. fitness: [48.420831536314864]
+2023-04-18 23:13:40,817 [MainThread  ] [INFO ]  Average age: 12.73
+2023-04-18 23:13:40,819 [MainThread  ] [INFO ]  Evaluations: 930. fitness: [48.420831536314864]
+2023-04-18 23:13:40,819 [MainThread  ] [INFO ]  Average age: 13.4
+2023-04-18 23:13:40,821 [MainThread  ] [INFO ]  Evaluations: 940. fitness: [48.420831536314864]
+2023-04-18 23:13:40,821 [MainThread  ] [INFO ]  Average age: 13.08
+2023-04-18 23:13:40,823 [MainThread  ] [INFO ]  Evaluations: 950. fitness: [48.420831536314864]
+2023-04-18 23:13:40,823 [MainThread  ] [INFO ]  Average age: 12.61
+2023-04-18 23:13:40,824 [MainThread  ] [INFO ]  Evaluations: 960. fitness: [48.420831536314864]
+2023-04-18 23:13:40,825 [MainThread  ] [INFO ]  Average age: 11.7
+2023-04-18 23:13:40,826 [MainThread  ] [INFO ]  Evaluations: 970. fitness: [48.420831536314864]
+2023-04-18 23:13:40,827 [MainThread  ] [INFO ]  Average age: 11.29
+2023-04-18 23:13:40,827 [MainThread  ] [INFO ]  Evaluations: 980. fitness: [46.80268538210864]
+2023-04-18 23:13:40,828 [MainThread  ] [INFO ]  Average age: 11.43
+2023-04-18 23:13:40,828 [MainThread  ] [INFO ]  Evaluations: 990. fitness: [46.80268538210864]
+2023-04-18 23:13:40,828 [MainThread  ] [INFO ]  Average age: 11.49
+2023-04-18 23:13:40,829 [MainThread  ] [INFO ]  Evaluations: 1000. fitness: [46.80268538210864]
+2023-04-18 23:13:40,829 [MainThread  ] [INFO ]  Average age: 11.9
+2023-04-18 23:13:40,831 [MainThread  ] [INFO ]  Evaluations: 100. fitness: [148.0874158644876]
+2023-04-18 23:13:40,831 [MainThread  ] [INFO ]  Average age: 0.0
+2023-04-18 23:13:40,833 [MainThread  ] [INFO ]  Evaluations: 120. fitness: [98.93779322482114]
+2023-04-18 23:13:40,833 [MainThread  ] [INFO ]  Average age: 1.0
+2023-04-18 23:13:40,834 [MainThread  ] [INFO ]  Evaluations: 140. fitness: [98.93779322482114]
+2023-04-18 23:13:40,834 [MainThread  ] [INFO ]  Average age: 1.83
+2023-04-18 23:13:40,836 [MainThread  ] [INFO ]  Evaluations: 160. fitness: [98.93779322482114]
+2023-04-18 23:13:40,836 [MainThread  ] [INFO ]  Average age: 2.5
+2023-04-18 23:13:40,837 [MainThread  ] [INFO ]  Evaluations: 180. fitness: [87.7158541627306]
+2023-04-18 23:13:40,837 [MainThread  ] [INFO ]  Average age: 3.13
+2023-04-18 23:13:40,839 [MainThread  ] [INFO ]  Evaluations: 200. fitness: [87.7158541627306]
+2023-04-18 23:13:40,840 [MainThread  ] [INFO ]  Average age: 3.63
+2023-04-18 23:13:40,841 [MainThread  ] [INFO ]  Evaluations: 220. fitness: [87.7158541627306]
+2023-04-18 23:13:40,841 [MainThread  ] [INFO ]  Average age: 4.02
+2023-04-18 23:13:40,843 [MainThread  ] [INFO ]  Evaluations: 240. fitness: [87.7158541627306]
+2023-04-18 23:13:40,843 [MainThread  ] [INFO ]  Average age: 4.52
+2023-04-18 23:13:40,844 [MainThread  ] [INFO ]  Evaluations: 260. fitness: [87.7158541627306]
+2023-04-18 23:13:40,844 [MainThread  ] [INFO ]  Average age: 4.55
+2023-04-18 23:13:40,845 [MainThread  ] [INFO ]  Evaluations: 280. fitness: [83.03578831133811]
+2023-04-18 23:13:40,845 [MainThread  ] [INFO ]  Average age: 4.87
+2023-04-18 23:13:40,848 [MainThread  ] [INFO ]  Evaluations: 300. fitness: [83.03578831133811]
+2023-04-18 23:13:40,848 [MainThread  ] [INFO ]  Average age: 5.08
+2023-04-18 23:13:40,851 [MainThread  ] [INFO ]  Evaluations: 320. fitness: [71.42837012583473]
+2023-04-18 23:13:40,851 [MainThread  ] [INFO ]  Average age: 5.04
+2023-04-18 23:13:40,854 [MainThread  ] [INFO ]  Evaluations: 340. fitness: [71.42837012583473]
+2023-04-18 23:13:40,855 [MainThread  ] [INFO ]  Average age: 5.16
+2023-04-18 23:13:40,857 [MainThread  ] [INFO ]  Evaluations: 360. fitness: [71.42837012583473]
+2023-04-18 23:13:40,857 [MainThread  ] [INFO ]  Average age: 5.09
+2023-04-18 23:13:40,858 [MainThread  ] [INFO ]  Evaluations: 380. fitness: [71.42837012583473]
+2023-04-18 23:13:40,859 [MainThread  ] [INFO ]  Average age: 5.47
+2023-04-18 23:13:40,860 [MainThread  ] [INFO ]  Evaluations: 400. fitness: [71.42837012583473]
+2023-04-18 23:13:40,860 [MainThread  ] [INFO ]  Average age: 5.63
+2023-04-18 23:13:40,861 [MainThread  ] [INFO ]  Evaluations: 420. fitness: [68.08878786231962]
+2023-04-18 23:13:40,861 [MainThread  ] [INFO ]  Average age: 5.65
+2023-04-18 23:13:40,863 [MainThread  ] [INFO ]  Evaluations: 440. fitness: [68.08878786231962]
+2023-04-18 23:13:40,863 [MainThread  ] [INFO ]  Average age: 5.65
+2023-04-18 23:13:40,865 [MainThread  ] [INFO ]  Evaluations: 460. fitness: [68.08878786231962]
+2023-04-18 23:13:40,865 [MainThread  ] [INFO ]  Average age: 5.84
+2023-04-18 23:13:40,866 [MainThread  ] [INFO ]  Evaluations: 480. fitness: [59.876966442527674]
+2023-04-18 23:13:40,866 [MainThread  ] [INFO ]  Average age: 5.94
+2023-04-18 23:13:40,868 [MainThread  ] [INFO ]  Evaluations: 500. fitness: [50.79122402013803]
+2023-04-18 23:13:40,868 [MainThread  ] [INFO ]  Average age: 5.81
+2023-04-18 23:13:40,869 [MainThread  ] [INFO ]  Evaluations: 520. fitness: [50.79122402013803]
+2023-04-18 23:13:40,869 [MainThread  ] [INFO ]  Average age: 5.9
+2023-04-18 23:13:40,870 [MainThread  ] [INFO ]  Evaluations: 540. fitness: [50.79122402013803]
+2023-04-18 23:13:40,870 [MainThread  ] [INFO ]  Average age: 6.1
+2023-04-18 23:13:40,871 [MainThread  ] [INFO ]  Evaluations: 560. fitness: [50.79122402013803]
+2023-04-18 23:13:40,871 [MainThread  ] [INFO ]  Average age: 6.24
+2023-04-18 23:13:40,873 [MainThread  ] [INFO ]  Evaluations: 580. fitness: [50.79122402013803]
+2023-04-18 23:13:40,873 [MainThread  ] [INFO ]  Average age: 6.35
+2023-04-18 23:13:40,874 [MainThread  ] [INFO ]  Evaluations: 600. fitness: [50.79122402013803]
+2023-04-18 23:13:40,874 [MainThread  ] [INFO ]  Average age: 6.34
+2023-04-18 23:13:40,875 [MainThread  ] [INFO ]  Evaluations: 620. fitness: [50.79122402013803]
+2023-04-18 23:13:40,875 [MainThread  ] [INFO ]  Average age: 6.16
+2023-04-18 23:13:40,876 [MainThread  ] [INFO ]  Evaluations: 640. fitness: [50.79122402013803]
+2023-04-18 23:13:40,876 [MainThread  ] [INFO ]  Average age: 6.09
+2023-04-18 23:13:40,877 [MainThread  ] [INFO ]  Evaluations: 660. fitness: [33.94756732368019]
+2023-04-18 23:13:40,877 [MainThread  ] [INFO ]  Average age: 5.92
+2023-04-18 23:13:40,878 [MainThread  ] [INFO ]  Evaluations: 680. fitness: [33.94756732368019]
+2023-04-18 23:13:40,879 [MainThread  ] [INFO ]  Average age: 6.17
+2023-04-18 23:13:40,880 [MainThread  ] [INFO ]  Evaluations: 700. fitness: [33.94756732368019]
+2023-04-18 23:13:40,880 [MainThread  ] [INFO ]  Average age: 6.17
+2023-04-18 23:13:40,881 [MainThread  ] [INFO ]  Evaluations: 720. fitness: [33.94756732368019]
+2023-04-18 23:13:40,881 [MainThread  ] [INFO ]  Average age: 6.13
+2023-04-18 23:13:40,882 [MainThread  ] [INFO ]  Evaluations: 740. fitness: [33.94756732368019]
+2023-04-18 23:13:40,883 [MainThread  ] [INFO ]  Average age: 6.2
+2023-04-18 23:13:40,884 [MainThread  ] [INFO ]  Evaluations: 760. fitness: [33.94756732368019]
+2023-04-18 23:13:40,884 [MainThread  ] [INFO ]  Average age: 6.31
+2023-04-18 23:13:40,886 [MainThread  ] [INFO ]  Evaluations: 780. fitness: [33.94756732368019]
+2023-04-18 23:13:40,886 [MainThread  ] [INFO ]  Average age: 6.52
+2023-04-18 23:13:40,888 [MainThread  ] [INFO ]  Evaluations: 800. fitness: [25.44694137295633]
+2023-04-18 23:13:40,888 [MainThread  ] [INFO ]  Average age: 6.54
+2023-04-18 23:13:40,889 [MainThread  ] [INFO ]  Evaluations: 820. fitness: [25.44694137295633]
+2023-04-18 23:13:40,889 [MainThread  ] [INFO ]  Average age: 6.75
+2023-04-18 23:13:40,890 [MainThread  ] [INFO ]  Evaluations: 840. fitness: [25.44694137295633]
+2023-04-18 23:13:40,890 [MainThread  ] [INFO ]  Average age: 6.69
+2023-04-18 23:13:40,892 [MainThread  ] [INFO ]  Evaluations: 860. fitness: [25.44694137295633]
+2023-04-18 23:13:40,892 [MainThread  ] [INFO ]  Average age: 6.59
+2023-04-18 23:13:40,894 [MainThread  ] [INFO ]  Evaluations: 880. fitness: [25.44694137295633]
+2023-04-18 23:13:40,894 [MainThread  ] [INFO ]  Average age: 6.28
+2023-04-18 23:13:40,895 [MainThread  ] [INFO ]  Evaluations: 900. fitness: [25.44694137295633]
+2023-04-18 23:13:40,895 [MainThread  ] [INFO ]  Average age: 6.22
+2023-04-18 23:13:40,897 [MainThread  ] [INFO ]  Evaluations: 920. fitness: [25.44694137295633]
+2023-04-18 23:13:40,897 [MainThread  ] [INFO ]  Average age: 6.17
+2023-04-18 23:13:40,898 [MainThread  ] [INFO ]  Evaluations: 940. fitness: [25.44694137295633]
+2023-04-18 23:13:40,898 [MainThread  ] [INFO ]  Average age: 6.36
+2023-04-18 23:13:40,900 [MainThread  ] [INFO ]  Evaluations: 960. fitness: [25.44694137295633]
+2023-04-18 23:13:40,900 [MainThread  ] [INFO ]  Average age: 6.3
+2023-04-18 23:13:40,901 [MainThread  ] [INFO ]  Evaluations: 980. fitness: [25.44694137295633]
+2023-04-18 23:13:40,901 [MainThread  ] [INFO ]  Average age: 5.95
+2023-04-18 23:13:40,902 [MainThread  ] [INFO ]  Evaluations: 1000. fitness: [24.435974659998625]
+2023-04-18 23:13:40,902 [MainThread  ] [INFO ]  Average age: 6.0
+2023-04-18 23:13:40,904 [MainThread  ] [INFO ]  Evaluations: 1020. fitness: [21.089384067280527]
+2023-04-18 23:13:40,904 [MainThread  ] [INFO ]  Average age: 6.13
+2023-04-18 23:13:40,906 [MainThread  ] [INFO ]  Evaluations: 1040. fitness: [21.089384067280527]
+2023-04-18 23:13:40,906 [MainThread  ] [INFO ]  Average age: 6.42
+2023-04-18 23:13:40,907 [MainThread  ] [INFO ]  Evaluations: 1060. fitness: [18.168693759433005]
+2023-04-18 23:13:40,907 [MainThread  ] [INFO ]  Average age: 6.37
+2023-04-18 23:13:40,909 [MainThread  ] [INFO ]  Evaluations: 1080. fitness: [18.168693759433005]
+2023-04-18 23:13:40,909 [MainThread  ] [INFO ]  Average age: 6.62
+2023-04-18 23:13:40,910 [MainThread  ] [INFO ]  Evaluations: 1100. fitness: [18.168693759433005]
+2023-04-18 23:13:40,910 [MainThread  ] [INFO ]  Average age: 6.56
+2023-04-18 23:13:40,911 [MainThread  ] [INFO ]  Evaluations: 1120. fitness: [18.168693759433005]
+2023-04-18 23:13:40,911 [MainThread  ] [INFO ]  Average age: 5.95
+2023-04-18 23:13:40,913 [MainThread  ] [INFO ]  Evaluations: 1140. fitness: [16.779616052241508]
+2023-04-18 23:13:40,913 [MainThread  ] [INFO ]  Average age: 6.16
+2023-04-18 23:13:40,914 [MainThread  ] [INFO ]  Evaluations: 1160. fitness: [16.779616052241508]
+2023-04-18 23:13:40,914 [MainThread  ] [INFO ]  Average age: 6.29
+2023-04-18 23:13:40,916 [MainThread  ] [INFO ]  Evaluations: 1180. fitness: [16.779616052241508]
+2023-04-18 23:13:40,916 [MainThread  ] [INFO ]  Average age: 5.94
+2023-04-18 23:13:40,917 [MainThread  ] [INFO ]  Evaluations: 1200. fitness: [16.779616052241508]
+2023-04-18 23:13:40,917 [MainThread  ] [INFO ]  Average age: 6.29
+2023-04-18 23:13:40,918 [MainThread  ] [INFO ]  Evaluations: 1220. fitness: [16.779616052241508]
+2023-04-18 23:13:40,919 [MainThread  ] [INFO ]  Average age: 6.3
+2023-04-18 23:13:40,920 [MainThread  ] [INFO ]  Evaluations: 1240. fitness: [16.705954453213316]
+2023-04-18 23:13:40,921 [MainThread  ] [INFO ]  Average age: 6.36
+2023-04-18 23:13:40,922 [MainThread  ] [INFO ]  Evaluations: 1260. fitness: [16.705954453213316]
+2023-04-18 23:13:40,922 [MainThread  ] [INFO ]  Average age: 6.53
+2023-04-18 23:13:40,923 [MainThread  ] [INFO ]  Evaluations: 1280. fitness: [16.705954453213316]
+2023-04-18 23:13:40,924 [MainThread  ] [INFO ]  Average age: 6.5
+2023-04-18 23:13:40,954 [MainThread  ] [INFO ]  Evaluations: 1300. fitness: [16.705954453213316]
+2023-04-18 23:13:40,955 [MainThread  ] [INFO ]  Average age: 5.91
+2023-04-18 23:13:40,958 [MainThread  ] [INFO ]  Evaluations: 1320. fitness: [16.705954453213316]
+2023-04-18 23:13:40,958 [MainThread  ] [INFO ]  Average age: 6.18
+2023-04-18 23:13:40,961 [MainThread  ] [INFO ]  Evaluations: 1340. fitness: [15.472638788176273]
+2023-04-18 23:13:40,961 [MainThread  ] [INFO ]  Average age: 6.58
+2023-04-18 23:13:40,963 [MainThread  ] [INFO ]  Evaluations: 1360. fitness: [15.472638788176273]
+2023-04-18 23:13:40,963 [MainThread  ] [INFO ]  Average age: 6.51
+2023-04-18 23:13:40,965 [MainThread  ] [INFO ]  Evaluations: 1380. fitness: [15.472638788176273]
+2023-04-18 23:13:40,965 [MainThread  ] [INFO ]  Average age: 6.74
+2023-04-18 23:13:40,967 [MainThread  ] [INFO ]  Evaluations: 1400. fitness: [15.472638788176273]
+2023-04-18 23:13:40,967 [MainThread  ] [INFO ]  Average age: 6.79
+2023-04-18 23:13:40,970 [MainThread  ] [INFO ]  Evaluations: 1420. fitness: [15.472638788176273]
+2023-04-18 23:13:40,970 [MainThread  ] [INFO ]  Average age: 6.62
+2023-04-18 23:13:40,972 [MainThread  ] [INFO ]  Evaluations: 1440. fitness: [15.472638788176273]
+2023-04-18 23:13:40,972 [MainThread  ] [INFO ]  Average age: 6.79
+2023-04-18 23:13:40,976 [MainThread  ] [INFO ]  Evaluations: 1460. fitness: [8.442024015285144]
+2023-04-18 23:13:40,976 [MainThread  ] [INFO ]  Average age: 6.48
+2023-04-18 23:13:40,977 [MainThread  ] [INFO ]  Evaluations: 1480. fitness: [8.442024015285144]
+2023-04-18 23:13:40,977 [MainThread  ] [INFO ]  Average age: 6.24
+2023-04-18 23:13:40,979 [MainThread  ] [INFO ]  Evaluations: 1500. fitness: [8.442024015285144]
+2023-04-18 23:13:40,980 [MainThread  ] [INFO ]  Average age: 5.99
+2023-04-18 23:13:40,980 [MainThread  ] [INFO ]  Evaluations: 1520. fitness: [8.442024015285144]
+2023-04-18 23:13:40,981 [MainThread  ] [INFO ]  Average age: 5.89
+2023-04-18 23:13:40,982 [MainThread  ] [INFO ]  Evaluations: 1540. fitness: [8.442024015285144]
+2023-04-18 23:13:40,982 [MainThread  ] [INFO ]  Average age: 5.96
+2023-04-18 23:13:40,985 [MainThread  ] [INFO ]  Evaluations: 1560. fitness: [8.442024015285144]
+2023-04-18 23:13:40,985 [MainThread  ] [INFO ]  Average age: 6.19
+2023-04-18 23:13:40,987 [MainThread  ] [INFO ]  Evaluations: 1580. fitness: [8.442024015285144]
+2023-04-18 23:13:40,988 [MainThread  ] [INFO ]  Average age: 6.2
+2023-04-18 23:13:40,990 [MainThread  ] [INFO ]  Evaluations: 1600. fitness: [8.442024015285144]
+2023-04-18 23:13:40,990 [MainThread  ] [INFO ]  Average age: 6.36
+2023-04-18 23:13:40,991 [MainThread  ] [INFO ]  Evaluations: 1620. fitness: [8.442024015285144]
+2023-04-18 23:13:40,991 [MainThread  ] [INFO ]  Average age: 6.44
+2023-04-18 23:13:40,993 [MainThread  ] [INFO ]  Evaluations: 1640. fitness: [8.442024015285144]
+2023-04-18 23:13:40,993 [MainThread  ] [INFO ]  Average age: 6.67
+2023-04-18 23:13:40,994 [MainThread  ] [INFO ]  Evaluations: 1660. fitness: [8.442024015285144]
+2023-04-18 23:13:40,994 [MainThread  ] [INFO ]  Average age: 6.46
+2023-04-18 23:13:40,996 [MainThread  ] [INFO ]  Evaluations: 1680. fitness: [8.442024015285144]
+2023-04-18 23:13:40,996 [MainThread  ] [INFO ]  Average age: 6.58
+2023-04-18 23:13:40,997 [MainThread  ] [INFO ]  Evaluations: 1700. fitness: [8.009783253909498]
+2023-04-18 23:13:40,997 [MainThread  ] [INFO ]  Average age: 6.58
+2023-04-18 23:13:40,998 [MainThread  ] [INFO ]  Evaluations: 1720. fitness: [8.009783253909498]
+2023-04-18 23:13:40,999 [MainThread  ] [INFO ]  Average age: 6.75
+2023-04-18 23:13:41,000 [MainThread  ] [INFO ]  Evaluations: 1740. fitness: [8.009783253909498]
+2023-04-18 23:13:41,000 [MainThread  ] [INFO ]  Average age: 6.31
+2023-04-18 23:13:41,002 [MainThread  ] [INFO ]  Evaluations: 1760. fitness: [8.009783253909498]
+2023-04-18 23:13:41,002 [MainThread  ] [INFO ]  Average age: 6.36
+2023-04-18 23:13:41,005 [MainThread  ] [INFO ]  Evaluations: 1780. fitness: [7.539300853256611]
+2023-04-18 23:13:41,005 [MainThread  ] [INFO ]  Average age: 6.18
+2023-04-18 23:13:41,006 [MainThread  ] [INFO ]  Evaluations: 1800. fitness: [7.539300853256611]
+2023-04-18 23:13:41,007 [MainThread  ] [INFO ]  Average age: 5.95
+2023-04-18 23:13:41,009 [MainThread  ] [INFO ]  Evaluations: 1820. fitness: [7.539300853256611]
+2023-04-18 23:13:41,009 [MainThread  ] [INFO ]  Average age: 5.86
+2023-04-18 23:13:41,010 [MainThread  ] [INFO ]  Evaluations: 1840. fitness: [7.378638085491108]
+2023-04-18 23:13:41,010 [MainThread  ] [INFO ]  Average age: 5.84
+2023-04-18 23:13:41,013 [MainThread  ] [INFO ]  Evaluations: 1860. fitness: [6.9883490144659355]
+2023-04-18 23:13:41,013 [MainThread  ] [INFO ]  Average age: 5.79
+2023-04-18 23:13:41,014 [MainThread  ] [INFO ]  Evaluations: 1880. fitness: [6.9883490144659355]
+2023-04-18 23:13:41,014 [MainThread  ] [INFO ]  Average age: 5.56
+2023-04-18 23:13:41,015 [MainThread  ] [INFO ]  Evaluations: 1900. fitness: [6.9883490144659355]
+2023-04-18 23:13:41,016 [MainThread  ] [INFO ]  Average age: 5.52
+2023-04-18 23:13:41,017 [MainThread  ] [INFO ]  Evaluations: 1920. fitness: [6.9883490144659355]
+2023-04-18 23:13:41,017 [MainThread  ] [INFO ]  Average age: 5.5
+2023-04-18 23:13:41,019 [MainThread  ] [INFO ]  Evaluations: 1940. fitness: [6.779597654780368]
+2023-04-18 23:13:41,019 [MainThread  ] [INFO ]  Average age: 5.7
+2023-04-18 23:13:41,021 [MainThread  ] [INFO ]  Evaluations: 1960. fitness: [6.779597654780368]
+2023-04-18 23:13:41,021 [MainThread  ] [INFO ]  Average age: 5.73
+2023-04-18 23:13:41,022 [MainThread  ] [INFO ]  Evaluations: 1980. fitness: [6.779597654780368]
+2023-04-18 23:13:41,022 [MainThread  ] [INFO ]  Average age: 5.82
+2023-04-18 23:13:41,024 [MainThread  ] [INFO ]  Evaluations: 2000. fitness: [5.768433418023346]
+2023-04-18 23:13:41,024 [MainThread  ] [INFO ]  Average age: 6.22
+2023-04-18 23:13:41,025 [MainThread  ] [INFO ]  Evaluations: 100. fitness: [174.8719784955784]
+2023-04-18 23:13:41,025 [MainThread  ] [INFO ]  Average age: 0.0
+2023-04-18 23:13:41,028 [MainThread  ] [INFO ]  Evaluations: 150. fitness: [113.81628126684109]
+2023-04-18 23:13:41,028 [MainThread  ] [INFO ]  Average age: 1.0
+2023-04-18 23:13:41,031 [MainThread  ] [INFO ]  Evaluations: 200. fitness: [113.81628126684109]
+2023-04-18 23:13:41,031 [MainThread  ] [INFO ]  Average age: 1.68
+2023-04-18 23:13:41,034 [MainThread  ] [INFO ]  Evaluations: 250. fitness: [96.77493861943042]
+2023-04-18 23:13:41,034 [MainThread  ] [INFO ]  Average age: 2.17
+2023-04-18 23:13:41,038 [MainThread  ] [INFO ]  Evaluations: 300. fitness: [92.84274767696992]
+2023-04-18 23:13:41,038 [MainThread  ] [INFO ]  Average age: 2.5
+2023-04-18 23:13:41,041 [MainThread  ] [INFO ]  Evaluations: 350. fitness: [92.84274767696992]
+2023-04-18 23:13:41,041 [MainThread  ] [INFO ]  Average age: 2.65
+2023-04-18 23:13:41,044 [MainThread  ] [INFO ]  Evaluations: 400. fitness: [78.08278653165104]
+2023-04-18 23:13:41,045 [MainThread  ] [INFO ]  Average age: 2.76
+2023-04-18 23:13:41,047 [MainThread  ] [INFO ]  Evaluations: 450. fitness: [78.08278653165104]
+2023-04-18 23:13:41,048 [MainThread  ] [INFO ]  Average age: 2.65
+2023-04-18 23:13:41,050 [MainThread  ] [INFO ]  Evaluations: 500. fitness: [66.29125040563136]
+2023-04-18 23:13:41,051 [MainThread  ] [INFO ]  Average age: 2.79
+2023-04-18 23:13:41,055 [MainThread  ] [INFO ]  Evaluations: 550. fitness: [66.29125040563136]
+2023-04-18 23:13:41,055 [MainThread  ] [INFO ]  Average age: 3.09
+2023-04-18 23:13:41,058 [MainThread  ] [INFO ]  Evaluations: 600. fitness: [56.959911497180734]
+2023-04-18 23:13:41,058 [MainThread  ] [INFO ]  Average age: 3.17
+2023-04-18 23:13:41,064 [MainThread  ] [INFO ]  Evaluations: 650. fitness: [56.959911497180734]
+2023-04-18 23:13:41,064 [MainThread  ] [INFO ]  Average age: 3.22
+2023-04-18 23:13:41,067 [MainThread  ] [INFO ]  Evaluations: 700. fitness: [56.959911497180734]
+2023-04-18 23:13:41,067 [MainThread  ] [INFO ]  Average age: 3.12
+2023-04-18 23:13:41,071 [MainThread  ] [INFO ]  Evaluations: 750. fitness: [56.959911497180734]
+2023-04-18 23:13:41,071 [MainThread  ] [INFO ]  Average age: 2.91
+2023-04-18 23:13:41,074 [MainThread  ] [INFO ]  Evaluations: 800. fitness: [46.473977496677755]
+2023-04-18 23:13:41,074 [MainThread  ] [INFO ]  Average age: 2.99
+2023-04-18 23:13:41,077 [MainThread  ] [INFO ]  Evaluations: 850. fitness: [46.473977496677755]
+2023-04-18 23:13:41,077 [MainThread  ] [INFO ]  Average age: 2.99
+2023-04-18 23:13:41,081 [MainThread  ] [INFO ]  Evaluations: 900. fitness: [36.22498369355638]
+2023-04-18 23:13:41,081 [MainThread  ] [INFO ]  Average age: 3.14
+2023-04-18 23:13:41,084 [MainThread  ] [INFO ]  Evaluations: 950. fitness: [36.22498369355638]
+2023-04-18 23:13:41,084 [MainThread  ] [INFO ]  Average age: 2.76
+2023-04-18 23:13:41,087 [MainThread  ] [INFO ]  Evaluations: 1000. fitness: [31.693382741136706]
+2023-04-18 23:13:41,087 [MainThread  ] [INFO ]  Average age: 2.81
+2023-04-18 23:13:41,090 [MainThread  ] [INFO ]  Evaluations: 1050. fitness: [31.693382741136706]
+2023-04-18 23:13:41,090 [MainThread  ] [INFO ]  Average age: 3.04
+2023-04-18 23:13:41,092 [MainThread  ] [INFO ]  Evaluations: 1100. fitness: [31.693382741136706]
+2023-04-18 23:13:41,093 [MainThread  ] [INFO ]  Average age: 2.94
+2023-04-18 23:13:41,095 [MainThread  ] [INFO ]  Evaluations: 1150. fitness: [31.693382741136706]
+2023-04-18 23:13:41,096 [MainThread  ] [INFO ]  Average age: 2.78
+2023-04-18 23:13:41,098 [MainThread  ] [INFO ]  Evaluations: 1200. fitness: [28.05857742158493]
+2023-04-18 23:13:41,099 [MainThread  ] [INFO ]  Average age: 2.88
+2023-04-18 23:13:41,101 [MainThread  ] [INFO ]  Evaluations: 1250. fitness: [23.19825805872488]
+2023-04-18 23:13:41,102 [MainThread  ] [INFO ]  Average age: 3.11
+2023-04-18 23:13:41,104 [MainThread  ] [INFO ]  Evaluations: 1300. fitness: [23.19825805872488]
+2023-04-18 23:13:41,104 [MainThread  ] [INFO ]  Average age: 2.94
+2023-04-18 23:13:41,107 [MainThread  ] [INFO ]  Evaluations: 1350. fitness: [22.40449816054172]
+2023-04-18 23:13:41,107 [MainThread  ] [INFO ]  Average age: 3.07
+2023-04-18 23:13:41,111 [MainThread  ] [INFO ]  Evaluations: 1400. fitness: [21.914504267000837]
+2023-04-18 23:13:41,111 [MainThread  ] [INFO ]  Average age: 3.09
+2023-04-18 23:13:41,117 [MainThread  ] [INFO ]  Evaluations: 1450. fitness: [18.57386130143981]
+2023-04-18 23:13:41,118 [MainThread  ] [INFO ]  Average age: 3.14
+2023-04-18 23:13:41,122 [MainThread  ] [INFO ]  Evaluations: 1500. fitness: [14.39455252694737]
+2023-04-18 23:13:41,122 [MainThread  ] [INFO ]  Average age: 3.24
+2023-04-18 23:13:41,125 [MainThread  ] [INFO ]  Evaluations: 1550. fitness: [14.39455252694737]
+2023-04-18 23:13:41,125 [MainThread  ] [INFO ]  Average age: 3.0
+2023-04-18 23:13:41,128 [MainThread  ] [INFO ]  Evaluations: 1600. fitness: [14.39455252694737]
+2023-04-18 23:13:41,129 [MainThread  ] [INFO ]  Average age: 2.95
+2023-04-18 23:13:41,133 [MainThread  ] [INFO ]  Evaluations: 1650. fitness: [8.027749293775777]
+2023-04-18 23:13:41,134 [MainThread  ] [INFO ]  Average age: 2.97
+2023-04-18 23:13:41,136 [MainThread  ] [INFO ]  Evaluations: 1700. fitness: [8.027749293775777]
+2023-04-18 23:13:41,137 [MainThread  ] [INFO ]  Average age: 3.02
+2023-04-18 23:13:41,139 [MainThread  ] [INFO ]  Evaluations: 1750. fitness: [8.027749293775777]
+2023-04-18 23:13:41,139 [MainThread  ] [INFO ]  Average age: 2.95
+2023-04-18 23:13:41,142 [MainThread  ] [INFO ]  Evaluations: 1800. fitness: [8.027749293775777]
+2023-04-18 23:13:41,142 [MainThread  ] [INFO ]  Average age: 2.87
+2023-04-18 23:13:41,144 [MainThread  ] [INFO ]  Evaluations: 1850. fitness: [8.027749293775777]
+2023-04-18 23:13:41,144 [MainThread  ] [INFO ]  Average age: 2.95
+2023-04-18 23:13:41,148 [MainThread  ] [INFO ]  Evaluations: 1900. fitness: [8.027749293775777]
+2023-04-18 23:13:41,148 [MainThread  ] [INFO ]  Average age: 3.16
+2023-04-18 23:13:41,151 [MainThread  ] [INFO ]  Evaluations: 1950. fitness: [8.027749293775777]
+2023-04-18 23:13:41,151 [MainThread  ] [INFO ]  Average age: 3.26
+2023-04-18 23:13:41,154 [MainThread  ] [INFO ]  Evaluations: 2000. fitness: [8.027749293775777]
+2023-04-18 23:13:41,154 [MainThread  ] [INFO ]  Average age: 3.35
+2023-04-18 23:13:41,157 [MainThread  ] [INFO ]  Evaluations: 2050. fitness: [8.027749293775777]
+2023-04-18 23:13:41,158 [MainThread  ] [INFO ]  Average age: 3.35
+2023-04-18 23:13:41,161 [MainThread  ] [INFO ]  Evaluations: 2100. fitness: [8.027749293775777]
+2023-04-18 23:13:41,161 [MainThread  ] [INFO ]  Average age: 3.24
+2023-04-18 23:13:41,164 [MainThread  ] [INFO ]  Evaluations: 2150. fitness: [8.027749293775777]
+2023-04-18 23:13:41,164 [MainThread  ] [INFO ]  Average age: 3.37
+2023-04-18 23:13:41,167 [MainThread  ] [INFO ]  Evaluations: 2200. fitness: [7.54877541625684]
+2023-04-18 23:13:41,167 [MainThread  ] [INFO ]  Average age: 3.26
+2023-04-18 23:13:41,170 [MainThread  ] [INFO ]  Evaluations: 2250. fitness: [7.320189701008463]
+2023-04-18 23:13:41,170 [MainThread  ] [INFO ]  Average age: 3.4
+2023-04-18 23:13:41,173 [MainThread  ] [INFO ]  Evaluations: 2300. fitness: [7.320189701008463]
+2023-04-18 23:13:41,173 [MainThread  ] [INFO ]  Average age: 3.57
+2023-04-18 23:13:41,176 [MainThread  ] [INFO ]  Evaluations: 2350. fitness: [6.715862774699076]
+2023-04-18 23:13:41,176 [MainThread  ] [INFO ]  Average age: 3.65
+2023-04-18 23:13:41,179 [MainThread  ] [INFO ]  Evaluations: 2400. fitness: [6.715862774699076]
+2023-04-18 23:13:41,179 [MainThread  ] [INFO ]  Average age: 3.63
+2023-04-18 23:13:41,182 [MainThread  ] [INFO ]  Evaluations: 2450. fitness: [6.715862774699076]
+2023-04-18 23:13:41,183 [MainThread  ] [INFO ]  Average age: 3.5
+2023-04-18 23:13:41,186 [MainThread  ] [INFO ]  Evaluations: 2500. fitness: [6.715862774699076]
+2023-04-18 23:13:41,187 [MainThread  ] [INFO ]  Average age: 3.3
+2023-04-18 23:13:41,189 [MainThread  ] [INFO ]  Evaluations: 2550. fitness: [6.715862774699076]
+2023-04-18 23:13:41,189 [MainThread  ] [INFO ]  Average age: 3.37
+2023-04-18 23:13:41,193 [MainThread  ] [INFO ]  Evaluations: 2600. fitness: [6.715862774699076]
+2023-04-18 23:13:41,193 [MainThread  ] [INFO ]  Average age: 3.1
+2023-04-18 23:13:41,196 [MainThread  ] [INFO ]  Evaluations: 2650. fitness: [5.606797936595477]
+2023-04-18 23:13:41,196 [MainThread  ] [INFO ]  Average age: 3.35
+2023-04-18 23:13:41,199 [MainThread  ] [INFO ]  Evaluations: 2700. fitness: [5.606797936595477]
+2023-04-18 23:13:41,199 [MainThread  ] [INFO ]  Average age: 3.24
+2023-04-18 23:13:41,202 [MainThread  ] [INFO ]  Evaluations: 2750. fitness: [5.5213465345031985]
+2023-04-18 23:13:41,202 [MainThread  ] [INFO ]  Average age: 3.0
+2023-04-18 23:13:41,206 [MainThread  ] [INFO ]  Evaluations: 2800. fitness: [5.5213465345031985]
+2023-04-18 23:13:41,206 [MainThread  ] [INFO ]  Average age: 2.92
+2023-04-18 23:13:41,212 [MainThread  ] [INFO ]  Evaluations: 2850. fitness: [5.5213465345031985]
+2023-04-18 23:13:41,212 [MainThread  ] [INFO ]  Average age: 3.05
+2023-04-18 23:13:41,215 [MainThread  ] [INFO ]  Evaluations: 2900. fitness: [5.5213465345031985]
+2023-04-18 23:13:41,215 [MainThread  ] [INFO ]  Average age: 3.06
+2023-04-18 23:13:41,218 [MainThread  ] [INFO ]  Evaluations: 2950. fitness: [5.5213465345031985]
+2023-04-18 23:13:41,218 [MainThread  ] [INFO ]  Average age: 2.99
+2023-04-18 23:13:41,220 [MainThread  ] [INFO ]  Evaluations: 3000. fitness: [5.206491206391977]
+2023-04-18 23:13:41,221 [MainThread  ] [INFO ]  Average age: 2.94
+2023-04-18 23:13:41,223 [MainThread  ] [INFO ]  Evaluations: 3050. fitness: [4.846189989198576]
+2023-04-18 23:13:41,224 [MainThread  ] [INFO ]  Average age: 2.7
+2023-04-18 23:13:41,229 [MainThread  ] [INFO ]  Evaluations: 3100. fitness: [4.846189989198576]
+2023-04-18 23:13:41,229 [MainThread  ] [INFO ]  Average age: 2.87
+2023-04-18 23:13:41,232 [MainThread  ] [INFO ]  Evaluations: 3150. fitness: [4.846189989198576]
+2023-04-18 23:13:41,232 [MainThread  ] [INFO ]  Average age: 2.81
+2023-04-18 23:13:41,234 [MainThread  ] [INFO ]  Evaluations: 3200. fitness: [4.846189989198576]
+2023-04-18 23:13:41,235 [MainThread  ] [INFO ]  Average age: 3.02
+2023-04-18 23:13:41,238 [MainThread  ] [INFO ]  Evaluations: 3250. fitness: [4.846189989198576]
+2023-04-18 23:13:41,238 [MainThread  ] [INFO ]  Average age: 3.16
+2023-04-18 23:13:41,241 [MainThread  ] [INFO ]  Evaluations: 3300. fitness: [4.731968796292122]
+2023-04-18 23:13:41,241 [MainThread  ] [INFO ]  Average age: 3.08
+2023-04-18 23:13:41,244 [MainThread  ] [INFO ]  Evaluations: 3350. fitness: [4.484860174669105]
+2023-04-18 23:13:41,244 [MainThread  ] [INFO ]  Average age: 2.81
+2023-04-18 23:13:41,247 [MainThread  ] [INFO ]  Evaluations: 3400. fitness: [4.484860174669105]
+2023-04-18 23:13:41,247 [MainThread  ] [INFO ]  Average age: 2.76
+2023-04-18 23:13:41,249 [MainThread  ] [INFO ]  Evaluations: 3450. fitness: [4.446708470568266]
+2023-04-18 23:13:41,249 [MainThread  ] [INFO ]  Average age: 2.7
+2023-04-18 23:13:41,254 [MainThread  ] [INFO ]  Evaluations: 3500. fitness: [4.446708470568266]
+2023-04-18 23:13:41,254 [MainThread  ] [INFO ]  Average age: 2.61
+2023-04-18 23:13:41,256 [MainThread  ] [INFO ]  Evaluations: 3550. fitness: [4.446708470568266]
+2023-04-18 23:13:41,256 [MainThread  ] [INFO ]  Average age: 2.64
+2023-04-18 23:13:41,260 [MainThread  ] [INFO ]  Evaluations: 3600. fitness: [4.4065316184660155]
+2023-04-18 23:13:41,261 [MainThread  ] [INFO ]  Average age: 2.67
+2023-04-18 23:13:41,264 [MainThread  ] [INFO ]  Evaluations: 3650. fitness: [4.347199800084981]
+2023-04-18 23:13:41,264 [MainThread  ] [INFO ]  Average age: 2.7
+2023-04-18 23:13:41,267 [MainThread  ] [INFO ]  Evaluations: 3700. fitness: [4.337676259354428]
+2023-04-18 23:13:41,267 [MainThread  ] [INFO ]  Average age: 2.7
+2023-04-18 23:13:41,271 [MainThread  ] [INFO ]  Evaluations: 3750. fitness: [4.289538649145534]
+2023-04-18 23:13:41,271 [MainThread  ] [INFO ]  Average age: 2.65
+2023-04-18 23:13:41,274 [MainThread  ] [INFO ]  Evaluations: 3800. fitness: [4.289538649145534]
+2023-04-18 23:13:41,274 [MainThread  ] [INFO ]  Average age: 2.89
+2023-04-18 23:13:41,279 [MainThread  ] [INFO ]  Evaluations: 3850. fitness: [4.289538649145534]
+2023-04-18 23:13:41,279 [MainThread  ] [INFO ]  Average age: 2.75
+2023-04-18 23:13:41,284 [MainThread  ] [INFO ]  Evaluations: 3900. fitness: [4.289538649145534]
+2023-04-18 23:13:41,284 [MainThread  ] [INFO ]  Average age: 2.68
+2023-04-18 23:13:41,288 [MainThread  ] [INFO ]  Evaluations: 3950. fitness: [4.27822900114068]
+2023-04-18 23:13:41,288 [MainThread  ] [INFO ]  Average age: 2.77
+2023-04-18 23:13:41,290 [MainThread  ] [INFO ]  Evaluations: 4000. fitness: [4.256765902463064]
+2023-04-18 23:13:41,291 [MainThread  ] [INFO ]  Average age: 2.7
+2023-04-18 23:13:41,293 [MainThread  ] [INFO ]  Evaluations: 4050. fitness: [4.256765902463064]
+2023-04-18 23:13:41,293 [MainThread  ] [INFO ]  Average age: 2.78
+2023-04-18 23:13:41,296 [MainThread  ] [INFO ]  Evaluations: 4100. fitness: [4.232574109603663]
+2023-04-18 23:13:41,296 [MainThread  ] [INFO ]  Average age: 2.69
+2023-04-18 23:13:41,299 [MainThread  ] [INFO ]  Evaluations: 4150. fitness: [4.232574109603663]
+2023-04-18 23:13:41,299 [MainThread  ] [INFO ]  Average age: 2.79
+2023-04-18 23:13:41,302 [MainThread  ] [INFO ]  Evaluations: 4200. fitness: [4.232574109603663]
+2023-04-18 23:13:41,303 [MainThread  ] [INFO ]  Average age: 2.82
+2023-04-18 23:13:41,306 [MainThread  ] [INFO ]  Evaluations: 4250. fitness: [4.232574109603663]
+2023-04-18 23:13:41,306 [MainThread  ] [INFO ]  Average age: 2.9
+2023-04-18 23:13:41,310 [MainThread  ] [INFO ]  Evaluations: 4300. fitness: [4.232574109603663]
+2023-04-18 23:13:41,310 [MainThread  ] [INFO ]  Average age: 3.1
+2023-04-18 23:13:41,313 [MainThread  ] [INFO ]  Evaluations: 4350. fitness: [4.232574109603663]
+2023-04-18 23:13:41,314 [MainThread  ] [INFO ]  Average age: 2.96
+2023-04-18 23:13:41,316 [MainThread  ] [INFO ]  Evaluations: 4400. fitness: [4.232574109603663]
+2023-04-18 23:13:41,316 [MainThread  ] [INFO ]  Average age: 2.84
+2023-04-18 23:13:41,319 [MainThread  ] [INFO ]  Evaluations: 4450. fitness: [4.232574109603663]
+2023-04-18 23:13:41,319 [MainThread  ] [INFO ]  Average age: 2.82
+2023-04-18 23:13:41,322 [MainThread  ] [INFO ]  Evaluations: 4500. fitness: [4.232081654088708]
+2023-04-18 23:13:41,322 [MainThread  ] [INFO ]  Average age: 2.67
+2023-04-18 23:13:41,325 [MainThread  ] [INFO ]  Evaluations: 4550. fitness: [4.216945081539999]
+2023-04-18 23:13:41,325 [MainThread  ] [INFO ]  Average age: 2.77
+2023-04-18 23:13:41,328 [MainThread  ] [INFO ]  Evaluations: 4600. fitness: [4.216945081539999]
+2023-04-18 23:13:41,328 [MainThread  ] [INFO ]  Average age: 2.85
+2023-04-18 23:13:41,334 [MainThread  ] [INFO ]  Evaluations: 4650. fitness: [4.216945081539999]
+2023-04-18 23:13:41,334 [MainThread  ] [INFO ]  Average age: 2.7
+2023-04-18 23:13:41,358 [MainThread  ] [INFO ]  Evaluations: 4700. fitness: [4.206627727115686]
+2023-04-18 23:13:41,358 [MainThread  ] [INFO ]  Average age: 2.8
+2023-04-18 23:13:41,368 [MainThread  ] [INFO ]  Evaluations: 4750. fitness: [4.20659750626063]
+2023-04-18 23:13:41,368 [MainThread  ] [INFO ]  Average age: 2.83
+2023-04-18 23:13:41,371 [MainThread  ] [INFO ]  Evaluations: 4800. fitness: [4.201956926439426]
+2023-04-18 23:13:41,371 [MainThread  ] [INFO ]  Average age: 2.92
+2023-04-18 23:13:41,374 [MainThread  ] [INFO ]  Evaluations: 4850. fitness: [4.201956926439426]
+2023-04-18 23:13:41,374 [MainThread  ] [INFO ]  Average age: 2.54
+2023-04-18 23:13:41,380 [MainThread  ] [INFO ]  Evaluations: 4900. fitness: [4.201956926439426]
+2023-04-18 23:13:41,381 [MainThread  ] [INFO ]  Average age: 2.58
+2023-04-18 23:13:41,387 [MainThread  ] [INFO ]  Evaluations: 4950. fitness: [4.201956926439426]
+2023-04-18 23:13:41,388 [MainThread  ] [INFO ]  Average age: 2.78
+2023-04-18 23:13:41,391 [MainThread  ] [INFO ]  Evaluations: 5000. fitness: [4.201520358982076]
+2023-04-18 23:13:41,391 [MainThread  ] [INFO ]  Average age: 2.73
+2023-04-19 22:12:47,743 [MainThread  ] [INFO ]  Evaluations: 100. fitness: [297.300122381474]
+2023-04-19 22:12:47,746 [MainThread  ] [INFO ]  Evaluations: 110. fitness: [287.897850398363]
+2023-04-19 22:12:47,748 [MainThread  ] [INFO ]  Evaluations: 120. fitness: [287.897850398363]
+2023-04-19 22:12:47,749 [MainThread  ] [INFO ]  Evaluations: 130. fitness: [253.35842917354975]
+2023-04-19 22:12:47,752 [MainThread  ] [INFO ]  Evaluations: 140. fitness: [253.35842917354975]
+2023-04-19 22:12:47,753 [MainThread  ] [INFO ]  Evaluations: 150. fitness: [253.35842917354975]
+2023-04-19 22:12:47,754 [MainThread  ] [INFO ]  Evaluations: 160. fitness: [253.35842917354975]
+2023-04-19 22:12:47,755 [MainThread  ] [INFO ]  Evaluations: 170. fitness: [253.35842917354975]
+2023-04-19 22:12:47,757 [MainThread  ] [INFO ]  Evaluations: 180. fitness: [253.35842917354975]
+2023-04-19 22:12:47,758 [MainThread  ] [INFO ]  Evaluations: 190. fitness: [253.35842917354975]
+2023-04-19 22:12:47,759 [MainThread  ] [INFO ]  Evaluations: 200. fitness: [253.35842917354975]
+2023-04-19 22:12:47,760 [MainThread  ] [INFO ]  Evaluations: 210. fitness: [253.35842917354975]
+2023-04-19 22:12:47,761 [MainThread  ] [INFO ]  Evaluations: 220. fitness: [253.35842917354975]
+2023-04-19 22:12:47,763 [MainThread  ] [INFO ]  Evaluations: 230. fitness: [253.35842917354975]
+2023-04-19 22:12:47,764 [MainThread  ] [INFO ]  Evaluations: 240. fitness: [253.35842917354975]
+2023-04-19 22:12:47,765 [MainThread  ] [INFO ]  Evaluations: 250. fitness: [253.35842917354975]
+2023-04-19 22:12:47,766 [MainThread  ] [INFO ]  Evaluations: 260. fitness: [253.35842917354975]
+2023-04-19 22:12:47,768 [MainThread  ] [INFO ]  Evaluations: 270. fitness: [253.35842917354975]
+2023-04-19 22:12:47,769 [MainThread  ] [INFO ]  Evaluations: 280. fitness: [253.35842917354975]
+2023-04-19 22:12:47,771 [MainThread  ] [INFO ]  Evaluations: 290. fitness: [253.35842917354975]
+2023-04-19 22:12:47,772 [MainThread  ] [INFO ]  Evaluations: 300. fitness: [253.35842917354975]
+2023-04-19 22:12:47,774 [MainThread  ] [INFO ]  Evaluations: 310. fitness: [253.35842917354975]
+2023-04-19 22:12:47,776 [MainThread  ] [INFO ]  Evaluations: 320. fitness: [253.35842917354975]
+2023-04-19 22:12:47,778 [MainThread  ] [INFO ]  Evaluations: 330. fitness: [253.35842917354975]
+2023-04-19 22:12:47,779 [MainThread  ] [INFO ]  Evaluations: 340. fitness: [253.35842917354975]
+2023-04-19 22:12:47,781 [MainThread  ] [INFO ]  Evaluations: 350. fitness: [253.35842917354975]
+2023-04-19 22:12:47,782 [MainThread  ] [INFO ]  Evaluations: 360. fitness: [253.35842917354975]
+2023-04-19 22:12:47,783 [MainThread  ] [INFO ]  Evaluations: 370. fitness: [253.35842917354975]
+2023-04-19 22:12:47,784 [MainThread  ] [INFO ]  Evaluations: 380. fitness: [253.35842917354975]
+2023-04-19 22:12:47,785 [MainThread  ] [INFO ]  Evaluations: 390. fitness: [253.35842917354975]
+2023-04-19 22:12:47,787 [MainThread  ] [INFO ]  Evaluations: 400. fitness: [253.35842917354975]
+2023-04-19 22:12:47,788 [MainThread  ] [INFO ]  Evaluations: 410. fitness: [253.35842917354975]
+2023-04-19 22:12:47,790 [MainThread  ] [INFO ]  Evaluations: 420. fitness: [253.35842917354975]
+2023-04-19 22:12:47,793 [MainThread  ] [INFO ]  Evaluations: 430. fitness: [253.35842917354975]
+2023-04-19 22:12:47,796 [MainThread  ] [INFO ]  Evaluations: 440. fitness: [253.35842917354975]
+2023-04-19 22:12:47,799 [MainThread  ] [INFO ]  Evaluations: 450. fitness: [253.35842917354975]
+2023-04-19 22:12:47,800 [MainThread  ] [INFO ]  Evaluations: 460. fitness: [253.35842917354975]
+2023-04-19 22:12:47,802 [MainThread  ] [INFO ]  Evaluations: 470. fitness: [253.35842917354975]
+2023-04-19 22:12:47,803 [MainThread  ] [INFO ]  Evaluations: 480. fitness: [253.35842917354975]
+2023-04-19 22:12:47,804 [MainThread  ] [INFO ]  Evaluations: 490. fitness: [253.35842917354975]
+2023-04-19 22:12:47,805 [MainThread  ] [INFO ]  Evaluations: 500. fitness: [253.35842917354975]
+2023-04-19 22:12:47,806 [MainThread  ] [INFO ]  Evaluations: 510. fitness: [253.35842917354975]
+2023-04-19 22:12:47,807 [MainThread  ] [INFO ]  Evaluations: 520. fitness: [253.35842917354975]
+2023-04-19 22:12:47,809 [MainThread  ] [INFO ]  Evaluations: 530. fitness: [253.35842917354975]
+2023-04-19 22:12:47,810 [MainThread  ] [INFO ]  Evaluations: 540. fitness: [253.35842917354975]
+2023-04-19 22:12:47,812 [MainThread  ] [INFO ]  Evaluations: 550. fitness: [253.35842917354975]
+2023-04-19 22:12:47,813 [MainThread  ] [INFO ]  Evaluations: 560. fitness: [253.35842917354975]
+2023-04-19 22:12:47,814 [MainThread  ] [INFO ]  Evaluations: 570. fitness: [253.35842917354975]
+2023-04-19 22:12:47,816 [MainThread  ] [INFO ]  Evaluations: 580. fitness: [253.35842917354975]
+2023-04-19 22:12:47,817 [MainThread  ] [INFO ]  Evaluations: 590. fitness: [253.35842917354975]
+2023-04-19 22:12:47,818 [MainThread  ] [INFO ]  Evaluations: 600. fitness: [253.35842917354975]
+2023-04-19 22:12:47,819 [MainThread  ] [INFO ]  Evaluations: 610. fitness: [253.35842917354975]
+2023-04-19 22:12:47,820 [MainThread  ] [INFO ]  Evaluations: 620. fitness: [253.35842917354975]
+2023-04-19 22:12:47,821 [MainThread  ] [INFO ]  Evaluations: 630. fitness: [253.35842917354975]
+2023-04-19 22:12:47,822 [MainThread  ] [INFO ]  Evaluations: 640. fitness: [253.35842917354975]
+2023-04-19 22:12:47,824 [MainThread  ] [INFO ]  Evaluations: 650. fitness: [253.35842917354975]
+2023-04-19 22:12:47,825 [MainThread  ] [INFO ]  Evaluations: 660. fitness: [253.35842917354975]
+2023-04-19 22:12:47,826 [MainThread  ] [INFO ]  Evaluations: 670. fitness: [253.35842917354975]
+2023-04-19 22:12:47,827 [MainThread  ] [INFO ]  Evaluations: 680. fitness: [253.35842917354975]
+2023-04-19 22:12:47,832 [MainThread  ] [INFO ]  Evaluations: 690. fitness: [253.35842917354975]
+2023-04-19 22:12:47,834 [MainThread  ] [INFO ]  Evaluations: 700. fitness: [253.35842917354975]
+2023-04-19 22:12:47,835 [MainThread  ] [INFO ]  Evaluations: 710. fitness: [253.35842917354975]
+2023-04-19 22:12:47,836 [MainThread  ] [INFO ]  Evaluations: 720. fitness: [253.35842917354975]
+2023-04-19 22:12:47,837 [MainThread  ] [INFO ]  Evaluations: 730. fitness: [253.35842917354975]
+2023-04-19 22:12:47,838 [MainThread  ] [INFO ]  Evaluations: 740. fitness: [253.35842917354975]
+2023-04-19 22:12:47,839 [MainThread  ] [INFO ]  Evaluations: 750. fitness: [253.35842917354975]
+2023-04-19 22:12:47,840 [MainThread  ] [INFO ]  Evaluations: 760. fitness: [253.35842917354975]
+2023-04-19 22:12:47,842 [MainThread  ] [INFO ]  Evaluations: 770. fitness: [253.35842917354975]
+2023-04-19 22:12:47,843 [MainThread  ] [INFO ]  Evaluations: 780. fitness: [253.35842917354975]
+2023-04-19 22:12:47,844 [MainThread  ] [INFO ]  Evaluations: 790. fitness: [253.35842917354975]
+2023-04-19 22:12:47,845 [MainThread  ] [INFO ]  Evaluations: 800. fitness: [253.35842917354975]
+2023-04-19 22:12:47,846 [MainThread  ] [INFO ]  Evaluations: 810. fitness: [253.35842917354975]
+2023-04-19 22:12:47,847 [MainThread  ] [INFO ]  Evaluations: 820. fitness: [253.35842917354975]
+2023-04-19 22:12:47,848 [MainThread  ] [INFO ]  Evaluations: 830. fitness: [253.35842917354975]
+2023-04-19 22:12:47,850 [MainThread  ] [INFO ]  Evaluations: 840. fitness: [253.35842917354975]
+2023-04-19 22:12:47,851 [MainThread  ] [INFO ]  Evaluations: 850. fitness: [253.35842917354975]
+2023-04-19 22:12:47,852 [MainThread  ] [INFO ]  Evaluations: 860. fitness: [253.35842917354975]
+2023-04-19 22:12:47,853 [MainThread  ] [INFO ]  Evaluations: 870. fitness: [253.35842917354975]
+2023-04-19 22:12:47,855 [MainThread  ] [INFO ]  Evaluations: 880. fitness: [253.35842917354975]
+2023-04-19 22:12:47,856 [MainThread  ] [INFO ]  Evaluations: 890. fitness: [253.35842917354975]
+2023-04-19 22:12:47,857 [MainThread  ] [INFO ]  Evaluations: 900. fitness: [253.35842917354975]
+2023-04-19 22:12:47,858 [MainThread  ] [INFO ]  Evaluations: 910. fitness: [253.35842917354975]
+2023-04-19 22:12:47,859 [MainThread  ] [INFO ]  Evaluations: 920. fitness: [253.35842917354975]
+2023-04-19 22:12:47,861 [MainThread  ] [INFO ]  Evaluations: 930. fitness: [253.35842917354975]
+2023-04-19 22:12:47,862 [MainThread  ] [INFO ]  Evaluations: 940. fitness: [253.35842917354975]
+2023-04-19 22:12:47,863 [MainThread  ] [INFO ]  Evaluations: 950. fitness: [253.35842917354975]
+2023-04-19 22:12:47,864 [MainThread  ] [INFO ]  Evaluations: 960. fitness: [253.35842917354975]
+2023-04-19 22:12:47,865 [MainThread  ] [INFO ]  Evaluations: 970. fitness: [253.35842917354975]
+2023-04-19 22:12:47,866 [MainThread  ] [INFO ]  Evaluations: 980. fitness: [253.35842917354975]
+2023-04-19 22:12:47,867 [MainThread  ] [INFO ]  Evaluations: 990. fitness: [253.35842917354975]
+2023-04-19 22:12:47,868 [MainThread  ] [INFO ]  Evaluations: 1000. fitness: [253.35842917354975]
+2023-04-19 22:15:03,877 [MainThread  ] [INFO ]  Evaluations: 100. fitness: [301.66177533927294]
+2023-04-19 22:15:03,879 [MainThread  ] [INFO ]  Evaluations: 110. fitness: [217.1571564757808]
+2023-04-19 22:15:03,880 [MainThread  ] [INFO ]  Evaluations: 120. fitness: [217.1571564757808]
+2023-04-19 22:15:03,882 [MainThread  ] [INFO ]  Evaluations: 130. fitness: [217.1571564757808]
+2023-04-19 22:15:03,884 [MainThread  ] [INFO ]  Evaluations: 140. fitness: [217.1571564757808]
+2023-04-19 22:15:03,885 [MainThread  ] [INFO ]  Evaluations: 150. fitness: [217.1571564757808]
+2023-04-19 22:15:03,886 [MainThread  ] [INFO ]  Evaluations: 160. fitness: [217.1571564757808]
+2023-04-19 22:15:03,888 [MainThread  ] [INFO ]  Evaluations: 170. fitness: [217.1571564757808]
+2023-04-19 22:15:03,889 [MainThread  ] [INFO ]  Evaluations: 180. fitness: [217.1571564757808]
+2023-04-19 22:15:03,891 [MainThread  ] [INFO ]  Evaluations: 190. fitness: [217.1571564757808]
+2023-04-19 22:15:03,893 [MainThread  ] [INFO ]  Evaluations: 200. fitness: [217.1571564757808]
+2023-04-19 22:15:03,894 [MainThread  ] [INFO ]  Evaluations: 210. fitness: [217.1571564757808]
+2023-04-19 22:15:03,895 [MainThread  ] [INFO ]  Evaluations: 220. fitness: [217.1571564757808]
+2023-04-19 22:15:03,896 [MainThread  ] [INFO ]  Evaluations: 230. fitness: [217.1571564757808]
+2023-04-19 22:15:03,897 [MainThread  ] [INFO ]  Evaluations: 240. fitness: [217.1571564757808]
+2023-04-19 22:15:03,898 [MainThread  ] [INFO ]  Evaluations: 250. fitness: [217.1571564757808]
+2023-04-19 22:15:03,899 [MainThread  ] [INFO ]  Evaluations: 260. fitness: [217.1571564757808]
+2023-04-19 22:15:03,901 [MainThread  ] [INFO ]  Evaluations: 270. fitness: [217.1571564757808]
+2023-04-19 22:15:03,902 [MainThread  ] [INFO ]  Evaluations: 280. fitness: [217.1571564757808]
+2023-04-19 22:15:03,903 [MainThread  ] [INFO ]  Evaluations: 290. fitness: [217.1571564757808]
+2023-04-19 22:15:03,904 [MainThread  ] [INFO ]  Evaluations: 300. fitness: [217.1571564757808]
+2023-04-19 22:15:03,906 [MainThread  ] [INFO ]  Evaluations: 310. fitness: [217.1571564757808]
+2023-04-19 22:15:03,907 [MainThread  ] [INFO ]  Evaluations: 320. fitness: [217.1571564757808]
+2023-04-19 22:15:03,908 [MainThread  ] [INFO ]  Evaluations: 330. fitness: [217.1571564757808]
+2023-04-19 22:15:03,909 [MainThread  ] [INFO ]  Evaluations: 340. fitness: [217.1571564757808]
+2023-04-19 22:15:03,911 [MainThread  ] [INFO ]  Evaluations: 350. fitness: [217.1571564757808]
+2023-04-19 22:15:03,912 [MainThread  ] [INFO ]  Evaluations: 360. fitness: [217.1571564757808]
+2023-04-19 22:15:03,913 [MainThread  ] [INFO ]  Evaluations: 370. fitness: [217.1571564757808]
+2023-04-19 22:15:03,916 [MainThread  ] [INFO ]  Evaluations: 380. fitness: [217.1571564757808]
+2023-04-19 22:15:03,918 [MainThread  ] [INFO ]  Evaluations: 390. fitness: [217.1571564757808]
+2023-04-19 22:15:03,919 [MainThread  ] [INFO ]  Evaluations: 400. fitness: [217.1571564757808]
+2023-04-19 22:15:03,922 [MainThread  ] [INFO ]  Evaluations: 410. fitness: [217.1571564757808]
+2023-04-19 22:15:03,925 [MainThread  ] [INFO ]  Evaluations: 420. fitness: [217.1571564757808]
+2023-04-19 22:15:03,928 [MainThread  ] [INFO ]  Evaluations: 430. fitness: [217.1571564757808]
+2023-04-19 22:15:03,929 [MainThread  ] [INFO ]  Evaluations: 440. fitness: [217.1571564757808]
+2023-04-19 22:15:03,932 [MainThread  ] [INFO ]  Evaluations: 450. fitness: [217.1571564757808]
+2023-04-19 22:15:03,933 [MainThread  ] [INFO ]  Evaluations: 460. fitness: [217.1571564757808]
+2023-04-19 22:15:03,934 [MainThread  ] [INFO ]  Evaluations: 470. fitness: [217.1571564757808]
+2023-04-19 22:15:03,935 [MainThread  ] [INFO ]  Evaluations: 480. fitness: [217.1571564757808]
+2023-04-19 22:15:03,936 [MainThread  ] [INFO ]  Evaluations: 490. fitness: [217.1571564757808]
+2023-04-19 22:15:03,937 [MainThread  ] [INFO ]  Evaluations: 500. fitness: [217.1571564757808]
+2023-04-19 22:15:03,938 [MainThread  ] [INFO ]  Evaluations: 510. fitness: [217.1571564757808]
+2023-04-19 22:15:03,939 [MainThread  ] [INFO ]  Evaluations: 520. fitness: [217.1571564757808]
+2023-04-19 22:15:03,941 [MainThread  ] [INFO ]  Evaluations: 530. fitness: [217.1571564757808]
+2023-04-19 22:15:03,943 [MainThread  ] [INFO ]  Evaluations: 540. fitness: [217.1571564757808]
+2023-04-19 22:15:03,944 [MainThread  ] [INFO ]  Evaluations: 550. fitness: [217.1571564757808]
+2023-04-19 22:15:03,945 [MainThread  ] [INFO ]  Evaluations: 560. fitness: [217.1571564757808]
+2023-04-19 22:15:03,947 [MainThread  ] [INFO ]  Evaluations: 570. fitness: [217.1571564757808]
+2023-04-19 22:15:03,948 [MainThread  ] [INFO ]  Evaluations: 580. fitness: [217.1571564757808]
+2023-04-19 22:15:03,949 [MainThread  ] [INFO ]  Evaluations: 590. fitness: [217.1571564757808]
+2023-04-19 22:15:03,950 [MainThread  ] [INFO ]  Evaluations: 600. fitness: [217.1571564757808]
+2023-04-19 22:15:03,951 [MainThread  ] [INFO ]  Evaluations: 610. fitness: [217.1571564757808]
+2023-04-19 22:15:03,952 [MainThread  ] [INFO ]  Evaluations: 620. fitness: [217.1571564757808]
+2023-04-19 22:15:03,953 [MainThread  ] [INFO ]  Evaluations: 630. fitness: [217.1571564757808]
+2023-04-19 22:15:03,955 [MainThread  ] [INFO ]  Evaluations: 640. fitness: [217.1571564757808]
+2023-04-19 22:15:03,956 [MainThread  ] [INFO ]  Evaluations: 650. fitness: [217.1571564757808]
+2023-04-19 22:15:03,957 [MainThread  ] [INFO ]  Evaluations: 660. fitness: [217.1571564757808]
+2023-04-19 22:15:03,958 [MainThread  ] [INFO ]  Evaluations: 670. fitness: [217.1571564757808]
+2023-04-19 22:15:03,960 [MainThread  ] [INFO ]  Evaluations: 680. fitness: [217.1571564757808]
+2023-04-19 22:15:03,961 [MainThread  ] [INFO ]  Evaluations: 690. fitness: [217.1571564757808]
+2023-04-19 22:15:03,962 [MainThread  ] [INFO ]  Evaluations: 700. fitness: [217.1571564757808]
+2023-04-19 22:15:03,963 [MainThread  ] [INFO ]  Evaluations: 710. fitness: [217.1571564757808]
+2023-04-19 22:15:03,964 [MainThread  ] [INFO ]  Evaluations: 720. fitness: [217.1571564757808]
+2023-04-19 22:15:03,965 [MainThread  ] [INFO ]  Evaluations: 730. fitness: [217.1571564757808]
+2023-04-19 22:15:03,966 [MainThread  ] [INFO ]  Evaluations: 740. fitness: [217.1571564757808]
+2023-04-19 22:15:03,967 [MainThread  ] [INFO ]  Evaluations: 750. fitness: [217.1571564757808]
+2023-04-19 22:15:03,968 [MainThread  ] [INFO ]  Evaluations: 760. fitness: [217.1571564757808]
+2023-04-19 22:15:03,969 [MainThread  ] [INFO ]  Evaluations: 770. fitness: [217.1571564757808]
+2023-04-19 22:15:03,970 [MainThread  ] [INFO ]  Evaluations: 780. fitness: [217.1571564757808]
+2023-04-19 22:15:03,971 [MainThread  ] [INFO ]  Evaluations: 790. fitness: [217.1571564757808]
+2023-04-19 22:15:03,972 [MainThread  ] [INFO ]  Evaluations: 800. fitness: [217.1571564757808]
+2023-04-19 22:15:03,973 [MainThread  ] [INFO ]  Evaluations: 810. fitness: [217.1571564757808]
+2023-04-19 22:15:03,974 [MainThread  ] [INFO ]  Evaluations: 820. fitness: [217.1571564757808]
+2023-04-19 22:15:03,975 [MainThread  ] [INFO ]  Evaluations: 830. fitness: [217.1571564757808]
+2023-04-19 22:15:03,976 [MainThread  ] [INFO ]  Evaluations: 840. fitness: [217.1571564757808]
+2023-04-19 22:15:03,978 [MainThread  ] [INFO ]  Evaluations: 850. fitness: [217.1571564757808]
+2023-04-19 22:15:03,979 [MainThread  ] [INFO ]  Evaluations: 860. fitness: [217.1571564757808]
+2023-04-19 22:15:03,980 [MainThread  ] [INFO ]  Evaluations: 870. fitness: [217.1571564757808]
+2023-04-19 22:15:03,981 [MainThread  ] [INFO ]  Evaluations: 880. fitness: [217.1571564757808]
+2023-04-19 22:15:03,982 [MainThread  ] [INFO ]  Evaluations: 890. fitness: [217.1571564757808]
+2023-04-19 22:15:03,983 [MainThread  ] [INFO ]  Evaluations: 900. fitness: [217.1571564757808]
+2023-04-19 22:15:03,984 [MainThread  ] [INFO ]  Evaluations: 910. fitness: [217.1571564757808]
+2023-04-19 22:15:03,986 [MainThread  ] [INFO ]  Evaluations: 920. fitness: [217.1571564757808]
+2023-04-19 22:15:03,987 [MainThread  ] [INFO ]  Evaluations: 930. fitness: [217.1571564757808]
+2023-04-19 22:15:03,988 [MainThread  ] [INFO ]  Evaluations: 940. fitness: [217.1571564757808]
+2023-04-19 22:15:03,989 [MainThread  ] [INFO ]  Evaluations: 950. fitness: [217.1571564757808]
+2023-04-19 22:15:03,990 [MainThread  ] [INFO ]  Evaluations: 960. fitness: [217.1571564757808]
+2023-04-19 22:15:03,992 [MainThread  ] [INFO ]  Evaluations: 970. fitness: [217.1571564757808]
+2023-04-19 22:15:03,993 [MainThread  ] [INFO ]  Evaluations: 980. fitness: [217.1571564757808]
+2023-04-19 22:15:03,994 [MainThread  ] [INFO ]  Evaluations: 990. fitness: [217.1571564757808]
+2023-04-19 22:15:03,995 [MainThread  ] [INFO ]  Evaluations: 1000. fitness: [217.1571564757808]
+2023-04-19 22:19:01,246 [MainThread  ] [INFO ]  Evaluations: 100. fitness: [242.09655265250535]
+2023-04-19 22:19:01,250 [MainThread  ] [INFO ]  Evaluations: 110. fitness: [242.09655265250535]
+2023-04-19 22:19:01,252 [MainThread  ] [INFO ]  Evaluations: 120. fitness: [242.09655265250535]
+2023-04-19 22:19:01,255 [MainThread  ] [INFO ]  Evaluations: 130. fitness: [242.09655265250535]
+2023-04-19 22:19:01,257 [MainThread  ] [INFO ]  Evaluations: 140. fitness: [242.09655265250535]
+2023-04-19 22:19:01,260 [MainThread  ] [INFO ]  Evaluations: 150. fitness: [242.09655265250535]
+2023-04-19 22:19:01,263 [MainThread  ] [INFO ]  Evaluations: 160. fitness: [242.09655265250535]
+2023-04-19 22:19:01,265 [MainThread  ] [INFO ]  Evaluations: 170. fitness: [242.09655265250535]
+2023-04-19 22:19:01,268 [MainThread  ] [INFO ]  Evaluations: 180. fitness: [242.09655265250535]
+2023-04-19 22:19:01,270 [MainThread  ] [INFO ]  Evaluations: 190. fitness: [242.09655265250535]
+2023-04-19 22:19:01,272 [MainThread  ] [INFO ]  Evaluations: 200. fitness: [242.09655265250535]
+2023-04-19 22:19:01,274 [MainThread  ] [INFO ]  Evaluations: 210. fitness: [242.09655265250535]
+2023-04-19 22:19:01,275 [MainThread  ] [INFO ]  Evaluations: 220. fitness: [242.09655265250535]
+2023-04-19 22:19:01,277 [MainThread  ] [INFO ]  Evaluations: 230. fitness: [242.09655265250535]
+2023-04-19 22:19:01,283 [MainThread  ] [INFO ]  Evaluations: 240. fitness: [242.09655265250535]
+2023-04-19 22:19:01,286 [MainThread  ] [INFO ]  Evaluations: 250. fitness: [242.09655265250535]
+2023-04-19 22:19:01,288 [MainThread  ] [INFO ]  Evaluations: 260. fitness: [242.09655265250535]
+2023-04-19 22:19:01,290 [MainThread  ] [INFO ]  Evaluations: 270. fitness: [242.09655265250535]
+2023-04-19 22:19:01,292 [MainThread  ] [INFO ]  Evaluations: 280. fitness: [242.09655265250535]
+2023-04-19 22:19:01,294 [MainThread  ] [INFO ]  Evaluations: 290. fitness: [242.09655265250535]
+2023-04-19 22:19:01,296 [MainThread  ] [INFO ]  Evaluations: 300. fitness: [242.09655265250535]
+2023-04-19 22:19:01,298 [MainThread  ] [INFO ]  Evaluations: 310. fitness: [242.09655265250535]
+2023-04-19 22:19:01,300 [MainThread  ] [INFO ]  Evaluations: 320. fitness: [242.09655265250535]
+2023-04-19 22:19:01,302 [MainThread  ] [INFO ]  Evaluations: 330. fitness: [242.09655265250535]
+2023-04-19 22:19:01,303 [MainThread  ] [INFO ]  Evaluations: 340. fitness: [242.09655265250535]
+2023-04-19 22:19:01,306 [MainThread  ] [INFO ]  Evaluations: 350. fitness: [242.09655265250535]
+2023-04-19 22:19:01,308 [MainThread  ] [INFO ]  Evaluations: 360. fitness: [242.09655265250535]
+2023-04-19 22:19:01,310 [MainThread  ] [INFO ]  Evaluations: 370. fitness: [242.09655265250535]
+2023-04-19 22:19:01,312 [MainThread  ] [INFO ]  Evaluations: 380. fitness: [242.09655265250535]
+2023-04-19 22:19:01,315 [MainThread  ] [INFO ]  Evaluations: 390. fitness: [242.09655265250535]
+2023-04-19 22:19:01,318 [MainThread  ] [INFO ]  Evaluations: 400. fitness: [242.09655265250535]
+2023-04-19 22:19:01,320 [MainThread  ] [INFO ]  Evaluations: 410. fitness: [242.09655265250535]
+2023-04-19 22:19:01,322 [MainThread  ] [INFO ]  Evaluations: 420. fitness: [242.09655265250535]
+2023-04-19 22:19:01,325 [MainThread  ] [INFO ]  Evaluations: 430. fitness: [242.09655265250535]
+2023-04-19 22:19:01,327 [MainThread  ] [INFO ]  Evaluations: 440. fitness: [242.09655265250535]
+2023-04-19 22:19:01,330 [MainThread  ] [INFO ]  Evaluations: 450. fitness: [242.09655265250535]
+2023-04-19 22:19:01,332 [MainThread  ] [INFO ]  Evaluations: 460. fitness: [242.09655265250535]
+2023-04-19 22:19:01,335 [MainThread  ] [INFO ]  Evaluations: 470. fitness: [242.09655265250535]
+2023-04-19 22:19:01,337 [MainThread  ] [INFO ]  Evaluations: 480. fitness: [242.09655265250535]
+2023-04-19 22:19:01,338 [MainThread  ] [INFO ]  Evaluations: 490. fitness: [242.09655265250535]
+2023-04-19 22:19:01,340 [MainThread  ] [INFO ]  Evaluations: 500. fitness: [242.09655265250535]
+2023-04-19 22:19:01,349 [MainThread  ] [INFO ]  Evaluations: 510. fitness: [242.09655265250535]
+2023-04-19 22:19:01,352 [MainThread  ] [INFO ]  Evaluations: 520. fitness: [242.09655265250535]
+2023-04-19 22:19:01,355 [MainThread  ] [INFO ]  Evaluations: 530. fitness: [242.09655265250535]
+2023-04-19 22:19:01,357 [MainThread  ] [INFO ]  Evaluations: 540. fitness: [242.09655265250535]
+2023-04-19 22:19:01,358 [MainThread  ] [INFO ]  Evaluations: 550. fitness: [242.09655265250535]
+2023-04-19 22:19:01,360 [MainThread  ] [INFO ]  Evaluations: 560. fitness: [242.09655265250535]
+2023-04-19 22:19:01,362 [MainThread  ] [INFO ]  Evaluations: 570. fitness: [242.09655265250535]
+2023-04-19 22:19:01,363 [MainThread  ] [INFO ]  Evaluations: 580. fitness: [242.09655265250535]
+2023-04-19 22:19:01,365 [MainThread  ] [INFO ]  Evaluations: 590. fitness: [242.09655265250535]
+2023-04-19 22:19:01,367 [MainThread  ] [INFO ]  Evaluations: 600. fitness: [242.09655265250535]
+2023-04-19 22:19:01,369 [MainThread  ] [INFO ]  Evaluations: 610. fitness: [242.09655265250535]
+2023-04-19 22:19:01,370 [MainThread  ] [INFO ]  Evaluations: 620. fitness: [242.09655265250535]
+2023-04-19 22:19:01,372 [MainThread  ] [INFO ]  Evaluations: 630. fitness: [242.09655265250535]
+2023-04-19 22:19:01,374 [MainThread  ] [INFO ]  Evaluations: 640. fitness: [242.09655265250535]
+2023-04-19 22:19:01,376 [MainThread  ] [INFO ]  Evaluations: 650. fitness: [242.09655265250535]
+2023-04-19 22:19:01,377 [MainThread  ] [INFO ]  Evaluations: 660. fitness: [242.09655265250535]
+2023-04-19 22:19:01,379 [MainThread  ] [INFO ]  Evaluations: 670. fitness: [242.09655265250535]
+2023-04-19 22:19:01,381 [MainThread  ] [INFO ]  Evaluations: 680. fitness: [242.09655265250535]
+2023-04-19 22:19:01,382 [MainThread  ] [INFO ]  Evaluations: 690. fitness: [242.09655265250535]
+2023-04-19 22:19:01,384 [MainThread  ] [INFO ]  Evaluations: 700. fitness: [242.09655265250535]
+2023-04-19 22:19:01,386 [MainThread  ] [INFO ]  Evaluations: 710. fitness: [242.09655265250535]
+2023-04-19 22:19:01,388 [MainThread  ] [INFO ]  Evaluations: 720. fitness: [242.09655265250535]
+2023-04-19 22:19:01,390 [MainThread  ] [INFO ]  Evaluations: 730. fitness: [242.09655265250535]
+2023-04-19 22:19:01,394 [MainThread  ] [INFO ]  Evaluations: 740. fitness: [242.09655265250535]
+2023-04-19 22:19:01,398 [MainThread  ] [INFO ]  Evaluations: 750. fitness: [242.09655265250535]
+2023-04-19 22:19:01,401 [MainThread  ] [INFO ]  Evaluations: 760. fitness: [242.09655265250535]
+2023-04-19 22:19:01,405 [MainThread  ] [INFO ]  Evaluations: 770. fitness: [242.09655265250535]
+2023-04-19 22:19:01,407 [MainThread  ] [INFO ]  Evaluations: 780. fitness: [242.09655265250535]
+2023-04-19 22:19:01,408 [MainThread  ] [INFO ]  Evaluations: 790. fitness: [242.09655265250535]
+2023-04-19 22:19:01,410 [MainThread  ] [INFO ]  Evaluations: 800. fitness: [242.09655265250535]
+2023-04-19 22:19:01,412 [MainThread  ] [INFO ]  Evaluations: 810. fitness: [242.09655265250535]
+2023-04-19 22:19:01,413 [MainThread  ] [INFO ]  Evaluations: 820. fitness: [242.09655265250535]
+2023-04-19 22:19:01,415 [MainThread  ] [INFO ]  Evaluations: 830. fitness: [242.09655265250535]
+2023-04-19 22:19:01,416 [MainThread  ] [INFO ]  Evaluations: 840. fitness: [242.09655265250535]
+2023-04-19 22:19:01,418 [MainThread  ] [INFO ]  Evaluations: 850. fitness: [242.09655265250535]
+2023-04-19 22:19:01,419 [MainThread  ] [INFO ]  Evaluations: 860. fitness: [242.09655265250535]
+2023-04-19 22:19:01,421 [MainThread  ] [INFO ]  Evaluations: 870. fitness: [242.09655265250535]
+2023-04-19 22:19:01,423 [MainThread  ] [INFO ]  Evaluations: 880. fitness: [242.09655265250535]
+2023-04-19 22:19:01,424 [MainThread  ] [INFO ]  Evaluations: 890. fitness: [242.09655265250535]
+2023-04-19 22:19:01,426 [MainThread  ] [INFO ]  Evaluations: 900. fitness: [242.09655265250535]
+2023-04-19 22:19:01,428 [MainThread  ] [INFO ]  Evaluations: 910. fitness: [242.09655265250535]
+2023-04-19 22:19:01,433 [MainThread  ] [INFO ]  Evaluations: 920. fitness: [242.09655265250535]
+2023-04-19 22:19:01,437 [MainThread  ] [INFO ]  Evaluations: 930. fitness: [242.09655265250535]
+2023-04-19 22:19:01,448 [MainThread  ] [INFO ]  Evaluations: 940. fitness: [242.09655265250535]
+2023-04-19 22:19:01,452 [MainThread  ] [INFO ]  Evaluations: 950. fitness: [242.09655265250535]
+2023-04-19 22:19:01,456 [MainThread  ] [INFO ]  Evaluations: 960. fitness: [242.09655265250535]
+2023-04-19 22:19:01,460 [MainThread  ] [INFO ]  Evaluations: 970. fitness: [242.09655265250535]
+2023-04-19 22:19:01,463 [MainThread  ] [INFO ]  Evaluations: 980. fitness: [242.09655265250535]
+2023-04-19 22:19:01,466 [MainThread  ] [INFO ]  Evaluations: 990. fitness: [242.09655265250535]
+2023-04-19 22:19:01,468 [MainThread  ] [INFO ]  Evaluations: 1000. fitness: [242.09655265250535]
+2023-04-19 22:24:22,456 [MainThread  ] [INFO ]  Evaluations: 100. fitness: [330.01144127525873]
+2023-04-19 22:24:22,459 [MainThread  ] [INFO ]  Evaluations: 110. fitness: [268.3358198339914]
+2023-04-19 22:24:22,461 [MainThread  ] [INFO ]  Evaluations: 120. fitness: [268.3358198339914]
+2023-04-19 22:24:22,464 [MainThread  ] [INFO ]  Evaluations: 130. fitness: [268.3358198339914]
+2023-04-19 22:24:22,466 [MainThread  ] [INFO ]  Evaluations: 140. fitness: [268.3358198339914]
+2023-04-19 22:24:22,469 [MainThread  ] [INFO ]  Evaluations: 150. fitness: [268.3358198339914]
+2023-04-19 22:24:22,471 [MainThread  ] [INFO ]  Evaluations: 160. fitness: [268.3358198339914]
+2023-04-19 22:24:22,475 [MainThread  ] [INFO ]  Evaluations: 170. fitness: [268.3358198339914]
+2023-04-19 22:24:22,478 [MainThread  ] [INFO ]  Evaluations: 180. fitness: [268.3358198339914]
+2023-04-19 22:24:22,482 [MainThread  ] [INFO ]  Evaluations: 190. fitness: [268.3358198339914]
+2023-04-19 22:24:22,486 [MainThread  ] [INFO ]  Evaluations: 200. fitness: [268.3358198339914]
+2023-04-19 22:24:22,488 [MainThread  ] [INFO ]  Evaluations: 210. fitness: [268.3358198339914]
+2023-04-19 22:24:22,490 [MainThread  ] [INFO ]  Evaluations: 220. fitness: [268.3358198339914]
+2023-04-19 22:24:22,492 [MainThread  ] [INFO ]  Evaluations: 230. fitness: [268.3358198339914]
+2023-04-19 22:24:22,495 [MainThread  ] [INFO ]  Evaluations: 240. fitness: [268.3358198339914]
+2023-04-19 22:24:22,498 [MainThread  ] [INFO ]  Evaluations: 250. fitness: [268.3358198339914]
+2023-04-19 22:24:22,499 [MainThread  ] [INFO ]  Evaluations: 260. fitness: [268.3358198339914]
+2023-04-19 22:24:22,501 [MainThread  ] [INFO ]  Evaluations: 270. fitness: [268.3358198339914]
+2023-04-19 22:24:22,502 [MainThread  ] [INFO ]  Evaluations: 280. fitness: [268.3358198339914]
+2023-04-19 22:24:22,507 [MainThread  ] [INFO ]  Evaluations: 290. fitness: [268.3358198339914]
+2023-04-19 22:24:22,510 [MainThread  ] [INFO ]  Evaluations: 300. fitness: [268.3358198339914]
+2023-04-19 22:24:22,512 [MainThread  ] [INFO ]  Evaluations: 310. fitness: [268.3358198339914]
+2023-04-19 22:24:22,514 [MainThread  ] [INFO ]  Evaluations: 320. fitness: [268.3358198339914]
+2023-04-19 22:24:22,516 [MainThread  ] [INFO ]  Evaluations: 330. fitness: [268.3358198339914]
+2023-04-19 22:24:22,517 [MainThread  ] [INFO ]  Evaluations: 340. fitness: [268.3358198339914]
+2023-04-19 22:24:22,519 [MainThread  ] [INFO ]  Evaluations: 350. fitness: [268.3358198339914]
+2023-04-19 22:24:22,520 [MainThread  ] [INFO ]  Evaluations: 360. fitness: [268.3358198339914]
+2023-04-19 22:24:22,521 [MainThread  ] [INFO ]  Evaluations: 370. fitness: [268.3358198339914]
+2023-04-19 22:24:22,523 [MainThread  ] [INFO ]  Evaluations: 380. fitness: [268.3358198339914]
+2023-04-19 22:24:22,525 [MainThread  ] [INFO ]  Evaluations: 390. fitness: [268.3358198339914]
+2023-04-19 22:24:22,526 [MainThread  ] [INFO ]  Evaluations: 400. fitness: [268.3358198339914]
+2023-04-19 22:24:22,528 [MainThread  ] [INFO ]  Evaluations: 410. fitness: [268.3358198339914]
+2023-04-19 22:24:22,530 [MainThread  ] [INFO ]  Evaluations: 420. fitness: [268.3358198339914]
+2023-04-19 22:24:22,533 [MainThread  ] [INFO ]  Evaluations: 430. fitness: [268.3358198339914]
+2023-04-19 22:24:22,534 [MainThread  ] [INFO ]  Evaluations: 440. fitness: [268.3358198339914]
+2023-04-19 22:24:22,536 [MainThread  ] [INFO ]  Evaluations: 450. fitness: [268.3358198339914]
+2023-04-19 22:24:22,538 [MainThread  ] [INFO ]  Evaluations: 460. fitness: [268.3358198339914]
+2023-04-19 22:24:22,539 [MainThread  ] [INFO ]  Evaluations: 470. fitness: [268.3358198339914]
+2023-04-19 22:24:22,541 [MainThread  ] [INFO ]  Evaluations: 480. fitness: [268.3358198339914]
+2023-04-19 22:24:22,542 [MainThread  ] [INFO ]  Evaluations: 490. fitness: [268.3358198339914]
+2023-04-19 22:24:22,544 [MainThread  ] [INFO ]  Evaluations: 500. fitness: [268.3358198339914]
+2023-04-19 22:24:22,547 [MainThread  ] [INFO ]  Evaluations: 510. fitness: [268.3358198339914]
+2023-04-19 22:24:22,553 [MainThread  ] [INFO ]  Evaluations: 520. fitness: [268.3358198339914]
+2023-04-19 22:24:22,557 [MainThread  ] [INFO ]  Evaluations: 530. fitness: [268.3358198339914]
+2023-04-19 22:24:22,564 [MainThread  ] [INFO ]  Evaluations: 540. fitness: [268.3358198339914]
+2023-04-19 22:24:22,569 [MainThread  ] [INFO ]  Evaluations: 550. fitness: [268.3358198339914]
+2023-04-19 22:24:22,573 [MainThread  ] [INFO ]  Evaluations: 560. fitness: [268.3358198339914]
+2023-04-19 22:24:22,577 [MainThread  ] [INFO ]  Evaluations: 570. fitness: [268.3358198339914]
+2023-04-19 22:24:22,581 [MainThread  ] [INFO ]  Evaluations: 580. fitness: [268.3358198339914]
+2023-04-19 22:24:22,583 [MainThread  ] [INFO ]  Evaluations: 590. fitness: [268.3358198339914]
+2023-04-19 22:24:22,585 [MainThread  ] [INFO ]  Evaluations: 600. fitness: [268.3358198339914]
+2023-04-19 22:24:22,587 [MainThread  ] [INFO ]  Evaluations: 610. fitness: [268.3358198339914]
+2023-04-19 22:24:22,590 [MainThread  ] [INFO ]  Evaluations: 620. fitness: [268.3358198339914]
+2023-04-19 22:24:22,592 [MainThread  ] [INFO ]  Evaluations: 630. fitness: [268.3358198339914]
+2023-04-19 22:24:22,595 [MainThread  ] [INFO ]  Evaluations: 640. fitness: [268.3358198339914]
+2023-04-19 22:24:22,596 [MainThread  ] [INFO ]  Evaluations: 650. fitness: [268.3358198339914]
+2023-04-19 22:24:22,598 [MainThread  ] [INFO ]  Evaluations: 660. fitness: [268.3358198339914]
+2023-04-19 22:24:22,599 [MainThread  ] [INFO ]  Evaluations: 670. fitness: [268.3358198339914]
+2023-04-19 22:24:22,601 [MainThread  ] [INFO ]  Evaluations: 680. fitness: [268.3358198339914]
+2023-04-19 22:24:22,602 [MainThread  ] [INFO ]  Evaluations: 690. fitness: [268.3358198339914]
+2023-04-19 22:24:22,604 [MainThread  ] [INFO ]  Evaluations: 700. fitness: [268.3358198339914]
+2023-04-19 22:24:22,606 [MainThread  ] [INFO ]  Evaluations: 710. fitness: [268.3358198339914]
+2023-04-19 22:24:22,608 [MainThread  ] [INFO ]  Evaluations: 720. fitness: [268.3358198339914]
+2023-04-19 22:24:22,611 [MainThread  ] [INFO ]  Evaluations: 730. fitness: [268.3358198339914]
+2023-04-19 22:24:22,615 [MainThread  ] [INFO ]  Evaluations: 740. fitness: [268.3358198339914]
+2023-04-19 22:24:22,619 [MainThread  ] [INFO ]  Evaluations: 750. fitness: [268.3358198339914]
+2023-04-19 22:24:22,622 [MainThread  ] [INFO ]  Evaluations: 760. fitness: [268.3358198339914]
+2023-04-19 22:24:22,624 [MainThread  ] [INFO ]  Evaluations: 770. fitness: [268.3358198339914]
+2023-04-19 22:24:22,626 [MainThread  ] [INFO ]  Evaluations: 780. fitness: [268.3358198339914]
+2023-04-19 22:24:22,628 [MainThread  ] [INFO ]  Evaluations: 790. fitness: [268.3358198339914]
+2023-04-19 22:24:22,630 [MainThread  ] [INFO ]  Evaluations: 800. fitness: [268.3358198339914]
+2023-04-19 22:24:22,632 [MainThread  ] [INFO ]  Evaluations: 810. fitness: [268.3358198339914]
+2023-04-19 22:24:22,634 [MainThread  ] [INFO ]  Evaluations: 820. fitness: [268.3358198339914]
+2023-04-19 22:24:22,636 [MainThread  ] [INFO ]  Evaluations: 830. fitness: [268.3358198339914]
+2023-04-19 22:24:22,639 [MainThread  ] [INFO ]  Evaluations: 840. fitness: [268.3358198339914]
+2023-04-19 22:24:22,642 [MainThread  ] [INFO ]  Evaluations: 850. fitness: [268.3358198339914]
+2023-04-19 22:24:22,645 [MainThread  ] [INFO ]  Evaluations: 860. fitness: [268.3358198339914]
+2023-04-19 22:24:22,646 [MainThread  ] [INFO ]  Evaluations: 870. fitness: [268.3358198339914]
+2023-04-19 22:24:22,648 [MainThread  ] [INFO ]  Evaluations: 880. fitness: [268.3358198339914]
+2023-04-19 22:24:22,649 [MainThread  ] [INFO ]  Evaluations: 890. fitness: [268.3358198339914]
+2023-04-19 22:24:22,653 [MainThread  ] [INFO ]  Evaluations: 900. fitness: [268.3358198339914]
+2023-04-19 22:24:22,655 [MainThread  ] [INFO ]  Evaluations: 910. fitness: [268.3358198339914]
+2023-04-19 22:24:22,656 [MainThread  ] [INFO ]  Evaluations: 920. fitness: [268.3358198339914]
+2023-04-19 22:24:22,659 [MainThread  ] [INFO ]  Evaluations: 930. fitness: [268.3358198339914]
+2023-04-19 22:24:22,661 [MainThread  ] [INFO ]  Evaluations: 940. fitness: [268.3358198339914]
+2023-04-19 22:24:22,662 [MainThread  ] [INFO ]  Evaluations: 950. fitness: [268.3358198339914]
+2023-04-19 22:24:22,664 [MainThread  ] [INFO ]  Evaluations: 960. fitness: [268.3358198339914]
+2023-04-19 22:24:22,666 [MainThread  ] [INFO ]  Evaluations: 970. fitness: [268.3358198339914]
+2023-04-19 22:24:22,668 [MainThread  ] [INFO ]  Evaluations: 980. fitness: [268.3358198339914]
+2023-04-19 22:24:22,670 [MainThread  ] [INFO ]  Evaluations: 990. fitness: [268.3358198339914]
+2023-04-19 22:24:22,672 [MainThread  ] [INFO ]  Evaluations: 1000. fitness: [268.3358198339914]

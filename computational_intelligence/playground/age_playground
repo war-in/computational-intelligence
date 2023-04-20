@@ -67,7 +67,7 @@ if __name__ == "__main__":
             mutation=UniformMutation(probability=0.1),
             crossover=SBXCrossover(probability=0.9),
             selection=RouletteWheelSelection(),
-            termination_criterion=StoppingByEvaluations(1000),
+            termination_criterion=StoppingByEvaluations(100 * int(offspring_size * population_size)),
         )
 
         observer = PrintObjectivesObserver(10)

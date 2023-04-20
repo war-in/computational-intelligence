@@ -150,18 +150,19 @@ class MyAlgorithm(GeneticAlgorithm):
 
         population.sort(key=lambda s: s.objectives[0])
 
-        for p in population:
-            p.age += 1 # increasing age of every solution that survived 
-
-        #print(population[0].age)
-        #print(population[0].variables)
-
         return population[:self.population_size]
     
-    def update_progress(self) -> None:
-        self.evaluations += 10
+    def increase_age(self):
 
-        observable_data = self.get_observable_data()
-        self.observable.notify_all(**observable_data)
+        for s in self.solutions:
+            s.age += 1
+
+    def step(self):
+        mating_population = self.selection(self.solutions)
+        offspring_population = self.reproduction(mating_population)
+        offspring_population = self.evaluate(offspring_population)
+
+        self.solutions = self.replacement(self.solutions, offspring_population)
+        self.increase_age()
 
     
