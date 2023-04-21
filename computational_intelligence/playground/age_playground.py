@@ -1,4 +1,6 @@
 import matplotlib.pyplot as plt
+from age_classes import MyAlgorithm, MyRastrigin
+from jmetal.core.observer import Observer
 from jmetal.lab.visualization import Plot
 from jmetal.operator import (
     BinaryTournamentSelection,
@@ -11,12 +13,8 @@ from jmetal.operator.crossover import CXCrossover, PMXCrossover, SBXCrossover
 from jmetal.operator.selection import BestSolutionSelection, RouletteWheelSelection
 from jmetal.problem.singleobjective.unconstrained import OneMax, Rastrigin, Sphere
 from jmetal.util.observer import LOGGER
-from jmetal.core.observer import Observer
 from jmetal.util.solution import get_non_dominated_solutions
 from jmetal.util.termination_criterion import StoppingByEvaluations
-
-from age_classes import MyRastrigin
-from age_classes import MyAlgorithm
 
 
 class PrintObjectivesObserver(Observer):
@@ -47,26 +45,26 @@ class PrintObjectivesObserver(Observer):
             LOGGER.info("Evaluations: {}. fitness: {}".format(evaluations, fitness))
             LOGGER.info("Average age: {}".format(average_age))
 
-if __name__ == "__main__":
 
+if __name__ == "__main__":
     offspring_sizes = [0.1, 0.2, 0.5]
     population_size = 100
-    iterations = 100 
 
     avg_age = []
 
     for offspring_size in offspring_sizes:
-
         problem = MyRastrigin()
 
         algorithm = MyAlgorithm(
             problem=problem,
-            population_size = population_size,
-            offspring_population_size = int(offspring_size * population_size),
+            population_size=population_size,
+            offspring_population_size=int(offspring_size * population_size),
             mutation=UniformMutation(probability=0.1),
             crossover=SBXCrossover(probability=0.9),
             selection=RouletteWheelSelection(),
-            termination_criterion=StoppingByEvaluations(iterations * int(offspring_size * population_size)),
+            termination_criterion=StoppingByEvaluations(
+                100 * int(offspring_size * population_size)
+            ),
         )
 
         observer = PrintObjectivesObserver(10)
@@ -78,10 +76,12 @@ if __name__ == "__main__":
 
     plt.xlabel("Iteracja")
     plt.ylabel("Wiek")
-    #plt.title("A test graph")
+    # plt.title("A test graph")
 
-    for i, data in enumerate(zip(avg_age,  offspring_sizes)):
-       plt.plot(data[0], label=str(data[1] * population_size))
+    for i, data in enumerate(zip(avg_age, offspring_sizes)):
+        print(i)
+        print(data)
+        plt.plot(data[0], label=str(offspring_sizes[i] * population_size))
 
     plt.legend()
     plt.show()
