@@ -51,12 +51,11 @@ if __name__ == "__main__":
 
     offspring_sizes = [0.1, 0.2, 0.5]
     population_size = 100
-    
+    iterations = 100 
 
     avg_age = []
 
     for offspring_size in offspring_sizes:
-
 
         problem = MyRastrigin()
 
@@ -67,7 +66,7 @@ if __name__ == "__main__":
             mutation=UniformMutation(probability=0.1),
             crossover=SBXCrossover(probability=0.9),
             selection=RouletteWheelSelection(),
-            termination_criterion=StoppingByEvaluations(100 * int(offspring_size * population_size)),
+            termination_criterion=StoppingByEvaluations(iterations * int(offspring_size * population_size)),
         )
 
         observer = PrintObjectivesObserver(10)
@@ -82,9 +81,7 @@ if __name__ == "__main__":
     #plt.title("A test graph")
 
     for i, data in enumerate(zip(avg_age,  offspring_sizes)):
-       print(i)
-       print(data)
-       plt.plot(data[0], label=str(offspring_sizes[i] * population_size))
+       plt.plot(data[0], label=str(data[1] * population_size))
 
     plt.legend()
     plt.show()
