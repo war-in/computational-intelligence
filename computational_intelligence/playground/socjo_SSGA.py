@@ -7,6 +7,7 @@ from jmetal.core.algorithm import EvolutionaryAlgorithm, R, S
 from jmetal.core.problem import Problem
 from jmetal.core.solution import FloatSolution
 from jmetal.core.observer import Observer
+from jmetal.core.operator import Crossover
 from jmetal.problem import Sphere
 from jmetal.util.evaluator import Evaluator
 from jmetal.util.generator import Generator
@@ -15,6 +16,7 @@ from jmetal.util.termination_criterion import (
     TerminationCriterion,
 )
 from jmetal.util.observer import LOGGER
+from jmetal.operator.crossover import SBXCrossover
 
 from age_classes import MyRastrigin
 
@@ -40,6 +42,7 @@ class SocioSSGA(EvolutionaryAlgorithm[S, R]):
         population_size: int,
         offspring_population_size: int,
         interaction_probability: float,
+        crossover: Crossover,
         basic_prob: float,
         trust_prob: float,
         cost_prob: float,
@@ -54,6 +57,8 @@ class SocioSSGA(EvolutionaryAlgorithm[S, R]):
         self.COST_PROB = cost_prob
 
         # TODO: check if the probablities all sum up to 1.0
+
+        self.crossover_operator = crossover
 
         self.interaction_probability = interaction_probability
 
@@ -120,27 +125,19 @@ class SocioSSGA(EvolutionaryAlgorithm[S, R]):
             exchange_probability = self.BASIC_PROB + trust_probablity + cost_probability
 
             if (random.uniform(0.0, 1.0) < exchange_probability):
+
+                old_evaluation = ind1.objectives[0]
                 #TODO Implement crossover instead of simpe switching half of genes
-                ind1.variables[: ind1.number_of_variables // 2] = ind2.variables[
-                    : ind2.number_of_variables // 2]               
-                
-                #TODO Check if the solution has better evaluation due to exchange and modify the trust ranking accordingly
-                #new_evaluation = self.evaluate([ind1])
-                #self.ranking[ind2] += 1
+                gene_to_switch = random.randint(0, self.problem.number_of_variables - 1)
+                '''ind1.variables[: ind1.number_of_variables // 2] = ind2.variables[
+                    : ind2.number_of_variables // 2]               '''
+                ind1.variables[gene_to_switch] = ind2.variables[gene_to_switch]
+                new_evaluation = self.evaluate([ind1])
 
-            '''if ind1.objectives[0] < ind2.objectives[0]:
-                ind2.variables[: ind2.number_of_variables // 2] = ind1.variables[
-                    : ind1.number_of_variables // 2
-                ]
-
-                self.ranking[ind1] += 1
-
-            else:
-                ind1.variables[: ind1.number_of_variables // 2] = ind2.variables[
-                    : ind2.number_of_variables // 2
-                ]
-
-                self.ranking[ind2] += 1'''
+                if new_evaluation[0].objectives[0] < old_evaluation:
+                    self.ranking[ind2] = min(self.ranking[ind2] + 1, self.MAX_TRUST)
+                else:
+                    self.ranking[ind2] = max(self.ranking[ind2] - 1, self.MIN_TRUST)
 
         return interacting_population
 
@@ -168,6 +165,20 @@ class SocioSSGA(EvolutionaryAlgorithm[S, R]):
 
     def get_name(self) -> str:
         return "Socio-cognitive SSGA"
+    
+    def get_avgerage_objective(self):
+
+        avg = 0 
+        for sol in self.solutions:
+            avg += sol.objectives[0]
+
+        return avg / len(self.solutions)
+    
+    def get_observable_data(self) -> dict:
+        return {'PROBLEM': self.problem,
+                'EVALUATIONS': self.evaluations,
+                'SOLUTIONS': self.get_result(),
+                'AVERAGE_SOLUTIONS': self.get_avgerage_objective()}
 
 
 class PrintObjectivesObserver(Observer):
@@ -178,10 +189,12 @@ class PrintObjectivesObserver(Observer):
         self.display_frequency = frequency
         self.epoch = []
         self.fitness = []
+        self.average_fitness = []
 
     def update(self, *args, **kwargs):
         evaluations = kwargs["EVALUATIONS"]
         solutions = kwargs["SOLUTIONS"]
+        average_solutions = kwargs["AVERAGE_SOLUTIONS"]
 
         if (evaluations % self.display_frequency) == 0 and solutions:
             if isinstance(solutions, list):
@@ -191,33 +204,62 @@ class PrintObjectivesObserver(Observer):
 
             self.epoch.append(evaluations)
             self.fitness.append(fitness)
+            self.average_fitness.append(average_solutions)
 
             LOGGER.info("Evaluations: {}. fitness: {}".format(evaluations, fitness))
 
 if __name__ == "__main__":
+
+    basic_probs = [0.2, 0.3, 0.4, 0.1]
+    trust_probs = [0.7, 0.6, 0.5, 0.5]
+    cost_probs =  [0.1, 0.1, 0.1, 0.4]
+
     problem = MyRastrigin()
 
     fitness = []
+    average_fitness = []
 
-    socio = SocioSSGA(
-        problem=problem,
-        population_size=100,
-        offspring_population_size=1,
-        interaction_probability=1.0,
-        basic_prob= 0.98,
-        trust_prob= 0.01,
-        cost_prob= 0.01,
-        termination_criterion=StoppingByEvaluations(1000),
-    )
+    for i, data in enumerate(zip(basic_probs,  trust_probs, cost_probs)):
 
-    observer = PrintObjectivesObserver(10)
-    socio.observable.register(observer)
+        socio = SocioSSGA(
+            problem=problem,
+            population_size=100,
+            offspring_population_size=1,
+            interaction_probability=1.0,
+            crossover=SBXCrossover(probability=0.9),
+            basic_prob= data[0],
+            trust_prob= data[1],
+            cost_prob= data[2],
+            termination_criterion=StoppingByEvaluations(1500),
+        )
 
-    socio.run()
+        observer = PrintObjectivesObserver(10)
+        socio.observable.register(observer)
 
-    fitness.append(observer.fitness)
+        socio.run()
 
-    print(socio.get_result())
+        fitness.append(observer.fitness)
+        average_fitness.append(observer.average_fitness)
 
-    plt.plot(observer.fitness)
+    for i, data in enumerate(zip(fitness, average_fitness)):
+        plt.title("Basic prob: " + str(basic_probs[i]) + 
+                  " Trust prob: " + str(trust_probs[i]) + 
+                  " Cost prob: " + str(cost_probs[i]))
+        plt.plot(data[0], label= "fitness")
+        plt.plot(data[1], label= "average_fitness")
+        plt.legend()
+        plt.show()
+
+    for i, data in enumerate(zip(fitness, basic_probs)):
+        plt.plot(data[0], label=str(data[1]))
+
+    plt.legend()
     plt.show()
+
+    
+    for i, data in enumerate(zip(average_fitness, basic_probs)):
+        plt.plot(data[0], label=str(data[1]))
+
+    plt.legend()
+    plt.show()
+
