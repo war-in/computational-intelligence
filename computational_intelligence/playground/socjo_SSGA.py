@@ -1,22 +1,23 @@
 import random
 from typing import Dict, List
-from numpy import interp
+
 import matplotlib.pyplot as plt
+from age_classes import MyRastrigin
 from jmetal.config import store
 from jmetal.core.algorithm import EvolutionaryAlgorithm, R, S
+from jmetal.core.observer import Observer
 from jmetal.core.problem import Problem
 from jmetal.core.solution import FloatSolution
-from jmetal.core.observer import Observer
 from jmetal.problem import Sphere
 from jmetal.util.evaluator import Evaluator
 from jmetal.util.generator import Generator
+from jmetal.util.observer import LOGGER
 from jmetal.util.termination_criterion import (
     StoppingByEvaluations,
     TerminationCriterion,
 )
-from jmetal.util.observer import LOGGER
+from numpy import interp
 
-from age_classes import MyRastrigin
 
 class SocioSSGA(EvolutionaryAlgorithm[S, R]):
     """
@@ -30,9 +31,9 @@ class SocioSSGA(EvolutionaryAlgorithm[S, R]):
     """
     MAX_TRUST: int = 100
     MIN_TRUST: int = 0
-    BASIC_PROB: float # Minimal probablity that the exchange will occur
-    TRUST_PROB: float # Weight of probability gained from trust ranking
-    COST_PROB: float # Weight of probability gained from better evaluation
+    BASIC_PROB: float  # Minimal probablity that the exchange will occur
+    TRUST_PROB: float  # Weight of probability gained from trust ranking
+    COST_PROB: float  # Weight of probability gained from better evaluation
 
     def __init__(
         self,
@@ -65,7 +66,6 @@ class SocioSSGA(EvolutionaryAlgorithm[S, R]):
         self.observable.register(termination_criterion)
 
     def create_initial_solutions(self) -> List[S]:
-
         sol = [
             self.population_generator.new(self.problem)
             for _ in range(self.population_size)
@@ -108,10 +108,9 @@ class SocioSSGA(EvolutionaryAlgorithm[S, R]):
         for ind1, ind2 in zip(
             interacting_population[: length // 2], interacting_population[length // 2 :]
         ):
-            
             trust_probablity = self.TRUST_PROB * (self.ranking[ind2] / self.MAX_TRUST)
 
-            #TODO How to compute the Cost probablity ?
+            # TODO How to compute the Cost probablity ?
             if ind1.objectives[0] < ind2.objectives[0]:
                 cost_probability = 0
             else:
@@ -119,16 +118,17 @@ class SocioSSGA(EvolutionaryAlgorithm[S, R]):
 
             exchange_probability = self.BASIC_PROB + trust_probablity + cost_probability
 
-            if (random.uniform(0.0, 1.0) < exchange_probability):
-                #TODO Implement crossover instead of simpe switching half of genes
+            if random.uniform(0.0, 1.0) < exchange_probability:
+                # TODO Implement crossover instead of simpe switching half of genes
                 ind1.variables[: ind1.number_of_variables // 2] = ind2.variables[
-                    : ind2.number_of_variables // 2]               
-                
-                #TODO Check if the solution has better evaluation due to exchange and modify the trust ranking accordingly
-                #new_evaluation = self.evaluate([ind1])
-                #self.ranking[ind2] += 1
+                    : ind2.number_of_variables // 2
+                ]
 
-            '''if ind1.objectives[0] < ind2.objectives[0]:
+                # TODO Check if the solution has better evaluation due to exchange and modify the trust ranking accordingly
+                # new_evaluation = self.evaluate([ind1])
+                # self.ranking[ind2] += 1
+
+            """if ind1.objectives[0] < ind2.objectives[0]:
                 ind2.variables[: ind2.number_of_variables // 2] = ind1.variables[
                     : ind1.number_of_variables // 2
                 ]
@@ -140,7 +140,7 @@ class SocioSSGA(EvolutionaryAlgorithm[S, R]):
                     : ind2.number_of_variables // 2
                 ]
 
-                self.ranking[ind2] += 1'''
+                self.ranking[ind2] += 1"""
 
         return interacting_population
 
@@ -194,6 +194,7 @@ class PrintObjectivesObserver(Observer):
 
             LOGGER.info("Evaluations: {}. fitness: {}".format(evaluations, fitness))
 
+
 if __name__ == "__main__":
     problem = MyRastrigin()
 
@@ -204,9 +205,9 @@ if __name__ == "__main__":
         population_size=100,
         offspring_population_size=1,
         interaction_probability=1.0,
-        basic_prob= 0.98,
-        trust_prob= 0.01,
-        cost_prob= 0.01,
+        basic_prob=0.98,
+        trust_prob=0.01,
+        cost_prob=0.01,
         termination_criterion=StoppingByEvaluations(1000),
     )
 
