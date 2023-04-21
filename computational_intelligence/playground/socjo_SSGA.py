@@ -126,11 +126,10 @@ class SocioSSGA(EvolutionaryAlgorithm[S, R]):
 
             if random.uniform(0.0, 1.0) < exchange_probability:
                 old_evaluation = ind1.objectives[0]
-                # TODO Implement crossover instead of simpe switching half of genes
+                # TODO Implement crossover instead of simpe switching one gene
                 gene_to_switch = random.randint(0, self.problem.number_of_variables - 1)
-                """ind1.variables[: ind1.number_of_variables // 2] = ind2.variables[
-                    : ind2.number_of_variables // 2]               """
                 ind1.variables[gene_to_switch] = ind2.variables[gene_to_switch]
+
                 new_evaluation = self.evaluate([ind1])
 
                 if new_evaluation[0].objectives[0] < old_evaluation:
