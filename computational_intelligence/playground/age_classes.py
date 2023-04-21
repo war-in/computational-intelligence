@@ -29,6 +29,9 @@ class MySolution(FloatSolution):
         new_solution.attributes = self.attributes.copy()
         return new_solution
     
+    def __hash__(self):
+        return id(self)
+    
 class MyFloatProblem (FloatProblem):
 
     def __init__(self):
