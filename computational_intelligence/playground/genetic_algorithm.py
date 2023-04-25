@@ -19,6 +19,9 @@ from jmetal.util.observer import LOGGER
 from jmetal.util.solution import get_non_dominated_solutions
 from jmetal.util.termination_criterion import StoppingByEvaluations
 
+from computational_intelligence.playground.age_classes import MyRastrigin
+from computational_intelligence.playground.socjo_SSGA import SocioSSGA
+
 
 class PrintObjectivesObserver(Observer):
     def __init__(self, frequency: float = 1.0) -> None:
@@ -35,9 +38,9 @@ class PrintObjectivesObserver(Observer):
 
         if (evaluations % self.display_frequency) == 0 and solutions:
             if isinstance(solutions, list):
-                fitness = solutions[0].objectives
+                fitness = sorted(solutions, key=lambda solution: solution.objectives[0])
             else:
-                fitness = solutions.objectives
+                fitness = solutions.objectives[0]
 
             self.epoch.append(evaluations)
             self.fitness.append(fitness)
@@ -46,32 +49,38 @@ class PrintObjectivesObserver(Observer):
 
 
 if __name__ == "__main__":
-    problem = Sphere(50)
+    problem = MyRastrigin(50)
 
     mutation_algorithms = [
-        PolynomialMutation(probability=0.1),
-        SimpleRandomMutation(probability=0.1),
+        # PolynomialMutation(probability=0.1),
+        # SimpleRandomMutation(probability=0.1),
         UniformMutation(probability=0.1),
     ]
     fitness = []
 
     for mutation_algorithm in mutation_algorithms:
-        algorithm = GeneticAlgorithm(
+        algorithm = SocioSSGA(
             problem=problem,
-            population_size=10,
+            population_size=100,
             offspring_population_size=1,
-            mutation=mutation_algorithm,
+            interaction_probability=0.5,
+            mutation_probability=0.05,
             crossover=SBXCrossover(probability=0.9),
-            selection=BestSolutionSelection(),
-            termination_criterion=StoppingByEvaluations(10000),
+            basic_prob=0.1,
+            trust_prob=0.6,
+            cost_prob=0.3,
+            max_switched_genes=4,
+            termination_criterion=StoppingByEvaluations(1500),
         )
 
-        observer = PrintObjectivesObserver(1)
+        observer = PrintObjectivesObserver(10)
         algorithm.observable.register(observer)
 
         algorithm.run()
 
         fitness.append(observer.fitness)
+
+    print(fitness)
 
     plt.xlabel("Ewaluacje")
     plt.ylabel("Fitness")
