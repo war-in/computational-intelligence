@@ -99,7 +99,7 @@ class SocioSSGA(EvolutionaryAlgorithm[S, R]):
         :return: Selected solutions.
         """
         return random.sample(
-            population, int(len(population) * self.interaction_probability * 2) // 2
+            population, int(len(population) * self.interaction_probability // 2) * 2
         )
 
     def interaction(self, interacting_population: List[FloatSolution]):
@@ -146,6 +146,7 @@ class SocioSSGA(EvolutionaryAlgorithm[S, R]):
                 self.mutation(ind1)
 
                 new_evaluation = self.evaluate([ind1])
+                self.evaluations += 1
 
                 if new_evaluation[0].objectives[0] < old_evaluation:
                     self.ranking[ind2] += 1
@@ -156,7 +157,7 @@ class SocioSSGA(EvolutionaryAlgorithm[S, R]):
                     self.ranking[ind1] += 1
 
                     ind1.variables = old_variables
-                    self.evaluate([ind1])
+                    ind1.objectives[0] = old_evaluation
 
     def evaluate(self, solution_list: List[S]) -> List[S]:
         """
@@ -188,12 +189,17 @@ class SocioSSGA(EvolutionaryAlgorithm[S, R]):
     ) -> List[S]:
         pass
 
+    def update_progress(self) -> None:
+        observable_data = self.get_observable_data()
+        self.observable.notify_all(**observable_data)
+
     def get_observable_data(self) -> dict:
         return {
             "PROBLEM": self.problem,
             "EVALUATIONS": self.evaluations,
             "SOLUTIONS": self.get_result(),
             "AVERAGE_SOLUTIONS": self.get_average_objective(),
+            "RANKING": self.ranking,
         }
 
     def get_average_objective(self):
@@ -239,12 +245,13 @@ class PrintObjectivesObserver2(Observer):
 
 
 if __name__ == "__main__":
-    basic_probs = [0.2, 0.3, 0.4, 0.1]
-    trust_probs = [0.7, 0.6, 0.5, 0.5]
-    cost_probs = [0.1, 0.1, 0.1, 0.4]
+    basic_probs = [0.1, 0.2, 0.3, 0.4, 0.1]
+    trust_probs = [0.6, 0.7, 0.6, 0.5, 0.5]
+    cost_probs = [0.3, 0.1, 0.1, 0.1, 0.4]
 
     problem = MyRastrigin(50)
 
+    epoch = []
     fitness = []
     average_fitness = []
 
@@ -260,7 +267,7 @@ if __name__ == "__main__":
             trust_prob=data[1],
             cost_prob=data[2],
             max_switched_genes=4,
-            termination_criterion=StoppingByEvaluations(1500),
+            termination_criterion=StoppingByEvaluations(10000),
         )
 
         observer = PrintObjectivesObserver2(10)
@@ -268,31 +275,20 @@ if __name__ == "__main__":
 
         socio.run()
 
+        epoch.append(observer.epoch)
         fitness.append(observer.fitness)
+
         average_fitness.append(observer.average_fitness)
 
-    for i, data in enumerate(zip(fitness, average_fitness)):
-        plt.title(
-            "Basic prob: "
-            + str(basic_probs[i])
-            + " Trust prob: "
-            + str(trust_probs[i])
-            + " Cost prob: "
-            + str(cost_probs[i])
-        )
-        plt.plot(data[0], label="fitness")
-        plt.plot(data[1], label="average_fitness")
-        plt.legend()
-        plt.show()
-
-    for i, data in enumerate(zip(fitness, basic_probs)):
-        plt.plot(data[0], label=str(data[1]))
-
+    plt.title("Comparison of different probabilities")
+    for i, data in enumerate(zip(epoch, fitness, average_fitness)):
+        plt.plot(data[0], data[1], label="fitness " + str(i))
+        plt.plot(data[0], data[2], label="average_fitness " + str(i))
     plt.legend()
     plt.show()
 
-    for i, data in enumerate(zip(average_fitness, basic_probs)):
-        plt.plot(data[0], label=str(data[1]))
-
+    plt.title("Basic probabilities")
+    for i, data in enumerate(zip(epoch, fitness, basic_probs)):
+        plt.plot(data[0], data[1], label="Basic prob: " + str(data[2]))
     plt.legend()
     plt.show()

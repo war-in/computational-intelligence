@@ -36,7 +36,7 @@ class PrintObjectivesObserver(Observer):
         evaluations = kwargs["EVALUATIONS"]
         solutions = kwargs["SOLUTIONS"]
 
-        if (evaluations % self.display_frequency) == 0 and solutions:
+        if evaluations % self.display_frequency == 0 and solutions:
             if isinstance(solutions, list):
                 fitness = sorted(solutions, key=lambda solution: solution.objectives[0])
             else:
@@ -50,42 +50,49 @@ class PrintObjectivesObserver(Observer):
 
 if __name__ == "__main__":
     problem = MyRastrigin(50)
+    evaluations = 5000
+    population_size = 32
 
-    mutation_algorithms = [
-        # PolynomialMutation(probability=0.1),
-        # SimpleRandomMutation(probability=0.1),
-        UniformMutation(probability=0.1),
-    ]
-    fitness = []
-
-    for mutation_algorithm in mutation_algorithms:
-        algorithm = SocioSSGA(
+    algorithms = [
+        GeneticAlgorithm(
             problem=problem,
-            population_size=100,
+            population_size=population_size,
+            offspring_population_size=population_size // 2,
+            mutation=UniformMutation(probability=0.1),
+            crossover=SBXCrossover(probability=0.9),
+            selection=BestSolutionSelection(),
+            termination_criterion=StoppingByEvaluations(evaluations),
+        ),
+        SocioSSGA(
+            problem=problem,
+            population_size=population_size,
             offspring_population_size=1,
             interaction_probability=0.5,
-            mutation_probability=0.05,
+            mutation_probability=0.1,
             crossover=SBXCrossover(probability=0.9),
-            basic_prob=0.1,
-            trust_prob=0.6,
-            cost_prob=0.3,
+            basic_prob=0.2,
+            trust_prob=0.7,
+            cost_prob=0.1,
             max_switched_genes=4,
-            termination_criterion=StoppingByEvaluations(1500),
-        )
+            termination_criterion=StoppingByEvaluations(evaluations),
+        ),
+    ]
+    fitness = []
+    epoch = []
 
-        observer = PrintObjectivesObserver(10)
+    for algorithm in algorithms:
+        observer = PrintObjectivesObserver(1)
         algorithm.observable.register(observer)
 
         algorithm.run()
 
         fitness.append(observer.fitness)
-
-    print(fitness)
+        epoch.append(observer.epoch)
 
     plt.xlabel("Ewaluacje")
     plt.ylabel("Fitness")
     plt.title("Porównanie różnych operatorów mutacji")
-    for i, data in enumerate(zip(fitness, mutation_algorithms)):
-        plt.plot(data[0], label=data[1].get_name())
+    for i, data in enumerate(zip(epoch, fitness, algorithms)):
+        plt.plot(data[0], data[1], label=data[2].get_name())
     plt.legend()
     plt.show()
