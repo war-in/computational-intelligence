@@ -3,11 +3,13 @@ from copy import copy
 from typing import Dict, List
 
 import matplotlib.pyplot as plt
+from jmetal.operator import UniformMutation
+
 from age_classes import MyRastrigin
 from jmetal.config import store
 from jmetal.core.algorithm import EvolutionaryAlgorithm, R, S
 from jmetal.core.observer import Observer
-from jmetal.core.operator import Crossover
+from jmetal.core.operator import Crossover, Mutation
 from jmetal.core.problem import FloatProblem, Problem
 from jmetal.core.solution import FloatSolution
 from jmetal.operator.crossover import SBXCrossover
@@ -43,7 +45,7 @@ class SocioSSGA(EvolutionaryAlgorithm[S, R]):
         population_size: int,
         offspring_population_size: int,
         interaction_probability: float,
-        mutation_probability: float,
+        mutation: Mutation,
         crossover: Crossover,
         basic_prob: float,
         trust_prob: float,
@@ -66,7 +68,7 @@ class SocioSSGA(EvolutionaryAlgorithm[S, R]):
         self.crossover_operator = crossover
 
         self.interaction_probability = interaction_probability
-        self.mutation_probability = mutation_probability
+        self.mutation_operator = mutation
 
         self.termination_criterion = termination_criterion
 
@@ -143,7 +145,7 @@ class SocioSSGA(EvolutionaryAlgorithm[S, R]):
                     )
                     ind1.variables[gene_to_switch] = ind2.variables[gene_to_switch]
 
-                self.mutation(ind1)
+                self.mutation_operator.execute(ind1)
 
                 new_evaluation = self.evaluate([ind1])
                 self.evaluations += 1
@@ -261,7 +263,7 @@ if __name__ == "__main__":
             population_size=100,
             offspring_population_size=1,
             interaction_probability=0.3,
-            mutation_probability=0.05,
+            mutation=UniformMutation(probability=0.5),
             crossover=SBXCrossover(probability=0.9),
             basic_prob=data[0],
             trust_prob=data[1],
