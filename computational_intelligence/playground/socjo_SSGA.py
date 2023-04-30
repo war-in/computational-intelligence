@@ -3,16 +3,16 @@ from copy import copy
 from typing import Dict, List
 
 import matplotlib.pyplot as plt
-from jmetal.operator import UniformMutation
-
-from age_classes import MyRastrigin
 from jmetal.config import store
 from jmetal.core.algorithm import EvolutionaryAlgorithm, R, S
 from jmetal.core.observer import Observer
-from jmetal.core.operator import Crossover, Mutation
+from jmetal.core.operator import Crossover, Mutation, Selection
 from jmetal.core.problem import FloatProblem, Problem
 from jmetal.core.solution import FloatSolution
+from jmetal.operator import BestSolutionSelection, UniformMutation
 from jmetal.operator.crossover import SBXCrossover
+from jmetal.operator.selection import RouletteWheelSelection
+from jmetal.problem.singleobjective.unconstrained import Rastrigin
 from jmetal.util.evaluator import Evaluator
 from jmetal.util.generator import Generator
 from jmetal.util.observer import LOGGER
@@ -21,16 +21,18 @@ from jmetal.util.termination_criterion import (
     TerminationCriterion,
 )
 
+from computational_intelligence.playground.age_classes import MyRastrigin
+
 
 class SocioSSGA(EvolutionaryAlgorithm[S, R]):
     """
     Socio-cognitive steady state genetic algorithm.
     """
 
-    ranking: Dict[S, int] = {}
+    ranking: Dict[int, int] = {}
     """
     Current ranking for solutions.
-    ranking[solution] - "trust" for solution
+    ranking[solution.id] - "trust" for solution
     """
     MAX_TRUST: int = 100
     MIN_TRUST: int = 0
@@ -45,6 +47,7 @@ class SocioSSGA(EvolutionaryAlgorithm[S, R]):
         population_size: int,
         offspring_population_size: int,
         interaction_probability: float,
+        selection: Selection,
         mutation: Mutation,
         crossover: Crossover,
         basic_prob: float,
@@ -68,6 +71,7 @@ class SocioSSGA(EvolutionaryAlgorithm[S, R]):
         self.crossover_operator = crossover
 
         self.interaction_probability = interaction_probability
+        self.selection_operator = selection
         self.mutation_operator = mutation
 
         self.termination_criterion = termination_criterion
@@ -77,21 +81,31 @@ class SocioSSGA(EvolutionaryAlgorithm[S, R]):
 
         self.observable.register(termination_criterion)
 
+        self.interacting_pool_size = (
+            int(self.population_size * self.interaction_probability // 2) * 2
+        )
+
     def create_initial_solutions(self) -> List[S]:
         solutions = [
             self.population_generator.new(self.problem)
             for _ in range(self.population_size)
         ]
 
-        # set trust for each solution to self.MAX_TRUST // 2
-        for solution in solutions:
-            self.ranking[solution] = self.MAX_TRUST // 2
+        # set index and trust for each solution
+        for index, solution in enumerate(solutions):
+            solution.id = index
+            self.ranking[solution.id] = self.MAX_TRUST // 2
 
         return solutions
 
     def step(self):
         interacting_population = self.selection(self.solutions)
         self.interaction(interacting_population)
+
+        ranking = [x[1] for x in sorted(self.ranking.items(), key=lambda x: x[0])]
+
+        plt.plot(ranking)
+        plt.show()
 
     def selection(self, population: List[S]) -> List[S]:
         """
@@ -100,9 +114,13 @@ class SocioSSGA(EvolutionaryAlgorithm[S, R]):
         :param population: Entire population.
         :return: Selected solutions.
         """
-        return random.sample(
-            population, int(len(population) * self.interaction_probability // 2) * 2
-        )
+        interacting_population = []
+
+        for _ in range(self.interacting_pool_size):
+            solution = self.selection_operator.execute(population)
+            interacting_population.append(solution)
+
+        return interacting_population
 
     def interaction(self, interacting_population: List[FloatSolution]):
         """
@@ -117,10 +135,13 @@ class SocioSSGA(EvolutionaryAlgorithm[S, R]):
         if length % 2 != 0:
             raise ValueError("List is not even-length.")
 
-        for ind1, ind2 in zip(
-            interacting_population[: length // 2], interacting_population[length // 2 :]
-        ):
-            trust_probability = self.TRUST_PROB * (self.ranking[ind2] / self.MAX_TRUST)
+        for index in range(0, length, 2):
+            ind1 = interacting_population[index]
+            ind2 = interacting_population[index + 1]
+
+            trust_probability = self.TRUST_PROB * (
+                self.ranking[ind2.id] / self.MAX_TRUST
+            )
 
             # TODO How to compute the Cost probablity ?
             if ind1.objectives[0] < ind2.objectives[0]:
@@ -151,12 +172,12 @@ class SocioSSGA(EvolutionaryAlgorithm[S, R]):
                 self.evaluations += 1
 
                 if new_evaluation[0].objectives[0] < old_evaluation:
-                    self.ranking[ind2] += 1
-                    self.ranking[ind1] -= 1
+                    self.ranking[ind2.id] += 1
+                    self.ranking[ind1.id] -= 1
 
                 else:
-                    self.ranking[ind2] -= 1
-                    self.ranking[ind1] += 1
+                    self.ranking[ind2.id] -= 1
+                    self.ranking[ind1.id] += 1
 
                     ind1.variables = old_variables
                     ind1.objectives[0] = old_evaluation
@@ -171,17 +192,6 @@ class SocioSSGA(EvolutionaryAlgorithm[S, R]):
 
     def stopping_condition_is_met(self) -> bool:
         return self.termination_criterion.is_met
-
-    def mutation(self, individual: S):
-        MAX_MUTATED_GENES = self.problem.number_of_variables // 10
-
-        if random.uniform(0.0, 1.0) < self.mutation_probability:
-            for _ in range(MAX_MUTATED_GENES):
-                gene_to_switch = random.randint(0, self.problem.number_of_variables - 1)
-                individual.variables[gene_to_switch] = random.uniform(
-                    self.problem.lower_bound[gene_to_switch],
-                    self.problem.upper_bound[gene_to_switch],
-                )
 
     def reproduction(self, population: List[S]) -> List[S]:
         pass
@@ -247,11 +257,11 @@ class PrintObjectivesObserver2(Observer):
 
 
 if __name__ == "__main__":
-    basic_probs = [0.1, 0.2, 0.3, 0.4, 0.1]
-    trust_probs = [0.6, 0.7, 0.6, 0.5, 0.5]
-    cost_probs = [0.3, 0.1, 0.1, 0.1, 0.4]
+    basic_probs = [0.1] #, 0.2, 0.3, 0.4, 0.1]
+    trust_probs = [0.6] #, 0.7, 0.6, 0.5, 0.5]
+    cost_probs = [0.3] #, 0.1, 0.1, 0.1, 0.4]
 
-    problem = MyRastrigin(50)
+    problem = Rastrigin(50)
 
     epoch = []
     fitness = []
@@ -262,12 +272,13 @@ if __name__ == "__main__":
             problem=problem,
             population_size=100,
             offspring_population_size=1,
-            interaction_probability=0.3,
-            mutation=UniformMutation(probability=0.5),
+            interaction_probability=0.5,
+            selection=RouletteWheelSelection(),
+            mutation=UniformMutation(probability=0.1),
             crossover=SBXCrossover(probability=0.9),
-            basic_prob=data[0],
-            trust_prob=data[1],
-            cost_prob=data[2],
+            basic_prob=0.2,
+            trust_prob=0.7,
+            cost_prob=0.1,
             max_switched_genes=4,
             termination_criterion=StoppingByEvaluations(10000),
         )
