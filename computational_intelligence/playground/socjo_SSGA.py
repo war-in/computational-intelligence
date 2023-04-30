@@ -102,11 +102,6 @@ class SocioSSGA(EvolutionaryAlgorithm[S, R]):
         interacting_population = self.selection(self.solutions)
         self.interaction(interacting_population)
 
-        ranking = [x[1] for x in sorted(self.ranking.items(), key=lambda x: x[0])]
-
-        plt.plot(ranking)
-        plt.show()
-
     def selection(self, population: List[S]) -> List[S]:
         """
         Select interacting individuals.

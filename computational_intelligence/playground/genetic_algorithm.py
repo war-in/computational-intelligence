@@ -50,14 +50,14 @@ class PrintObjectivesObserver(Observer):
 
 if __name__ == "__main__":
     problem = Rastrigin(200)
-    evaluations = 10000
-    population_size = 100
+    evaluations = 20000
+    population_size = 48
 
     algorithms = [
         GeneticAlgorithm(
             problem=problem,
             population_size=population_size,
-            offspring_population_size=1,
+            offspring_population_size=population_size//2,
             mutation=UniformMutation(probability=0.1),
             crossover=SBXCrossover(probability=0.9),
             selection=RouletteWheelSelection(),
@@ -68,13 +68,13 @@ if __name__ == "__main__":
             population_size=population_size,
             offspring_population_size=1,
             interaction_probability=0.5,
-            selection=BestSolutionSelection(),
+            selection=RouletteWheelSelection(),
             mutation=UniformMutation(probability=0.1),
             crossover=SBXCrossover(probability=0.9),
             basic_prob=0.2,
             trust_prob=0.7,
             cost_prob=0.1,
-            max_switched_genes=4,
+            max_switched_genes=int(problem.number_of_variables * 0.75),
             termination_criterion=StoppingByEvaluations(evaluations),
         ),
     ]
