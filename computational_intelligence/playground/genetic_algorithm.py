@@ -1,25 +1,13 @@
 import matplotlib.pyplot as plt
 from jmetal.algorithm.singleobjective.genetic_algorithm import GeneticAlgorithm
 from jmetal.core.observer import Observer
-from jmetal.core.operator import Crossover
-from jmetal.core.solution import BinarySolution
-from jmetal.lab.visualization import Plot
-from jmetal.operator import (
-    BinaryTournamentSelection,
-    BitFlipMutation,
-    PolynomialMutation,
-    SimpleRandomMutation,
-    UniformMutation,
-)
-from jmetal.operator.crossover import CXCrossover, PMXCrossover, SBXCrossover
-from jmetal.operator.selection import BestSolutionSelection, RouletteWheelSelection
-from jmetal.problem import ZDT1
-from jmetal.problem.singleobjective.unconstrained import OneMax, Rastrigin, Sphere
+from jmetal.operator import UniformMutation
+from jmetal.operator.crossover import SBXCrossover
+from jmetal.operator.selection import RouletteWheelSelection
+from jmetal.problem.singleobjective.unconstrained import Rastrigin
 from jmetal.util.observer import LOGGER
-from jmetal.util.solution import get_non_dominated_solutions
 from jmetal.util.termination_criterion import StoppingByEvaluations
 
-from computational_intelligence.playground.age_classes import MyRastrigin
 from computational_intelligence.playground.socjo_SSGA import SocioSSGA
 
 
@@ -45,7 +33,7 @@ class PrintObjectivesObserver(Observer):
             self.epoch.append(evaluations)
             self.fitness.append(fitness)
 
-            LOGGER.info("Evaluations: {}. fitness: {}".format(evaluations, fitness))
+            LOGGER.info(f"Evaluations: {evaluations}. fitness: {fitness}")
 
 
 if __name__ == "__main__":

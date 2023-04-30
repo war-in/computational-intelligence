@@ -7,9 +7,9 @@ from jmetal.config import store
 from jmetal.core.algorithm import EvolutionaryAlgorithm, R, S
 from jmetal.core.observer import Observer
 from jmetal.core.operator import Crossover, Mutation, Selection
-from jmetal.core.problem import FloatProblem, Problem
+from jmetal.core.problem import Problem
 from jmetal.core.solution import FloatSolution
-from jmetal.operator import BestSolutionSelection, UniformMutation
+from jmetal.operator import UniformMutation
 from jmetal.operator.crossover import SBXCrossover
 from jmetal.operator.selection import RouletteWheelSelection
 from jmetal.problem.singleobjective.unconstrained import Rastrigin
@@ -20,8 +20,6 @@ from jmetal.util.termination_criterion import (
     StoppingByEvaluations,
     TerminationCriterion,
 )
-
-from computational_intelligence.playground.age_classes import MyRastrigin
 
 
 class SocioSSGA(EvolutionaryAlgorithm[S, R]):
