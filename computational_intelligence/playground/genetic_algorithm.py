@@ -57,7 +57,7 @@ if __name__ == "__main__":
         GeneticAlgorithm(
             problem=problem,
             population_size=population_size,
-            offspring_population_size=population_size//2,
+            offspring_population_size=population_size // 2,
             mutation=UniformMutation(probability=0.1),
             crossover=SBXCrossover(probability=0.9),
             selection=RouletteWheelSelection(),

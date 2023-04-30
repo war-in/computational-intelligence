@@ -252,9 +252,9 @@ class PrintObjectivesObserver2(Observer):
 
 
 if __name__ == "__main__":
-    basic_probs = [0.1] #, 0.2, 0.3, 0.4, 0.1]
-    trust_probs = [0.6] #, 0.7, 0.6, 0.5, 0.5]
-    cost_probs = [0.3] #, 0.1, 0.1, 0.1, 0.4]
+    basic_probs = [0.1, 0.2, 0.3, 0.4, 0.1]
+    trust_probs = [0.6, 0.7, 0.6, 0.5, 0.5]
+    cost_probs = [0.3, 0.1, 0.1, 0.1, 0.4]
 
     problem = Rastrigin(50)
 
