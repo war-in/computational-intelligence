@@ -154,7 +154,6 @@ class SocioSSGA(EvolutionaryAlgorithm[S, R]):
                 self.mutation_operator.execute(ind1)
 
                 new_evaluation = self.evaluate([ind1])
-                self.evaluations += 1
 
                 if new_evaluation[0].objectives[0] < old_evaluation:
                     self.ranking[ind2.id] += 1
@@ -173,7 +172,12 @@ class SocioSSGA(EvolutionaryAlgorithm[S, R]):
 
         :param solution_list: List of solutions.
         """
-        return self.population_evaluator.evaluate(solution_list, self.problem)
+        res = self.population_evaluator.evaluate(solution_list, self.problem)
+        self.evaluations += 1
+
+        self.update_progress()
+
+        return res
 
     def stopping_condition_is_met(self) -> bool:
         return self.termination_criterion.is_met
@@ -197,6 +201,7 @@ class SocioSSGA(EvolutionaryAlgorithm[S, R]):
             "SOLUTIONS": self.get_result(),
             "AVERAGE_SOLUTIONS": self.get_average_objective(),
             "RANKING": self.ranking,
+            "ALL_SOLUTIONS": self.solutions,
         }
 
     def get_average_objective(self):
@@ -213,19 +218,23 @@ class SocioSSGA(EvolutionaryAlgorithm[S, R]):
         return "Socio-cognitive SSGA"
 
 
-class PrintObjectivesObserver2(Observer):
+class SocioObserver(Observer):
     def __init__(self, frequency: float = 1.0) -> None:
-        """Show the number of evaluations, the best fitness and computing time.
+        """
+        Show the number of evaluations, the best fitness and computing time.
 
-        :param frequency: Display frequency."""
+        :param frequency: Display frequency.
+        """
         self.display_frequency = frequency
         self.epoch = []
         self.fitness = []
         self.average_fitness = []
+        self.all_variables_per_evaluation = []
 
     def update(self, *args, **kwargs):
         evaluations = kwargs["EVALUATIONS"]
         solutions = kwargs["SOLUTIONS"]
+        all_solutions = kwargs["ALL_SOLUTIONS"]
         average_solutions = kwargs["AVERAGE_SOLUTIONS"]
 
         if (evaluations % self.display_frequency) == 0 and solutions:
@@ -237,5 +246,10 @@ class PrintObjectivesObserver2(Observer):
             self.epoch.append(evaluations)
             self.fitness.append(fitness)
             self.average_fitness.append(average_solutions)
+
+            all_variables = []
+            for solution in all_solutions:
+                all_variables.append(copy(solution.variables))
+            self.all_variables_per_evaluation.append(all_variables)
 
             LOGGER.info("Evaluations: {}. fitness: {}".format(evaluations, fitness))

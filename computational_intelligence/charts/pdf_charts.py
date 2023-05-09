@@ -8,10 +8,7 @@ from jmetal.util.termination_criterion import StoppingByEvaluations
 from matplotlib import pyplot as plt
 from matplotlib.backends.backend_pdf import PdfPages
 
-from computational_intelligence.algorithms.socjo_SSGA import (
-    PrintObjectivesObserver2,
-    SocioSSGA,
-)
+from computational_intelligence.algorithms.socjo_SSGA import SocioObserver, SocioSSGA
 
 
 def save_to_pdf(problems, plots_per_problem, note):
@@ -113,7 +110,7 @@ if __name__ == "__main__":
                 termination_criterion=StoppingByEvaluations(evaluations),
             )
 
-            observer = PrintObjectivesObserver2(observer_freq)
+            observer = SocioObserver(observer_freq)
             socio.observable.register(observer)
 
             socio.run()
