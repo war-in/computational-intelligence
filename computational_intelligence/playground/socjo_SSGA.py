@@ -286,7 +286,7 @@ if __name__ == "__main__":
     interaction_probability = 0.5
     mutation_probability = 0.1
     crossover_probability = 0.9
-    evaluations = 4000
+    evaluations = 10000
     observer_freq = 10
 
     #basic_probs = [0.1]
@@ -311,8 +311,9 @@ if __name__ == "__main__":
     "Offspring size: " + str(offspring_population_size) + "\n" +
     "Interaction probability: " + str(interaction_probability) + "\n" +
     "Mutation probability: " + str(mutation_probability) + "\n" +
-    "Crossover probability: " + str(crossover_probability) + "\n" )
-
+    "Crossover probability: " + str(crossover_probability) + "\n" +
+     "Evaluations: " + str(evaluations) )
+    
     for problem in problems:
 
         epoch = []
@@ -378,14 +379,18 @@ if __name__ == "__main__":
         average_fitness = [average_fitness]'''
 
         plt.figure()
-        plt.title("Comparison of different probabilities (average fitness)")
+        plt.xlabel("Ewaluacje")
+        plt.ylabel("Fitness")
+        plt.title("Comparison of different probabilities (fitness vs average fitness)")
         for i, data2 in enumerate(zip(epoch, fitness, average_fitness)):
-            #plt.plot(data2[0], data2[1], label="fitness " + str(i))
+            plt.plot(data2[0], data2[1], label="fitness " + str(i))
             plt.plot(data2[0], data2[2], label="average_fitness " + str(i))
         plt.legend()
         #plt.show()
 
         plt.figure()
+        plt.xlabel("Ewaluacje")
+        plt.ylabel("Fitness")
         plt.title("Comparison of different probabilities (fitness)")
         for i, data2 in enumerate(zip(epoch, fitness, basic_probs)):
             plt.plot(data2[0], data2[1], label="Basic prob: " + str(data2[2]))
