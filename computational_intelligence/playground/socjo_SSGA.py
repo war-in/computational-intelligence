@@ -1,12 +1,11 @@
-import random
-import numpy as np
 import os
-from datetime import datetime
-from matplotlib.backends.backend_pdf import PdfPages
+import random
 from copy import copy
+from datetime import datetime
 from typing import Dict, List
 
 import matplotlib.pyplot as plt
+import numpy as np
 from jmetal.config import store
 from jmetal.core.algorithm import EvolutionaryAlgorithm, R, S
 from jmetal.core.observer import Observer
@@ -24,6 +23,7 @@ from jmetal.util.termination_criterion import (
     StoppingByEvaluations,
     TerminationCriterion,
 )
+from matplotlib.backends.backend_pdf import PdfPages
 
 
 class SocioSSGA(EvolutionaryAlgorithm[S, R]):
@@ -252,31 +252,33 @@ class PrintObjectivesObserver2(Observer):
 
             LOGGER.info("Evaluations: {}. fitness: {}".format(evaluations, fitness))
 
-def save_to_pdf(problems, plots_per_problem, note):
 
+def save_to_pdf(problems, plots_per_problem, note):
     dir_name = datetime.now().strftime("%d_%m_%Y_%H_%M_%S")
 
     os.mkdir(str(dir_name))
 
-    fig_nums = plt.get_fignums()  
+    fig_nums = plt.get_fignums()
     figs = [plt.figure(n) for n in fig_nums]
 
-    for i in range (0, len(problems)): 
-
-        
-        filename =  str(dir_name) + "/" + problems[i].get_name() + str(problems[i].number_of_variables) + ".pdf"
+    for i in range(0, len(problems)):
+        filename = (
+            str(dir_name)
+            + "/"
+            + problems[i].get_name()
+            + str(problems[i].number_of_variables)
+            + ".pdf"
+        )
         p = PdfPages(filename)
-        p.attach_note(note, [0,0])
+        p.attach_note(note, [0, 0])
         for j in range(0, plots_per_problem):
-
             fig = figs[i * plots_per_problem + j]
-            fig.savefig(p, format='pdf') 
+            fig.savefig(p, format="pdf")
 
-        
-        p.close()  
+        p.close()
+
 
 if __name__ == "__main__":
-
     basic_probs = [0.1, 0.2, 0.3, 0.1]
     trust_probs = [0.6, 0.7, 0.6, 0.5]
     cost_probs = [0.3, 0.1, 0.1, 0.4]
@@ -289,9 +291,9 @@ if __name__ == "__main__":
     evaluations = 10000
     observer_freq = 10
 
-    #basic_probs = [0.1]
-    #trust_probs = [0.6]
-    #cost_probs = [0.3]
+    # basic_probs = [0.1]
+    # trust_probs = [0.6]
+    # cost_probs = [0.3]
 
     sizes = [50, 100, 200]
     problems = []
@@ -300,29 +302,40 @@ if __name__ == "__main__":
         problems.append(Rastrigin(size))
         problems.append(Sphere(size))
 
-    plots_per_problem = 2 # how many charts should be printed for each problem
-    number_of_trials = 1  # number of tests per problem 
+    plots_per_problem = 2  # how many charts should be printed for each problem
+    number_of_trials = 1  # number of tests per problem
 
     epoch = []
     fitness = []
     average_fitness = []
 
-    test_data = ("Population size: " + str(population_size) + "\n" +
-    "Offspring size: " + str(offspring_population_size) + "\n" +
-    "Interaction probability: " + str(interaction_probability) + "\n" +
-    "Mutation probability: " + str(mutation_probability) + "\n" +
-    "Crossover probability: " + str(crossover_probability) + "\n" +
-     "Evaluations: " + str(evaluations) )
-    
-    for problem in problems:
+    test_data = (
+        "Population size: "
+        + str(population_size)
+        + "\n"
+        + "Offspring size: "
+        + str(offspring_population_size)
+        + "\n"
+        + "Interaction probability: "
+        + str(interaction_probability)
+        + "\n"
+        + "Mutation probability: "
+        + str(mutation_probability)
+        + "\n"
+        + "Crossover probability: "
+        + str(crossover_probability)
+        + "\n"
+        + "Evaluations: "
+        + str(evaluations)
+    )
 
+    for problem in problems:
         epoch = []
         fitness = []
         average_fitness = []
 
         for i, data in enumerate(zip(basic_probs, trust_probs, cost_probs)):
-            
-            #for j in range(0, number_of_trials):
+            # for j in range(0, number_of_trials):
 
             socio = SocioSSGA(
                 problem=problem,
@@ -343,16 +356,21 @@ if __name__ == "__main__":
             socio.observable.register(observer)
 
             socio.run()
-            print("Problem: " + problem.get_name() + " " + str(problem.number_of_variables))
+            print(
+                "Problem: "
+                + problem.get_name()
+                + " "
+                + str(problem.number_of_variables)
+            )
             print(len(observer.epoch))
 
             epoch.append(observer.epoch)
             fitness.append(observer.fitness)
             average_fitness.append(observer.average_fitness)
 
-            #epoch = [x + y for x, y in zip(epoch, observer.epoch)] 
-            #fitness = [x + y for x, y in zip(epoch, observer.fitness)]
-            #average_fitness = [x + y for x, y in zip(epoch, observer.average_fitness)] 
+            # epoch = [x + y for x, y in zip(epoch, observer.epoch)]
+            # fitness = [x + y for x, y in zip(epoch, observer.fitness)]
+            # average_fitness = [x + y for x, y in zip(epoch, observer.average_fitness)]
 
         plt.figure()
         plt.xlabel("Ewaluacje")
@@ -362,7 +380,7 @@ if __name__ == "__main__":
             plt.plot(data2[0], data2[1], label="fitness " + str(i))
             plt.plot(data2[0], data2[2], label="average_fitness " + str(i))
         plt.legend()
-        #plt.show()
+        # plt.show()
 
         plt.figure()
         plt.xlabel("Ewaluacje")
@@ -371,7 +389,6 @@ if __name__ == "__main__":
         for i, data2 in enumerate(zip(epoch, fitness, basic_probs)):
             plt.plot(data2[0], data2[1], label="Basic prob: " + str(data2[2]))
         plt.legend()
-        #plt.show()
+        # plt.show()
 
     save_to_pdf(problems, plots_per_problem, test_data)
-

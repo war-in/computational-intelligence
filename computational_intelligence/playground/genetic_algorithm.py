@@ -1,7 +1,7 @@
-import matplotlib.pyplot as plt
 import os
 from datetime import datetime
-from matplotlib.backends.backend_pdf import PdfPages
+
+import matplotlib.pyplot as plt
 from jmetal.algorithm.singleobjective.genetic_algorithm import GeneticAlgorithm
 from jmetal.core.observer import Observer
 from jmetal.operator import UniformMutation
@@ -10,7 +10,7 @@ from jmetal.operator.selection import RouletteWheelSelection
 from jmetal.problem.singleobjective.unconstrained import Rastrigin, Sphere
 from jmetal.util.observer import LOGGER
 from jmetal.util.termination_criterion import StoppingByEvaluations
-
+from matplotlib.backends.backend_pdf import PdfPages
 from socjo_SSGA import SocioSSGA
 
 
@@ -40,30 +40,31 @@ class PrintObjectivesObserver(Observer):
 
 
 def save_to_pdf(problems, plots_per_problem, note):
-
     dir_name = datetime.now().strftime("%d_%m_%Y_%H_%M_%S")
 
     os.mkdir(str(dir_name))
 
-    fig_nums = plt.get_fignums()  
+    fig_nums = plt.get_fignums()
     figs = [plt.figure(n) for n in fig_nums]
 
-    for i in range (0, len(problems)): 
-
-        
-        filename =  str(dir_name) + "/" + problems[i].get_name() + str(problems[i].number_of_variables) + ".pdf"
+    for i in range(0, len(problems)):
+        filename = (
+            str(dir_name)
+            + "/"
+            + problems[i].get_name()
+            + str(problems[i].number_of_variables)
+            + ".pdf"
+        )
         p = PdfPages(filename)
-        p.attach_note(note, [0,0])
+        p.attach_note(note, [0, 0])
         for j in range(0, plots_per_problem):
-
             fig = figs[i * plots_per_problem + j]
-            fig.savefig(p, format='pdf') 
+            fig.savefig(p, format="pdf")
 
-        
-        p.close()  
+        p.close()
+
 
 if __name__ == "__main__":
-
     basic_probs = [0.1, 0.2, 0.3, 0.1]
     trust_probs = [0.6, 0.7, 0.6, 0.5]
     cost_probs = [0.3, 0.1, 0.1, 0.4]
@@ -76,9 +77,9 @@ if __name__ == "__main__":
     evaluations = 20000
     observer_freq = 10
 
-    #basic_probs = [0.1]
-    #trust_probs = [0.6]
-    #cost_probs = [0.3]
+    # basic_probs = [0.1]
+    # trust_probs = [0.6]
+    # cost_probs = [0.3]
 
     sizes = [50, 100, 200]
     problems = []
@@ -87,22 +88,34 @@ if __name__ == "__main__":
         problems.append(Rastrigin(size))
         problems.append(Sphere(size))
 
-    plots_per_problem = 1 # how many charts should be printed for each problem
-    number_of_trials = 1  # number of tests per problem 
+    plots_per_problem = 1  # how many charts should be printed for each problem
+    number_of_trials = 1  # number of tests per problem
 
     epoch = []
     fitness = []
     average_fitness = []
 
-    test_data = ("Population size: " + str(population_size) + "\n" +
-    "Offspring size: " + str(offspring_population_size) + "\n" +
-    "Interaction probability: " + str(interaction_probability) + "\n" +
-    "Mutation probability: " + str(mutation_probability) + "\n" +
-    "Crossover probability: " + str(crossover_probability) + "\n" +
-     "Evaluations: " + str(evaluations) )
+    test_data = (
+        "Population size: "
+        + str(population_size)
+        + "\n"
+        + "Offspring size: "
+        + str(offspring_population_size)
+        + "\n"
+        + "Interaction probability: "
+        + str(interaction_probability)
+        + "\n"
+        + "Mutation probability: "
+        + str(mutation_probability)
+        + "\n"
+        + "Crossover probability: "
+        + str(crossover_probability)
+        + "\n"
+        + "Evaluations: "
+        + str(evaluations)
+    )
 
     for problem in problems:
-
         algorithms = [
             GeneticAlgorithm(
                 problem=problem,
@@ -132,15 +145,13 @@ if __name__ == "__main__":
         epoch = []
         fitness = []
         average_fitness = []
-        
+
         for algorithm in algorithms:
+            # epoch = [0] * 5
+            # fitness = [0] * 5
+            # average_fitness = [0] * 5
 
-
-            #epoch = [0] * 5
-            #fitness = [0] * 5
-            #average_fitness = [0] * 5
-
-            #for j in range(0, number_of_trials):
+            # for j in range(0, number_of_trials):
 
             observer = PrintObjectivesObserver(observer_freq)
             algorithm.observable.register(observer)
@@ -149,7 +160,7 @@ if __name__ == "__main__":
 
             epoch.append(observer.epoch)
             fitness.append(observer.fitness)
-            #average_fitness.append(observer.average_fitness)
+            # average_fitness.append(observer.average_fitness)
 
         plt.figure()
         plt.xlabel("Ewaluacje")
@@ -158,6 +169,6 @@ if __name__ == "__main__":
         for i, data in enumerate(zip(epoch, fitness, algorithms)):
             plt.plot(data[0], data[1], label=data[2].get_name())
         plt.legend()
-        #plt.show()
+        # plt.show()
 
     save_to_pdf(problems, plots_per_problem, test_data)
