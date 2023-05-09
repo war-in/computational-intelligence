@@ -101,23 +101,6 @@ if __name__ == "__main__":
     "Crossover probability: " + str(crossover_probability) + "\n" +
      "Evaluations: " + str(evaluations) )
 
-    '''for algorithm in algorithms:
-        observer = PrintObjectivesObserver(1)
-        algorithm.observable.register(observer)
-
-        algorithm.run()
-
-        fitness.append(observer.fitness)
-        epoch.append(observer.epoch)
-
-    plt.xlabel("Ewaluacje")
-    plt.ylabel("Fitness")
-    plt.title("Porównanie różnych operatorów mutacji")
-    for i, data in enumerate(zip(epoch, fitness, algorithms)):
-        plt.plot(data[0], data[1], label=data[2].get_name())
-    plt.legend()
-    plt.show()'''
-
     for problem in problems:
 
         algorithms = [

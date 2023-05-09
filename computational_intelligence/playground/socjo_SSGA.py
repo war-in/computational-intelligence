@@ -321,11 +321,7 @@ if __name__ == "__main__":
         average_fitness = []
 
         for i, data in enumerate(zip(basic_probs, trust_probs, cost_probs)):
-
-            #epoch = [0] * 5
-            #fitness = [0] * 5
-            #average_fitness = [0] * 5
-
+            
             #for j in range(0, number_of_trials):
 
             socio = SocioSSGA(
@@ -357,26 +353,6 @@ if __name__ == "__main__":
             #epoch = [x + y for x, y in zip(epoch, observer.epoch)] 
             #fitness = [x + y for x, y in zip(epoch, observer.fitness)]
             #average_fitness = [x + y for x, y in zip(epoch, observer.average_fitness)] 
-
-            '''#fig = plt.figure()
-            #ax = fig.add_subplot()
-            test_data = ("Problem: " + problem.get_name() + " " + str(problem.number_of_variables) + "\n" +
-            "Population size: " + str(population_size) + "\n" +
-            "Offspring size: " + str(offspring_population_size) + "\n" +
-            "Interaction probability: " + str(interaction_probability) + "\n" +
-            "Mutation probability: " + str(mutation_probability) + "\n" +
-            "Crossover probability: " + str(crossover_probability) + "\n" )
-            
-            #ax.text(0, 0, test_data)
-            #plt.show()'''
-
-        '''epoch = [x // number_of_trials for x in epoch]
-        fitness = [x // number_of_trials for x in fitness]
-        average_fitness = [x // number_of_trials for x in average_fitness]
-
-        epoch = [epoch]
-        fitness = [fitness]
-        average_fitness = [average_fitness]'''
 
         plt.figure()
         plt.xlabel("Ewaluacje")
