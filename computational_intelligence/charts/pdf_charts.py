@@ -8,7 +8,7 @@ from jmetal.util.termination_criterion import StoppingByEvaluations
 from matplotlib import pyplot as plt
 from matplotlib.backends.backend_pdf import PdfPages
 
-from computational_intelligence.algorithms.socjo_SSGA import SocioObserver, SocioSSGA
+from algorithms.socjo_SSGA import SocioObserver, SocioSSGA
 
 
 def save_to_pdf(problems, plots_per_problem, note):
@@ -37,21 +37,21 @@ def save_to_pdf(problems, plots_per_problem, note):
 
 
 if __name__ == "__main__":
-    basic_probs = [0.1, 0.2, 0.3, 0.1]
-    trust_probs = [0.6, 0.7, 0.6, 0.5]
-    cost_probs = [0.3, 0.1, 0.1, 0.4]
+    #basic_probs = [0.1, 0.2, 0.3, 0.1]
+    #trust_probs = [0.6, 0.7, 0.6, 0.5]
+    #cost_probs = [0.3, 0.1, 0.1, 0.4]
 
     population_size = 100
     offspring_population_size = 1
     interaction_probability = 0.5
     mutation_probability = 0.1
     crossover_probability = 0.9
-    evaluations = 10000
+    evaluations = 2000
     observer_freq = 10
 
-    # basic_probs = [0.1]
-    # trust_probs = [0.6]
-    # cost_probs = [0.3]
+    basic_probs = [0.1, 0.2]
+    trust_probs = [0.6, 0.7]
+    cost_probs = [0.3, 0.1]
 
     sizes = [50, 100, 200]
     problems = []
@@ -61,7 +61,7 @@ if __name__ == "__main__":
         problems.append(Sphere(size))
 
     plots_per_problem = 2  # how many charts should be printed for each problem
-    number_of_trials = 1  # number of tests per problem
+    number_of_trials = 2  # number of tests per problem
 
     epoch = []
     fitness = []
@@ -93,42 +93,55 @@ if __name__ == "__main__":
         average_fitness = []
 
         for i, data in enumerate(zip(basic_probs, trust_probs, cost_probs)):
-            # for j in range(0, number_of_trials):
 
-            socio = SocioSSGA(
-                problem=problem,
-                population_size=population_size,
-                offspring_population_size=offspring_population_size,
-                interaction_probability=interaction_probability,
-                selection=RouletteWheelSelection(),
-                mutation=UniformMutation(mutation_probability),
-                crossover=SBXCrossover(crossover_probability),
-                basic_prob=data[0],
-                trust_prob=data[1],
-                cost_prob=data[2],
-                max_switched_genes=int(problem.number_of_variables * 0.75),
-                termination_criterion=StoppingByEvaluations(evaluations),
-            )
+            trial_epoch = []
+            trial_fitness = []
+            trial_average_fitness = []
 
-            observer = SocioObserver(observer_freq)
-            socio.observable.register(observer)
+            for j in range(0, number_of_trials):
 
-            socio.run()
-            print(
-                "Problem: "
-                + problem.get_name()
-                + " "
-                + str(problem.number_of_variables)
-            )
-            print(len(observer.epoch))
+                socio = SocioSSGA(
+                    problem=problem,
+                    population_size=population_size,
+                    offspring_population_size=offspring_population_size,
+                    interaction_probability=interaction_probability,
+                    selection=RouletteWheelSelection(),
+                    mutation=UniformMutation(mutation_probability),
+                    crossover=SBXCrossover(crossover_probability),
+                    basic_prob=data[0],
+                    trust_prob=data[1],
+                    cost_prob=data[2],
+                    max_switched_genes=int(problem.number_of_variables * 0.75),
+                    termination_criterion=StoppingByEvaluations(evaluations),
+                )
 
-            epoch.append(observer.epoch)
-            fitness.append(observer.fitness)
-            average_fitness.append(observer.average_fitness)
+                observer = SocioObserver(observer_freq)
+                socio.observable.register(observer)
 
-            # epoch = [x + y for x, y in zip(epoch, observer.epoch)]
-            # fitness = [x + y for x, y in zip(epoch, observer.fitness)]
-            # average_fitness = [x + y for x, y in zip(epoch, observer.average_fitness)]
+                socio.run()
+                print(
+                    "Problem: "
+                    + problem.get_name()
+                    + " "
+                    + str(problem.number_of_variables)
+                )
+                #print(len(observer.epoch))
+                if j == 0:
+                    trial_epoch.extend(observer.epoch)
+                    trial_fitness.extend(observer.fitness)
+                    trial_average_fitness.extend(observer.average_fitness)
+                else:
+                    min_len = min(len(trial_fitness), len(observer.fitness))
+                    trial_epoch = trial_epoch[0:min_len]
+                    trial_fitness = [x + y for x, y in zip(trial_fitness[0:min_len], observer.fitness[0:min_len])]
+                    trial_average_fitness = [x + y for x, y in zip(trial_average_fitness[0:min_len], observer.average_fitness[0:min_len])]
+
+            trial_fitness = [x / number_of_trials for x in trial_fitness]
+            trial_average_fitness = [x / number_of_trials for x in trial_average_fitness]
+
+            epoch.append(trial_epoch)
+            fitness.append(trial_fitness)
+            average_fitness.append(trial_average_fitness)
 
         plt.figure()
         plt.xlabel("Ewaluacje")
@@ -138,7 +151,7 @@ if __name__ == "__main__":
             plt.plot(data2[0], data2[1], label="fitness " + str(i))
             plt.plot(data2[0], data2[2], label="average_fitness " + str(i))
         plt.legend()
-        # plt.show()
+        #plt.show()
 
         plt.figure()
         plt.xlabel("Ewaluacje")
@@ -147,6 +160,6 @@ if __name__ == "__main__":
         for i, data2 in enumerate(zip(epoch, fitness, basic_probs)):
             plt.plot(data2[0], data2[1], label="Basic prob: " + str(data2[2]))
         plt.legend()
-        # plt.show()
+        #plt.show()
 
     save_to_pdf(problems, plots_per_problem, test_data)

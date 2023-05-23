@@ -252,4 +252,4 @@ class SocioObserver(Observer):
                 all_variables.append(copy(solution.variables))
             self.all_variables_per_evaluation.append(all_variables)
 
-            LOGGER.info("Evaluations: {}. fitness: {}".format(evaluations, fitness))
+            #LOGGER.info("Evaluations: {}. fitness: {}".format(evaluations, fitness))
