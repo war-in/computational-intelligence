@@ -243,13 +243,14 @@ class SocioObserver(Observer):
             else:
                 fitness = solutions.objectives[0]
 
-            self.epoch.append(evaluations)
-            self.fitness.append(fitness)
-            self.average_fitness.append(average_solutions)
+            if len(self.epoch) ==  0 or evaluations != self.epoch[-1]:
+                self.epoch.append(evaluations)
+                self.fitness.append(fitness)
+                self.average_fitness.append(average_solutions)
 
-            all_variables = []
-            for solution in all_solutions:
-                all_variables.append(copy(solution.variables))
-            self.all_variables_per_evaluation.append(all_variables)
+                all_variables = []
+                for solution in all_solutions:
+                    all_variables.append(copy(solution.variables))
+                self.all_variables_per_evaluation.append(all_variables)
 
-            #LOGGER.info("Evaluations: {}. fitness: {}".format(evaluations, fitness))
+                #LOGGER.info("Evaluations: {}. fitness: {}".format(evaluations, fitness))

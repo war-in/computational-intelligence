@@ -49,9 +49,9 @@ if __name__ == "__main__":
     evaluations = 2000
     observer_freq = 10
 
-    basic_probs = [0.1, 0.2]
-    trust_probs = [0.6, 0.7]
-    cost_probs = [0.3, 0.1]
+    basic_probs = [0.1]
+    trust_probs = [0.6]
+    cost_probs = [0.3]
 
     sizes = [50, 100, 200]
     problems = []
@@ -125,7 +125,7 @@ if __name__ == "__main__":
                     + " "
                     + str(problem.number_of_variables)
                 )
-                #print(len(observer.epoch))
+                
                 if j == 0:
                     trial_epoch.extend(observer.epoch)
                     trial_fitness.extend(observer.fitness)
@@ -138,7 +138,6 @@ if __name__ == "__main__":
 
             trial_fitness = [x / number_of_trials for x in trial_fitness]
             trial_average_fitness = [x / number_of_trials for x in trial_average_fitness]
-
             epoch.append(trial_epoch)
             fitness.append(trial_fitness)
             average_fitness.append(trial_average_fitness)
