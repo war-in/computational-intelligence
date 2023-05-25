@@ -54,17 +54,36 @@ if __name__ == "__main__":
     #trust_probs = [0.6, 0.7, 0.6, 0.5]
     #cost_probs = [0.3, 0.1, 0.1, 0.4]
 
-    population_size = 100
+    population_size = 50
     offspring_population_size = 1
     interaction_probability = 0.5
     mutation_probability = 0.1
     crossover_probability = 0.9
-    evaluations = 200
+    evaluations = 10000
     observer_freq = 10
 
-    basic_probs = [0.1, 0.2]
-    trust_probs = [0.6, 0.7]
-    cost_probs = [0.3, 0.1]
+    #basic_probs = [0.1, 0.2]
+    #trust_probs = [0.6, 0.7]
+    #cost_probs = [0.3, 0.1]
+
+    basic_probs = []
+    trust_probs = []
+    cost_probs = []
+    num_of_tests = 2
+
+    for i in range (1, num_of_tests + 1):
+        for j in range (1, num_of_tests + 1):
+            for k in range (1, num_of_tests + 1):
+                if i == j == k and i!=1:
+                    continue
+                summ = i + j + k 
+                basic_probs.append(i / summ)
+                trust_probs.append(j / summ)
+                cost_probs.append(k / summ)
+
+    print(basic_probs)
+    print(trust_probs)
+    print(cost_probs)
 
     sizes = [50, 100, 200]
     problems = []
@@ -74,7 +93,7 @@ if __name__ == "__main__":
         problems.append(Sphere(size))
 
     plots_per_problem = 4  # how many charts should be printed for each problem
-    number_of_trials = 2  # number of tests per problem
+    number_of_trials = 3  # number of tests per problem
 
     test_data = (
         "Population size: "
@@ -94,6 +113,9 @@ if __name__ == "__main__":
         + "\n"
         + "Evaluations: "
         + str(evaluations)
+        + "\n"
+        + "Number of trials: "
+        + str(number_of_trials)
     )
 
     for problem in problems:
@@ -170,9 +192,9 @@ if __name__ == "__main__":
         plt.figure()
         plt.xlabel("Ewaluacje")
         plt.ylabel("Fitness")
-        plt.title("Comparison of different probabilities (fitness vs average fitness)")
+        plt.title("Comparison of different probabilities (average fitness)")
         for i, data2 in enumerate(zip(epoch, fitness, average_fitness)):
-            plt.plot(data2[0], data2[1], label="fitness " + str(basic_probs[i]) + " " + str(trust_probs[i]) + " " + str(cost_probs[i]))
+            #plt.plot(data2[0], data2[1], label="fitness " + str(basic_probs[i]) + " " + str(trust_probs[i]) + " " + str(cost_probs[i]))
             plt.plot(data2[0], data2[2], label="average_fitness " + str(basic_probs[i]) + " " + str(trust_probs[i]) + " " + str(cost_probs[i]))
         plt.legend()
         #plt.show()
