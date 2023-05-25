@@ -59,12 +59,12 @@ if __name__ == "__main__":
     interaction_probability = 0.5
     mutation_probability = 0.1
     crossover_probability = 0.9
-    evaluations = 1000
+    evaluations = 200
     observer_freq = 10
 
-    basic_probs = [0.1]
-    trust_probs = [0.6]
-    cost_probs = [0.3]
+    basic_probs = [0.1, 0.2]
+    trust_probs = [0.6, 0.7]
+    cost_probs = [0.3, 0.1]
 
     sizes = [50, 100, 200]
     problems = []
@@ -73,12 +73,8 @@ if __name__ == "__main__":
         problems.append(Rastrigin(size))
         problems.append(Sphere(size))
 
-    plots_per_problem = 3  # how many charts should be printed for each problem
+    plots_per_problem = 4  # how many charts should be printed for each problem
     number_of_trials = 2  # number of tests per problem
-
-    epoch = []
-    fitness = []
-    average_fitness = []
 
     test_data = (
         "Population size: "
@@ -105,6 +101,7 @@ if __name__ == "__main__":
         fitness = []
         average_fitness = []
         all_deviations = []
+        rankings = []
 
         for i, data in enumerate(zip(basic_probs, trust_probs, cost_probs)):
 
@@ -112,6 +109,7 @@ if __name__ == "__main__":
             trial_fitness = []
             trial_average_fitness = []
             trial_all_deviations = []
+            trial_rankings = []
 
             for j in range(0, number_of_trials):
 
@@ -148,6 +146,7 @@ if __name__ == "__main__":
                     trial_fitness.extend(observer.fitness)
                     trial_average_fitness.extend(observer.average_fitness)
                     trial_all_deviations.extend(new_deviations)
+                    trial_rankings.extend(observer.rankings)
 
                 else:
                     min_len = min(len(trial_fitness), len(observer.fitness))
@@ -155,14 +154,18 @@ if __name__ == "__main__":
                     trial_fitness = [x + y for x, y in zip(trial_fitness[0:min_len], observer.fitness[0:min_len])]
                     trial_average_fitness = [x + y for x, y in zip(trial_average_fitness[0:min_len], observer.average_fitness[0:min_len])]
                     trial_all_deviations = [x + y for x, y in zip( trial_all_deviations, new_deviations)]
+                    trial_rankings = [x + y for x, y in zip( trial_rankings, observer.rankings)]
 
             trial_fitness = [x / number_of_trials for x in trial_fitness]
             trial_average_fitness = [x / number_of_trials for x in trial_average_fitness]
             trial_all_deviations = [ x / number_of_trials for x in trial_all_deviations]
+            trial_rankings = [x / number_of_trials for x in trial_rankings]
+
             epoch.append(trial_epoch)
             fitness.append(trial_fitness)
             average_fitness.append(trial_average_fitness)
             all_deviations.append(trial_all_deviations)
+            rankings.append(trial_rankings)
 
         plt.figure()
         plt.xlabel("Ewaluacje")
@@ -179,7 +182,7 @@ if __name__ == "__main__":
         plt.ylabel("Fitness")
         plt.title("Comparison of different probabilities (fitness)")
         for i, data2 in enumerate(zip(epoch, fitness, basic_probs)):
-            plt.plot(data2[0], data2[1], label="Basic prob: " + str(data2[2]))
+            plt.plot(data2[0], data2[1], label="Basic prob: " + str(basic_probs[i]) + " " + str(trust_probs[i]) + " " + str(cost_probs[i]))
         plt.legend()
         #plt.show()
 
@@ -190,6 +193,19 @@ if __name__ == "__main__":
         for i, data2 in enumerate(zip(epoch, all_deviations)):
             plt.plot(data2[0], data2[1], label="std: " + str(basic_probs[i]) + " " + str(trust_probs[i]) + " " + str(cost_probs[i]))
         plt.legend()
+        #plt.show()
+        
+        # create labels for boxplot
+        labels = []
+        for i in range(0, len(basic_probs)):
+            labels.append(str(basic_probs[i]) + " " + str(trust_probs[i]) + " " + str(cost_probs[i]))
+
+        # plotting rankings
+        fig = plt.figure(figsize =(10, 7))
+        ax = fig.add_subplot(111)
+        ax.set_yticklabels(labels)
+        bp = ax.boxplot(rankings, patch_artist = True,
+                    notch ='True', vert = 0)
         #plt.show()
 
     save_to_pdf(problems, plots_per_problem, test_data)

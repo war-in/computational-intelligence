@@ -230,13 +230,15 @@ class SocioObserver(Observer):
         self.fitness = []
         self.average_fitness = []
         self.all_variables_per_evaluation = []
+        self.rankings = []
 
     def update(self, *args, **kwargs):
         evaluations = kwargs["EVALUATIONS"]
         solutions = kwargs["SOLUTIONS"]
         all_solutions = kwargs["ALL_SOLUTIONS"]
         average_solutions = kwargs["AVERAGE_SOLUTIONS"]
-    
+        ranking = kwargs["RANKING"]
+
         if (evaluations % self.display_frequency) == 0 and solutions:
             if isinstance(solutions, list):
                 fitness = solutions[0].objectives
@@ -247,6 +249,7 @@ class SocioObserver(Observer):
                 self.epoch.append(evaluations)
                 self.fitness.append(fitness)
                 self.average_fitness.append(average_solutions)
+                self.rankings = list(ranking.values())
 
                 all_variables = []
                 for solution in all_solutions:
