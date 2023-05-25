@@ -5,8 +5,7 @@ from jmetal.operator.selection import RouletteWheelSelection
 from jmetal.problem.singleobjective.unconstrained import Rastrigin, Sphere
 from jmetal.util.termination_criterion import StoppingByEvaluations
 
-from computational_intelligence.algorithms.socjo_SSGA import SocioObserver, SocioSSGA
-
+from algorithms.socjo_SSGA import SocioObserver, SocioSSGA
 
 def main():
     problem_size = 100
@@ -24,7 +23,7 @@ def main():
         trust_prob=0.6,
         cost_prob=0.3,
         max_switched_genes=int(problem.number_of_variables * 0.75),
-        termination_criterion=StoppingByEvaluations(10000),
+        termination_criterion=StoppingByEvaluations(3000),
     )
 
     observer = SocioObserver(10)

@@ -236,7 +236,7 @@ class SocioObserver(Observer):
         solutions = kwargs["SOLUTIONS"]
         all_solutions = kwargs["ALL_SOLUTIONS"]
         average_solutions = kwargs["AVERAGE_SOLUTIONS"]
-
+    
         if (evaluations % self.display_frequency) == 0 and solutions:
             if isinstance(solutions, list):
                 fitness = solutions[0].objectives

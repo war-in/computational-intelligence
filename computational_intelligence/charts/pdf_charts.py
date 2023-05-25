@@ -1,6 +1,6 @@
 import os
+import numpy as np
 from datetime import datetime
-
 from jmetal.operator import SBXCrossover, UniformMutation
 from jmetal.operator.selection import RouletteWheelSelection
 from jmetal.problem.singleobjective.unconstrained import Rastrigin, Sphere
@@ -10,6 +10,19 @@ from matplotlib.backends.backend_pdf import PdfPages
 
 from algorithms.socjo_SSGA import SocioObserver, SocioSSGA
 
+def get_deviation(observer, problem_size):
+
+    all_deviations = []
+    for all_variables in observer.all_variables_per_evaluation:
+        variables_by_index = [[]] * problem_size
+        for variables in all_variables:
+            for index, variable in enumerate(variables):
+                variables_by_index[index].append(variable)
+
+        deviations = [np.std(variables) for variables in variables_by_index]
+        all_deviations.append(min(deviations))
+
+    return all_deviations
 
 def save_to_pdf(problems, plots_per_problem, note):
     dir_name = datetime.now().strftime("%d_%m_%Y_%H_%M_%S")
@@ -46,7 +59,7 @@ if __name__ == "__main__":
     interaction_probability = 0.5
     mutation_probability = 0.1
     crossover_probability = 0.9
-    evaluations = 2000
+    evaluations = 1000
     observer_freq = 10
 
     basic_probs = [0.1]
@@ -60,7 +73,7 @@ if __name__ == "__main__":
         problems.append(Rastrigin(size))
         problems.append(Sphere(size))
 
-    plots_per_problem = 2  # how many charts should be printed for each problem
+    plots_per_problem = 3  # how many charts should be printed for each problem
     number_of_trials = 2  # number of tests per problem
 
     epoch = []
@@ -91,12 +104,14 @@ if __name__ == "__main__":
         epoch = []
         fitness = []
         average_fitness = []
+        all_deviations = []
 
         for i, data in enumerate(zip(basic_probs, trust_probs, cost_probs)):
 
             trial_epoch = []
             trial_fitness = []
             trial_average_fitness = []
+            trial_all_deviations = []
 
             for j in range(0, number_of_trials):
 
@@ -125,30 +140,37 @@ if __name__ == "__main__":
                     + " "
                     + str(problem.number_of_variables)
                 )
-                
+
+                new_deviations = get_deviation(observer, problem.number_of_variables)
+
                 if j == 0:
                     trial_epoch.extend(observer.epoch)
                     trial_fitness.extend(observer.fitness)
                     trial_average_fitness.extend(observer.average_fitness)
+                    trial_all_deviations.extend(new_deviations)
+
                 else:
                     min_len = min(len(trial_fitness), len(observer.fitness))
                     trial_epoch = trial_epoch[0:min_len]
                     trial_fitness = [x + y for x, y in zip(trial_fitness[0:min_len], observer.fitness[0:min_len])]
                     trial_average_fitness = [x + y for x, y in zip(trial_average_fitness[0:min_len], observer.average_fitness[0:min_len])]
+                    trial_all_deviations = [x + y for x, y in zip( trial_all_deviations, new_deviations)]
 
             trial_fitness = [x / number_of_trials for x in trial_fitness]
             trial_average_fitness = [x / number_of_trials for x in trial_average_fitness]
+            trial_all_deviations = [ x / number_of_trials for x in trial_all_deviations]
             epoch.append(trial_epoch)
             fitness.append(trial_fitness)
             average_fitness.append(trial_average_fitness)
+            all_deviations.append(trial_all_deviations)
 
         plt.figure()
         plt.xlabel("Ewaluacje")
         plt.ylabel("Fitness")
         plt.title("Comparison of different probabilities (fitness vs average fitness)")
         for i, data2 in enumerate(zip(epoch, fitness, average_fitness)):
-            plt.plot(data2[0], data2[1], label="fitness " + str(i))
-            plt.plot(data2[0], data2[2], label="average_fitness " + str(i))
+            plt.plot(data2[0], data2[1], label="fitness " + str(basic_probs[i]) + " " + str(trust_probs[i]) + " " + str(cost_probs[i]))
+            plt.plot(data2[0], data2[2], label="average_fitness " + str(basic_probs[i]) + " " + str(trust_probs[i]) + " " + str(cost_probs[i]))
         plt.legend()
         #plt.show()
 
@@ -158,6 +180,15 @@ if __name__ == "__main__":
         plt.title("Comparison of different probabilities (fitness)")
         for i, data2 in enumerate(zip(epoch, fitness, basic_probs)):
             plt.plot(data2[0], data2[1], label="Basic prob: " + str(data2[2]))
+        plt.legend()
+        #plt.show()
+
+        plt.figure()
+        plt.xlabel("Ewaluacje")
+        plt.ylabel("Fitness")
+        plt.title("Standard Deviation")
+        for i, data2 in enumerate(zip(epoch, all_deviations)):
+            plt.plot(data2[0], data2[1], label="std: " + str(basic_probs[i]) + " " + str(trust_probs[i]) + " " + str(cost_probs[i]))
         plt.legend()
         #plt.show()
 
